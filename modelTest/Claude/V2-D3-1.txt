@@ -1,0 +1,18 @@
+- Domain: Communication
+- Task: Developing Verbal Imitation Skills
+- Sub task: Imitating Single-Syllable Words
+- Description: Teaching the client to imitate single-syllable words to build foundational verbal communication skills
+- Materials: Picture cards of common single-syllable objects (e.g., ball, car, dog), data collection sheets, reinforcers
+- Procedure:
+  1. Present a picture card to the client
+  2. Say the word clearly while pointing to the picture
+  3. Prompt the client to repeat the word
+  4. Provide immediate reinforcement for successful imitation
+  5. Gradually fade prompts as the client improves
+- Data Collection: Record the number of correct imitations per session, noting prompt level required
+- Variations:
+  1. Use objects instead of picture cards
+  2. Incorporate movement or gestures with words
+  3. Practice in different settings (e.g., table, floor, outdoors)
+- Reinforcement: Praise, preferred toys, or small edibles immediately following correct imitations
+- Skills Developed: Verbal imitation, auditory processing, articulation, attention to verbal cues

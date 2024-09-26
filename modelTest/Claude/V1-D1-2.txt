@@ -1,0 +1,19 @@
+- Domain: Academic and Learning
+- Task: Vocabulary Expansion
+- Sub task: Context Clues
+- Description: The learner will use context clues to determine the meaning of unfamiliar words in a given text.
+- Materials: Short paragraphs with target vocabulary words, worksheet, pencil
+- Procedure:
+  1. Present a short paragraph containing a target vocabulary word.
+  2. Ask the learner to read the paragraph aloud.
+  3. Instruct the learner to identify the unfamiliar word.
+  4. Guide the learner to underline context clues in the paragraph.
+  5. Have the learner guess the meaning of the word based on context.
+  6. Discuss the actual definition and how context helped.
+- Data Collection: Record number of correctly identified meanings out of total attempts
+- Variations:
+  1. Use different types of context clues (definition, synonym, antonym, example)
+  2. Increase text complexity
+  3. Include multiple target words per paragraph
+- Reinforcement: Sticker chart, choice of reading material, or small prize for meeting weekly goals
+- Skills Developed: Reading comprehension, critical thinking, inference making, vocabulary acquisition

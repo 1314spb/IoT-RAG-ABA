@@ -1,0 +1,19 @@
+- Domain: Communication
+- Task: Enhancing Receptive Language Skills
+- Sub task: Following One-Step Instructions
+- Description: Teaching the client to respond appropriately to simple, one-step verbal instructions
+- Materials: Common household objects, picture cards, data collection sheets
+- Procedure:
+  1. Present 3-5 objects or picture cards to the client
+  2. Give a clear, one-step instruction (e.g., "Touch the ball")
+  3. Wait 3-5 seconds for the client to respond
+  4. Provide prompts if necessary (least-to-most prompting)
+  5. Reinforce correct responses immediately
+  6. Repeat with different instructions and objects
+- Data Collection: Record the number of correct responses and prompt levels required for each instruction
+- Variations:
+  1. Use different verbs (e.g., "Give me," "Show me," "Point to")
+  2. Incorporate body parts (e.g., "Touch your nose")
+  3. Practice in various locations to promote generalization
+- Reinforcement: Verbal praise, token system, or brief access to preferred activities
+- Skills Developed: Receptive language, listening skills, following directions, object identification

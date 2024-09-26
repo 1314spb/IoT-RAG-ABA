@@ -1,0 +1,19 @@
+- Domain: Social Emotion
+- Task: Recognizing and Expressing Emotions
+- Sub task: Identifying Basic Emotions in Others
+- Description: The client will learn to identify and label basic emotions (happy, sad, angry, scared) in others by looking at facial expressions and body language.
+- Materials: Emotion flashcards, mirror, tablet/computer for video clips
+- Procedure:
+  1. Present emotion flashcards to the client
+  2. Model each emotion using facial expressions and body language
+  3. Ask the client to imitate the expressions
+  4. Show video clips of people expressing different emotions
+  5. Ask the client to identify the emotion being displayed
+  6. Practice identifying emotions in real-time interactions with therapist and peers
+- Data Collection: Record the number of correct identifications out of total attempts
+- Variations:
+  1. Use pictures of familiar people (family, friends) expressing emotions
+  2. Incorporate emotion identification into other activities or games
+  3. Gradually introduce more complex emotions (surprised, disgusted, confused)
+- Reinforcement: Provide verbal praise and preferred items/activities for correct identifications
+- Skills Developed: Emotion recognition, social awareness, empathy, communication

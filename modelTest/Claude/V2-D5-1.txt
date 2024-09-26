@@ -1,0 +1,47 @@
+- Domain: Independent and Self-help
+
+- Task: Tooth Brushing
+
+- Sub task: Squeezing toothpaste onto brush
+
+- Description: Teaching the client to independently squeeze an appropriate amount of toothpaste onto a toothbrush as part of the overall tooth brushing routine.
+
+- Materials:
+  * Toothbrush
+  * Toothpaste
+  * Visual schedule or task analysis chart
+  * Timer (optional)
+
+- Procedure:
+  1. Place materials within reach of the client
+  2. Present the visual schedule or task analysis chart
+  3. Provide verbal instruction: "Let's brush teeth. First, put toothpaste on the brush."
+  4. Use least-to-most prompting hierarchy:
+     a. Verbal prompt
+     b. Gestural prompt
+     c. Partial physical prompt
+     d. Full physical prompt
+  5. Gradually fade prompts as client demonstrates increased independence
+  6. Provide immediate reinforcement for successful completion
+
+- Data Collection:
+  * Record level of prompting required for each trial
+  * Track successful independent completions
+  * Note duration of task completion (if using timer)
+
+- Variations:
+  * Practice with different types of toothpaste containers (e.g., tube, pump)
+  * Incorporate into full tooth brushing routine
+  * Practice at different times of day
+
+- Reinforcement:
+  * Verbal praise for attempts and successful completion
+  * Token system with preferred reward for consistent performance
+  * Natural reinforcement of fresh, clean mouth feeling
+
+- Skills Developed:
+  * Fine motor skills
+  * Following multi-step instructions
+  * Task initiation and completion
+  * Personal hygiene
+  * Independence in daily living skills

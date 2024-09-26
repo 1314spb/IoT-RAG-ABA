@@ -1,0 +1,42 @@
+- Domain: Behavioral Development
+
+- Task: Social Skills Enhancement
+
+- Sub task: Turn-Taking in Conversation
+
+- Description: Teaching the client to engage in reciprocal conversation by taking turns speaking and listening.
+
+- Materials:
+  - Visual conversation cues (e.g., talking stick, conversation cards)
+  - Timer
+  - Topic cards
+  - Social stories about turn-taking
+
+- Procedure:
+  1. Introduce the concept of turn-taking using social stories
+  2. Demonstrate turn-taking in conversation with a model
+  3. Practice turn-taking using visual cues (e.g., passing a talking stick)
+  4. Gradually increase conversation duration and complexity
+  5. Generalize skills to various settings and conversation partners
+
+- Data Collection:
+  - Frequency of successful turn-taking instances
+  - Duration of maintained conversation
+  - Instances of interrupting or dominating conversation
+
+- Variations:
+  - Use role-play scenarios with different social contexts
+  - Incorporate non-verbal turn-taking cues
+  - Practice turn-taking in group settings
+
+- Reinforcement:
+  - Verbal praise for successful turn-taking
+  - Token system for maintaining conversations
+  - Preferred activity after completing conversation practice
+
+- Skills Developed:
+  - Active listening
+  - Conversational timing
+  - Social awareness
+  - Impulse control
+  - Verbal communication

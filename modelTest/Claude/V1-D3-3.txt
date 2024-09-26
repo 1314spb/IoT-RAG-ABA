@@ -1,0 +1,18 @@
+- Domain: Communication
+- Task: Following Multi-Step Instructions
+- Sub task: Executing a series of 2-3 related actions
+- Description: The child will listen to and follow a set of 2-3 step instructions to complete a simple task
+- Materials: Common household items (e.g., toy box, stuffed animal, book)
+- Procedure:
+  1. Gain the child's attention
+  2. Clearly state a 2-3 step instruction (e.g., "Pick up the book, put it in the toy box, then bring me the teddy bear")
+  3. Wait for the child to begin the task
+  4. Provide prompts if needed after a brief pause
+  5. Observe the child's execution of the steps
+- Data Collection: Record number of steps completed independently and level of prompting required
+- Variations:
+  - Increase or decrease number of steps
+  - Use different contexts (playground, classroom)
+  - Include more complex vocabulary
+- Reinforcement: Praise for effort and completion; allow child to give instructions to therapist
+- Skills Developed: Listening comprehension, working memory, sequential processing, following directions

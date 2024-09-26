@@ -1,0 +1,18 @@
+- Domain: Behavioral Development
+- Task: Impulse Control
+- Sub task: Puzzle Assembly with Waiting Period
+- Description: Teach the child to wait for a signal before starting or continuing a puzzle activity
+- Materials: Age-appropriate puzzle, timer, "start" and "stop" signs
+- Procedure:
+  1. Set up the puzzle and explain the waiting rules
+  2. Show the "stop" sign and set a timer for a short period (e.g., 10 seconds)
+  3. When the timer rings, show the "start" sign and allow the child to work on the puzzle
+  4. After a brief period, show the "stop" sign again and reset the timer
+  5. Repeat the process until the puzzle is complete
+- Data Collection: Record successful waiting periods, attempts to start early, and duration of waiting tolerance
+- Variations:
+  1. Gradually increase waiting time
+  2. Use different activities (e.g., coloring, building blocks)
+  3. Introduce distractions during waiting periods
+- Reinforcement: Verbal praise, stickers, or small rewards for successful waiting
+- Skills Developed: Self-control, patience, following instructions, task completion

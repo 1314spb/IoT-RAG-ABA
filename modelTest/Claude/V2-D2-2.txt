@@ -1,0 +1,19 @@
+- Domain: Social Emotion
+- Task: Emotional Self-Regulation
+- Sub task: Using Coping Strategies for Frustration
+- Description: The client will learn and practice coping strategies to manage frustration in social situations.
+- Materials: Visual cues for coping strategies, stress balls, calming music, timer
+- Procedure:
+  1. Introduce and model 3-4 coping strategies (deep breathing, counting to 10, squeezing a stress ball)
+  2. Practice each strategy with the client in a calm state
+  3. Create mildly frustrating situations (e.g., difficult puzzle, losing a game)
+  4. Prompt the client to recognize signs of frustration
+  5. Guide the client to choose and use a coping strategy
+  6. Gradually increase the intensity of frustrating situations as the client improves
+- Data Collection: Record frequency of appropriate strategy use and successful frustration management
+- Variations:
+  1. Use role-play scenarios to practice in various social contexts
+  2. Incorporate mindfulness techniques for older clients
+  3. Create a personalized "coping toolbox" with client's preferred strategies
+- Reinforcement: Provide verbal praise and small rewards for using coping strategies successfully
+- Skills Developed: Emotional awareness, self-regulation, problem-solving, resilience

@@ -1,0 +1,19 @@
+- Domain: Communication
+- Task: Expanding Expressive Language
+- Sub task: Using Two-Word Combinations
+- Description: Teaching the client to combine two words to express wants, needs, or observations
+- Materials: Picture cards of objects and actions, data collection sheets, reinforcers
+- Procedure:
+  1. Present two picture cards (e.g., "car" and "go")
+  2. Model the two-word combination ("car go")
+  3. Prompt the client to repeat the combination
+  4. Gradually fade prompts as the client improves
+  5. Reinforce successful two-word combinations
+  6. Introduce new combinations systematically
+- Data Collection: Record the number of correct two-word combinations per session, noting prompt level required
+- Variations:
+  1. Use real objects instead of picture cards
+  2. Incorporate different word combinations (e.g., adjective-noun, verb-noun)
+  3. Practice during naturalistic play scenarios
+- Reinforcement: Immediate access to requested item/action, praise, or token system
+- Skills Developed: Expressive language, word combination, vocabulary expansion, basic sentence structure

@@ -1,0 +1,17 @@
+- Domain: Sensory Motor Skill
+- Task: Texture Sorting
+- Sub task: Identifying and grouping objects by texture
+- Description: The child will sort various objects into groups based on their textures (smooth, rough, soft, etc.)
+- Materials: A variety of small objects with different textures (e.g., cotton balls, sandpaper, smooth stones, fuzzy fabric, plastic blocks)
+- Procedure:
+  1. Present the child with a mixed array of textured objects
+  2. Demonstrate how to feel each object and sort into groups based on texture
+  3. Guide the child to sort the remaining objects, providing assistance as needed
+  4. Gradually reduce assistance as the child becomes more proficient
+- Data Collection: Record the number of objects correctly sorted without prompting
+- Variations:
+  1. Increase the number of texture categories
+  2. Use blindfold for purely tactile sorting
+  3. Incorporate matching textures to environmental objects
+- Reinforcement: Praise for correct sorting, token system for completed sets
+- Skills Developed: Tactile discrimination, fine motor skills, categorization, sensory processing
