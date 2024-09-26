@@ -1,0 +1,34 @@
+- Domain: Communication
+- Task: Teaching Active Listening
+- Sub task: Maintaining attention and responding to a speaker
+- Description: This task targets the development of active listening skills, which is an essential aspect of effective communication. The therapist will engage the individual in a conversation and encourage them to maintain their attention and respond to the speaker.
+- Materials: 
+  - A conversation script
+  - A timer
+  - A visual aid (e.g., a picture or a video) to support the conversation
+- Procedure: 
+  1. Begin a conversation with the individual using the conversation script.
+  2. Encourage the individual to maintain their attention by making eye contact and using verbal cues (e.g., "Can you please look at me?").
+  3. When the individual breaks attention, gently prompt them to refocus.
+  4. After the conversation, ask the individual to summarize the main points discussed.
+  5. Provide reinforcement for active listening (e.g., praise, a sticker, or a small reward).
+  6. Gradually increase the duration of the conversation and the complexity of the topics discussed.
+- Data Collection: 
+  - Record the number of times the individual maintains attention during the conversation.
+  - Record the number of times the individual breaks attention during the conversation.
+  - Note any challenges or difficulties the individual experiences during the task.
+- Variations: 
+  - Use different conversation topics or scripts to increase the variety of the task.
+  - Increase the duration of the conversation or the number of conversations.
+  - Use different visual aids or props to support the conversation.
+  - Incorporate gestures or other nonverbal cues to encourage active listening.
+- Reinforcement: 
+  - Verbal praise (e.g., "Great job listening and responding!")
+  - Nonverbal praise (e.g., a thumbs-up or a smile)
+  - Tangible rewards (e.g., stickers, small toys, or treats)
+  - Social reinforcement (e.g., "I appreciate how you're paying attention to me!")
+- Skills Developed: 
+  - Active listening skills
+  - Attention and focus skills
+  - Communication skills
+  - Social interaction and relationships

@@ -1,0 +1,32 @@
+Domain: Communication
+Task: Story Sequence Training
+Sub task: Teaching the client to identify and sequence events in a story
+Description: This task is designed to teach the client to identify and sequence events in a story, with the goal of improving their comprehension and retelling of stories.
+Materials: 
+- Picture cards or symbols representing events in a story (e.g., characters, settings, actions)
+- Story sequence cards or worksheets
+- Storybooks or videos
+Procedure: 
+1. Choose a story and identify the key events (e.g., beginning, middle, end).
+2. Show the client the picture cards or symbols representing the events in the story.
+3. Ask the client to sequence the events in the correct order.
+4. Provide feedback and reinforcement for correct sequencing.
+5. Gradually increase the complexity of the story and the number of events to be sequenced.
+Data Collection: 
+- Track the number of correct sequences made by the client.
+- Record the frequency and duration of the client's retelling of the story.
+- Evaluate the client's ability to identify and sequence events in different stories.
+Variations: 
+- Use different types of stories (e.g., fiction, non-fiction, fantasy).
+- Use different types of materials (e.g., picture cards, symbols, storybooks).
+- Increase the number of events to be sequenced.
+- Decrease the number of cues provided by the therapist.
+Reinforcement: 
+- Verbal praise and encouragement.
+- Tokens or rewards for correct sequencing.
+- Access to the story or activity associated with the story.
+Skills Developed: 
+- Story comprehension.
+- Sequencing.
+- Retelling.
+- Problem-solving.

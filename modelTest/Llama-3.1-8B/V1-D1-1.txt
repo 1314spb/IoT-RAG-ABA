@@ -1,0 +1,30 @@
+- Domain: Academic and Learning
+- Task: "Sorting and Labeling Objects by Category"
+- Sub task: Sorting objects into categories (e.g., animals, toys, food) and labeling each object with its category.
+- Description: This task aims to improve the individual's ability to categorize and label objects, which is an essential skill for learning and academic success.
+- Materials: 
+  - A set of objects that can be sorted into categories (e.g., pictures or real objects)
+  - A whiteboard or a piece of paper with categories written on it
+- Procedure:
+  1. Begin by presenting the individual with a set of objects and asking them to sort them into categories.
+  2. Once the individual has sorted the objects, ask them to label each object with its category.
+  3. Provide feedback and guidance as needed to ensure the individual is accurately sorting and labeling the objects.
+  4. Gradually increase the difficulty of the task by adding more objects or using more complex categories.
+- Data Collection:
+  - Observe the individual's ability to sort and label objects accurately.
+  - Record the number of correct and incorrect sortings.
+  - Take note of any challenges or difficulties the individual encounters.
+- Variations:
+  - Use different types of objects (e.g., toys, pictures, real objects).
+  - Increase the number of categories or objects.
+  - Use more complex categories (e.g., animals by habitat, food by course).
+  - Have the individual sort and label objects in a specific order (e.g., from smallest to largest).
+- Reinforcement:
+  - Provide praise and encouragement for accurate sortings and labeling.
+  - Use verbal or visual rewards (e.g., stickers, stars) for correct sortings and labeling.
+  - Gradually phase out reinforcement as the individual becomes more accurate and independent.
+- Skills Developed:
+  - Categorization and classification
+  - Labeling and vocabulary
+  - Problem-solving and critical thinking
+  - Fine motor skills (e.g., writing, drawing)
