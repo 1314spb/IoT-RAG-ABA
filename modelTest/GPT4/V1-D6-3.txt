@@ -1,0 +1,16 @@
+Domain: Behavioral Development
+Task: Waiting for a Preferred Item
+Sub task: Delayed gratification
+Description: The child will practice waiting for a short period before receiving a preferred item or activity, teaching patience and impulse control.
+Materials: Preferred item (toy, snack, activity), timer
+Procedure:
+Present the child with a preferred item but explain that they must wait before receiving it.
+Set a timer for a short, manageable period (e.g., 30 seconds).
+If the child waits without engaging in disruptive behavior, reward them with the preferred item.
+Gradually increase the waiting time as the child becomes more successful.
+Data Collection: Record the length of time the child waits successfully without displaying problem behaviors.
+Variations:
+Use different items to vary the task and maintain interest.
+Introduce distractions during the waiting period to increase difficulty.
+Reinforcement: Provide the preferred item or verbal praise after successful waiting.
+Skills Developed: Impulse control, patience, self-regulation, and delayed gratification.
