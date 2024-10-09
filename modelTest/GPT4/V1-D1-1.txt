@@ -1,0 +1,17 @@
+Domain: Academic and Learning
+Task: Letter Recognition
+Sub task: Identifying Uppercase and Lowercase Letters
+Description: The child will identify and distinguish between uppercase and lowercase letters by selecting the correct letter when prompted.
+Materials: Flashcards with uppercase and lowercase letters, letter tiles, or a whiteboard and marker.
+Procedure:
+Present the child with a set of letter flashcards or tiles (a mix of uppercase and lowercase letters).
+Ask the child to identify a specific letter (e.g., "Find the uppercase A").
+Provide immediate feedback, correct errors, and reinforce correct responses.
+Gradually increase difficulty by introducing more letters and reducing prompts.
+Data Collection: Record the number of correct identifications of uppercase and lowercase letters out of the total presented.
+Variations:
+Use different fonts or colors to enhance letter recognition.
+Play a matching game where the child matches uppercase and lowercase pairs.
+Use digital apps that focus on letter identification.
+Reinforcement: Provide verbal praise, stickers, or a small reward for correct identifications. Use a token system for continued engagement.
+Skills Developed: Letter recognition, visual discrimination, attention to detail, memory, and early literacy skills.
