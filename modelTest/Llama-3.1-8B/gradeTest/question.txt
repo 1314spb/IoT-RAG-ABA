@@ -1,0 +1,143 @@
+1-1. Create the task for Applied Behavior Analysis (ABA) therapy in domain of Academic and Learning. Just need to use the following format to generate the response without any other irrelvant response:
+- Domain: Academic and Learning
+- Task: Category: Identify category - Expressive
+- Subtask: Food, 2-3 items in category given; "Xx, yy, zz are all (_____)"
+- Description:
+- Materials:
+- Procedure:
+- Data Collection:
+- Variations:
+- Reinforcement:
+- Skills Developed:
+
+1-2. Base on the provided information, create the task for Applied Behavior Analysis (ABA) therapy in domain of Academic and Learning. Just need to use the above format to generate the response without any other irrelvant response:
+- Domain: Academic and Learning
+- Task: Category: Identify category - Expressive
+- Subtask: Food, 2-3 items in category given; "Xx, yy, zz are all (_____)"
+- Description:
+- Materials:
+- Procedure:
+- Data Collection:
+- Variations:
+- Reinforcement:
+- Skills Developed:
+
+2-1. Create the task for Applied Behavior Analysis (ABA) therapy in domain of Social Emotion. Just need to use the following format to generate the response without any other irrelvant response:
+- Domain: Social Emotion
+- Task: Greetings: Responding
+- Subtask: say "hi + name" when being greeted, in any situations, any rooms
+- Description:
+- Materials:
+- Procedure:
+- Data Collection:
+- Variations:
+- Reinforcement:
+- Skills Developed:
+
+2-2. Base on the provided information, create the task for Applied Behavior Analysis (ABA) therapy in domain of Social Emotion. Just need to use the above format to generate the response without any other irrelvant response:
+- Domain: Social Emotion
+- Task: Greetings: Responding
+- Subtask: say "hi + name" when being greeted, in any situations, any rooms
+- Description:
+- Materials:
+- Procedure:
+- Data Collection:
+- Variations:
+- Reinforcement:
+- Skills Developed:
+
+3-1. Create the task for Applied Behavior Analysis (ABA) therapy in domain of Communication. Just need to use the following format to generate the response without any other irrelvant response:
+- Domain: Communication
+- Task: P.E.C.S.: Phase 4 - Sentences - In PECS book
+- Subtask: choose "I want" icon, reinforcement icon and exchange strip/ exchange completed sentence strip
+- Description:
+- Materials:
+- Procedure:
+- Data Collection:
+- Variations:
+- Reinforcement:
+- Skills Developed:
+
+3-2. Base on the provided information, create the task for Applied Behavior Analysis (ABA) therapy in domain of Communication. Just need to use the above format to generate the response without any other irrelvant response:
+- Domain: Communication
+- Task: P.E.C.S.: Phase 4 - Sentences - In PECS book
+- Subtask: choose "I want" icon, reinforcement icon and exchange strip/ exchange completed sentence strip
+- Description:
+- Materials:
+- Procedure:
+- Data Collection:
+- Variations:
+- Reinforcement:
+- Skills Developed:
+
+4-1. Create the task for Applied Behavior Analysis (ABA) therapy in domain of Sensory Motor Skill. Just need to use the following format to generate the response without any other irrelvant response:
+- Domain: Sensory Motor Skill
+- Task: Fine motor: Dexterity
+- Subtask: Pick up small beads/Thumb and middle finger (beads 1 cm diameter)
+- Description:
+- Materials:
+- Procedure:
+- Data Collection:
+- Variations:
+- Reinforcement:
+- Skills Developed:
+
+4-2. Base on the provided information, create the task for Applied Behavior Analysis (ABA) therapy in domain of Sensory Motor Skill. Just need to use the above format to generate the response without any other irrelvant response:
+- Domain: Sensory Motor Skill
+- Task: Fine motor: Dexterity
+- Subtask: Pick up small beads/Thumb and middle finger (beads 1 cm diameter)
+- Description:
+- Materials:
+- Procedure:
+- Data Collection:
+- Variations:
+- Reinforcement:
+- Skills Developed:
+
+5-1. Create the task for Applied Behavior Analysis (ABA) therapy in domain of Independent and Self-help. Just need to use the following format to generate the response without any other irrelvant response:
+- Domain: Independent and Self-help
+- Task: Play: Imaginary Play
+- Subtask: cooking" pretend to eat the food
+- Description:
+- Materials:
+- Procedure:
+- Data Collection:
+- Variations:
+- Reinforcement:
+- Skills Developed:
+
+5-2. Base on the provided information, create the task for Applied Behavior Analysis (ABA) therapy in domain of Independent and Self-help. Just need to use the above format to generate the response without any other irrelvant response:
+- Domain: Independent and Self-help
+- Task: Play: Imaginary Play
+- Subtask: cooking" pretend to eat the food
+- Description:
+- Materials:
+- Procedure:
+- Data Collection:
+- Variations:
+- Reinforcement:
+- Skills Developed:
+
+6-1. Create the task for Applied Behavior Analysis (ABA) therapy in domain of Behavioural Development. Just need to use the following format to generate the response without any other irrelvant response:
+- Domain: Behavioural Development
+- Task: Attention training: Sustaining attention - reading/writing
+- Subtask: fill in blanks from board (2 sentences)
+- Description:
+- Materials:
+- Procedure:
+- Data Collection:
+- Variations:
+- Reinforcement:
+- Skills Developed:
+
+6-2. Base on the provided information, create the task for Applied Behavior Analysis (ABA) therapy in domain of Behavioural Development. Just need to use the above format to generate the response without any other irrelvant response:
+- Domain: Behavioural Development
+- Task: Attention training: Sustaining attention - reading/writing
+- Subtask: fill in blanks from board (2 sentences)
+- Description:
+- Materials:
+- Procedure:
+- Data Collection:
+- Variations:
+- Reinforcement:
+- Skills Developed:
