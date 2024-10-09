@@ -1,0 +1,21 @@
+Domain: Sensory Motor Skill
+Task: Improve fine motor skills through object manipulation.
+Sub task: Grasping and releasing small objects.
+Description: This task focuses on enhancing the child’s ability to grasp, hold, and release small objects to improve fine motor skills and coordination.
+Materials: Small objects such as blocks, beads, or buttons, a small basket or container, and a timer.
+Procedure:
+Present the child with a variety of small objects and a container.
+Instruct the child to pick up the objects one by one and place them in the container.
+Use prompts if necessary (e.g., hand-over-hand assistance, verbal prompts).
+Gradually reduce prompts as the child becomes more proficient.
+After all objects are placed in the container, have the child remove them one by one and return them to their original location.
+Data Collection: Record the number of successful grasps and releases within a 5-minute period, and note the level of prompting needed (full, partial, or independent).
+Variations:
+Use objects of different sizes and textures to increase difficulty.
+Introduce tweezers or tongs to further refine motor skills.
+Set a time limit to encourage faster, yet accurate performance.
+Reinforcement: Offer praise, high-fives, or access to a preferred item or activity after a set number of successful attempts.
+Skills Developed:
+Fine motor coordination
+Hand-eye coordination
+Precision and dexterity
