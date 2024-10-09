@@ -1,4 +1,3 @@
-- Domain: Sensory Motor Skill
 - Task: Tracing Shapes with a Finger
 - Subtask: 
   - Subtask 1: Improving hand-eye coordination and fine motor control

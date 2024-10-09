@@ -276,6 +276,14 @@ There is a significant amount of noise information even fake news in the content
 _Zhenyu He, Zexuan Zhong, Tianle Cai, Jason D Lee, Di He_ \
 arXiv - Nov 2023 [[Paper](./literature/Retrieval-enhanced_LLMs/3.pdf)][[Github](https://github.com/fasterdecoding/rest)]
 
+- Retrieval-Based Speculative Decoding (REST): New algorithm designed to speed up language model generation \
+  REST：新的算法用於加速語言模型生成
+- By observing the process of text generation often includes certain common phases and patterns \
+  透過觀察文字生成經常包括的段落和模式
+- REST uses the power of retrieval to generate draft tokens: draws from the reservoir of existing knowledge, retrieving and employing relevant tokens based on the current context \
+  REST使用檢索的力量去生成草稿token: 在知識庫中抽取，檢索和使用相關token
+
+
 **Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection**  
 _Anonymous_  
 ICLR 24 – Oct 2023 [[paper](./literature/Retrieval-enhanced_LLMs/4.pdf)]
