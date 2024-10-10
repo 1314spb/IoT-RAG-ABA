@@ -1,0 +1,10 @@
+Domain: Behavioural Development
+Task: Attention training: Sustaining attention - reading/writing
+Sub task: Complete a reading or writing activity for a set duration
+Description: The child will sustain attention during a reading or writing activity for a set duration (e.g., 5 minutes), gradually increasing time based on progress.
+Materials: Age-appropriate reading books, writing worksheets, timer.
+Procedure: The therapist will instruct the child to focus on a reading or writing task while using a timer to track the duration of sustained attention. Prompts and redirection will be provided if attention wanes, with the goal of fading assistance over time.
+Data Collection: Record the duration of sustained attention and the number of prompts required during the activity.
+Variations: Gradually increase the duration of the activity. Alternate between different reading materials or writing tasks to maintain interest and generalize skills.
+Reinforcement: Provide verbal praise, a sticker, or another small reward for maintaining focus for the set duration.
+Skills Developed: Sustained attention, reading comprehension, writing skills, task persistence, self-regulation.
