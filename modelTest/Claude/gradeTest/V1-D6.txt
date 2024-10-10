@@ -1,0 +1,18 @@
+- Domain: Behavioural Development
+- Task: Attention training: Sustaining attention - reading/writing
+- Subtask: Reading comprehension exercise
+- Description: The child will read a short passage and answer questions about it, focusing on maintaining attention throughout the task.
+- Materials: Age-appropriate reading material, question sheet, pencil, timer
+- Procedure:
+  1. Present the child with a short reading passage.
+  2. Set a timer for an appropriate duration (e.g., 5-10 minutes).
+  3. Ask the child to read the passage silently.
+  4. Once finished or when the timer goes off, provide the question sheet.
+  5. Have the child answer the questions without referring back to the text.
+- Data Collection: Record the time spent reading, number of correct answers, and any instances of distraction or off-task behavior.
+- Variations:
+  1. Increase text length or complexity as the child progresses.
+  2. Add background noise to simulate real-world distractions.
+  3. Alternate between silent reading and reading aloud.
+- Reinforcement: Provide praise for completing the task and staying focused. Offer a preferred activity or small reward for improvement in score or sustained attention.
+- Skills Developed: Reading comprehension, sustained attention, following instructions, time management

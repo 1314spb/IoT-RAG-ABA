@@ -1,0 +1,37 @@
+- Domain: Behavioural Development
+- Task: Attention training: Sustaining attention - reading/writing
+- Subtask: Increase duration of focused attention during reading and writing activities
+- Description: This task aims to improve the client's ability to sustain attention while engaging in reading and writing activities, gradually increasing the duration of focused attention over time.
+- Materials:
+  * Age-appropriate books or reading materials
+  * Writing materials (paper, pencils, or digital devices if applicable)
+  * Timer or stopwatch
+  * Reinforcement items or tokens
+  * Visual schedule or timer display
+- Procedure:
+  1. Begin with a baseline assessment of the client's current attention span during reading/writing tasks.
+  2. Set an initial goal slightly above the baseline (e.g., if baseline is 2 minutes, set initial goal to 2.5 minutes).
+  3. Present the reading or writing task to the client.
+  4. Use a visual timer to show the duration of the task.
+  5. Provide verbal praise and encouragement throughout the task.
+  6. If the client completes the set duration, provide immediate reinforcement.
+  7. Gradually increase the duration of the task as the client consistently meets goals.
+  8. Incorporate short breaks between attention periods to prevent fatigue.
+- Data Collection:
+  * Record the duration of sustained attention for each session
+  * Note any instances of off-task behavior or distractions
+  * Track progress over time using a line graph
+- Variations:
+  * Alternate between reading and writing tasks
+  * Use different types of reading materials (e.g., stories, non-fiction, puzzles)
+  * Incorporate digital reading or writing tasks if appropriate
+- Reinforcement:
+  * Use a token economy system, where tokens are earned for completing attention periods
+  * Provide immediate verbal praise and small tangible rewards for meeting time goals
+  * Allow the client to choose a preferred activity after completing the task
+- Skills Developed:
+  * Sustained attention
+  * Reading comprehension
+  * Writing skills
+  * Task persistence
+  * Self-regulation

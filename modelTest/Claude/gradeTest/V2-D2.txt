@@ -1,0 +1,29 @@
+- Domain: Social Emotion
+- Task: Greetings: Responding
+- Subtask: Responding to "Hello" with a verbal greeting
+- Description: Teaching the client to respond appropriately to a greeting by saying "Hello" or a similar verbal greeting
+- Materials: 
+  - Picture cards showing people greeting each other
+  - Social stories about greetings
+  - Mirror for practicing facial expressions
+- Procedure:
+  1. Present the greeting "Hello" to the client
+  2. Prompt the client to respond with "Hello" or a similar greeting
+  3. Gradually fade prompts as the client becomes more proficient
+  4. Practice in various settings and with different people
+- Data Collection: 
+  - Frequency of correct responses without prompts
+  - Latency between greeting and response
+- Variations:
+  - Respond to different greetings (e.g., "Hi", "Good morning")
+  - Add appropriate body language (e.g., wave, smile)
+  - Initiate greetings
+- Reinforcement:
+  - Verbal praise for correct responses
+  - Token economy system
+  - Access to preferred activities after successful greetings
+- Skills Developed:
+  - Social awareness
+  - Verbal communication
+  - Turn-taking in conversation
+  - Appropriate social responses
