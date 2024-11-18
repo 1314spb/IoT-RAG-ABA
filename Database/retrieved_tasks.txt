@@ -1,0 +1,151 @@
+
+Filtered Custom Prompt Content:
+Domain: Academic and Learning, Task: Pronouns: Possessive - Expressive, Sub-Task: he, Holding an item, "who has?"
+Domain: Academic and Learning, Task: Pronouns: Possessive - Expressive, Sub-Task: he, Holding an item, "who has?"
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Academic and Learning, Task: Pronouns: Possessive - Expressive, Sub-Task: he, Holding an item, "who has?"
+Domain: Academic and Learning, Task: Pronouns: Possessive - Expressive, Sub-Task: he, Holding an item, "who has?"
+Domain: Academic and Learning, Task: Pronouns: Possessive - Expressive, Sub-Task: he, Holding an item, "who has?"
+Domain: Academic and Learning, Task: Pronouns: Possessive - Expressive, Sub-Task: he, Holding an item, "who has?"
+Domain: Academic and Learning, Task: Pronouns: Possessive - Expressive, Sub-Task: he, Holding an item, "who has?"
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Academic and Learning, Task: Pronouns: Possessive - Expressive, Sub-Task: he, Holding an item, "who has?"
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Independent and Self-help, Task: Play: Imaginary Play, Sub-Task: cooking" pretend to eat the food
+Domain: Independent and Self-help, Task: Play: Imaginary Play, Sub-Task: cooking" pretend to eat the food
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Academic and Learning, Task: Pronouns: Possessive - Expressive, Sub-Task: he, Holding an item, "who has?"
+Domain: Academic and Learning, Task: Pronouns: Possessive - Expressive, Sub-Task: he, Holding an item, "who has?"
+Domain: Academic and Learning, Task: Pronouns: Possessive - Expressive, Sub-Task: he, Holding an item, "who has?"
+Domain: Academic and Learning, Task: Pronouns: Possessive - Expressive, Sub-Task: he, Holding an item, "who has?"
+Domain: Academic and Learning, Task: Pronouns: Possessive - Expressive, Sub-Task: he, Holding an item, "who has?"
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Academic and Learning, Task: Pronouns: Possessive - Expressive, Sub-Task: he, Holding an item, "who has?"
+Domain: Independent and Self-help, Task: Play: Imaginary Play, Sub-Task: cooking" pretend to eat the food
+Domain: Social Emotion, Task: Social Interaction: Inviting to play, Sub-Task: familiar adult
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Independent and Self-help, Task: Play: Imaginary Play, Sub-Task: cooking" pretend to eat the food
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Independent and Self-help, Task: Play: Imaginary Play, Sub-Task: cooking" pretend to eat the food
+Domain: Independent and Self-help, Task: Play: Imaginary Play, Sub-Task: cooking" pretend to eat the food
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Social Emotion, Task: Social Interaction: Inviting to play, Sub-Task: familiar adult
+Domain: Social Emotion, Task: Social Interaction: Inviting to play, Sub-Task: familiar adult
+Domain: Social Emotion, Task: Social Interaction: Inviting to play, Sub-Task: familiar adult
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Academic and Learning, Task: Describing: Sentences - Advanced - Expressive, Sub-Task: S + V + (adjective) + O, "what's happening"
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Academic and Learning, Task: Category: Identify category - Expressive, Sub-Task: Furniture, 2-3 items in category given; "Xx, yy, zz are all (_____)"
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Academic and Learning, Task: Category: Identify category - Expressive, Sub-Task: Food, 2-3 items in category given; "Xx, yy, zz are all (_____)"
+Domain: Academic and Learning, Task: Describing: Sentences - Advanced - Expressive, Sub-Task: S + V + (adjective) + O, "what's happening"
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Academic and Learning, Task: Category: Identify category - Expressive, Sub-Task: Food, 2-3 items in category given; "Xx, yy, zz are all (_____)"
+Domain: Academic and Learning, Task: Category: Identify category - Expressive, Sub-Task: Food, 2-3 items in category given; "Xx, yy, zz are all (_____)"
+Domain: Behavioural Development, Task: Self-control: standing still, Sub-Task: 3 secs on floor, count out loud; around the room
+Domain: Behavioural Development, Task: Self-control: standing still, Sub-Task: 3 secs on floor, count out loud; around the room
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Academic and Learning, Task: Describing: Sentences - Advanced - Expressive, Sub-Task: S + V + (adjective) + O, "what's happening"
+Domain: Academic and Learning, Task: Describing: Sentences - Advanced - Expressive, Sub-Task: S + V + (adjective) + O, "what's happening"
+Domain: Academic and Learning, Task: Describing: Sentences - Advanced - Expressive, Sub-Task: S + V + (adjective) + O, "what's happening"
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Academic and Learning, Task: Describing: Sentences - Advanced - Expressive, Sub-Task: S + V + (adjective) + O, "what's happening"
+Domain: Academic and Learning, Task: Category: Identify category - Expressive, Sub-Task: Food, 2-3 items in category given; "Xx, yy, zz are all (_____)"
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Independent and Self-help, Task: Play: Imaginary Play, Sub-Task: cooking" pretend to eat the food
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Academic and Learning, Task: Describing: Object, Sub-Task: colour + object, parallel statement
+Domain: Academic and Learning, Task: Describing: Object, Sub-Task: colour + object, parallel statement
+Domain: Academic and Learning, Task: Describing: Object, Sub-Task: colour + object, parallel statement
+Domain: Academic and Learning, Task: Describing: Object, Sub-Task: colour + object, parallel statement
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Academic and Learning, Task: Describing: Object, Sub-Task: colour + object, parallel statement
+Domain: Academic and Learning, Task: Describing: Object, Sub-Task: colour + object, parallel statement
+Domain: Academic and Learning, Task: Describing: Object, Sub-Task: colour + object, parallel statement
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Circle
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Social Emotion, Task: Social Interaction: Inviting to play, Sub-Task: familiar adult
+Domain: Social Emotion, Task: Social Interaction: Inviting to play, Sub-Task: familiar adult
+Domain: Academic and Learning, Task: Describing: Object, Sub-Task: colour + object, parallel statement
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Sensory Motor Skill, Task: Fine motor: Tracing - Dotted lines, Sub-Task: Diamond
+Domain: Academic and Learning, Task: Describing: Sentences - Advanced - Expressive, Sub-Task: S + V + (adjective) + O, "what's happening"
+Domain: Social Emotion, Task: Social Interaction: Inviting to play, Sub-Task: familiar adult
+Domain: Social Emotion, Task: Emotions: Receptive - Field of 3, Sub-Task: Frustrated
+Domain: Social Emotion, Task: Emotions: Expressive, Sub-Task: sick, 2D card
+
+Semantic Search Results in ABA Task Dataset for 'Academic and Learning':
+1. Domain: Academic and Learning; Task: Receptive instructions: Complex; Sub-Task: 2 steps, both steps short activities (Score: 0.5768)
+2. Domain: Academic and Learning; Task: Receptive instructions: Complex; Sub-Task: 2 steps, both steps short activities (Score: 0.5768)
+3. Domain: Academic and Learning; Task: Receptive instructions: Complex; Sub-Task: 2 steps, both steps short activities (Score: 0.5768)
+4. Domain: Academic and Learning; Task: Receptive instructions: Complex; Sub-Task: 2 steps, both steps short activities (Score: 0.5768)
+5. Domain: Academic and Learning; Task: Receptive instructions: Complex; Sub-Task: 2 steps, both steps short activities (Score: 0.5768)
+
+Semantic Search Results in Other Tasklist for 'Academic and Learning':
+1. E.4. Identify professional development activities that strengthen and expand areas of competence (e.g., attend conferences, read literature, seek consultation, establish mentors). (Score: 0.4054)
+2. E.3. Develop and maintain competence by engaging in professional development activities (e.g., read literature, seek consultation, establish mentors). (Score: 0.4042)
+3. E.8. Identify and apply interpersonal and other skills (e.g., accepting feedback, listening actively, seeking input, collaborating) to establish and maintain professional relationships. (Score: 0.3817)
