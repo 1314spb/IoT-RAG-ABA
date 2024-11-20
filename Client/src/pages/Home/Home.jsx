@@ -2,16 +2,16 @@ import React, { useEffect } from "react";
 
 const Home = () => {
     return (
-        <section class="relative bg-stone-50">
+        <section class="relative bg-stone-50 w-full">
             <div class="bg-sky-400 w-full sm:w-40 h-40 rounded-full absolute top-1 opacity-20 max-sm:right-0 sm:left-56 z-0"></div>
             <div class="bg-emerald-500 w-full sm:w-40 h-24 absolute top-0 -left-0 opacity-20 z-0"></div>
             <div class="bg-purple-600 w-full sm:w-40 h-24 absolute top-40 -left-0 opacity-20 z-0"></div>
             <div class="w-full py-24 relative z-10 backdrop-blur-3xl">
-                <div class="w-full max-w-7xl mx-auto px-2 lg:px-8">
-                    <div class="grid grid-cols-12 gap-8 max-w-4xl mx-auto xl:max-w-full">
+                <div class="w-full max-w-7xl px-2 lg:px-8">
+                    <div class="grid grid-cols-12 gap-8 max-w-4xl xl:max-w-full">
                         <div class="col-span-12 xl:col-span-5">
                             <h2 class="font-manrope text-3xl leading-tight text-gray-900 mb-1.5">Upcoming Events</h2>
-                            <p class="text-lg font-normal text-gray-600 mb-8">Don’t miss schedule</p>
+                            <p class="text-lg font-normal text-gray-600 mb-8">Don't miss schedule</p>
                             <div class="flex gap-5 flex-col">
                                 <div class="p-6 rounded-xl bg-white">
                                     <div class="flex items-center justify-between mb-3">
