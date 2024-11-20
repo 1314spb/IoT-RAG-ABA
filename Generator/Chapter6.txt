@@ -1,0 +1,1732 @@
+Constructing and Interpreting Graphic
+Displays of Behavioral Data
+
+Key Terms
+bar graph independent variable split-middle line of progress
+cumulative record level Standard Celeration Chart
+cumulative recorder line graph trend
+data local response rate variability
+data path overall response rate visual analysis
+dependent variable scatterplot
+graph semilogarithmic chart
+
+Applied behavior analysts document and quan-
+tify behavior change by direct and repeated
+measurement of behavior. The product of these
+measurements, called data, is the medium with which
+behavior analysts work. In everyday usage the word data
+refers to a wide variety of often imprecise and subjec-
+tive information offered as facts. In scientific usage the
+word data means “the results of measurement, usually
+in quantified form” (Johnston & Pennypacker, 1993a,
+p. 365).1
+Because behavior change is a dynamic and ongoing
+process, the behavior analyst—the practitioner and the
+researcher—must maintain direct and continuous con-
+tact with the behavior under investigation. The data ob-
+tained throughout a behavior change program or a
+research study are the means for that contact; they form
+the empirical basis for every important decision: to con-
+tinue with the present procedure, to try a different inter-
+vention, or to reinstitute a previous condition. But making
+valid and reliable decisions from the raw data themselves
+(a series of numbers) is difficult, if not impossible, and in-
+efficient. Inspecting a long row of numbers will reveal
+only very large changes in performance, or no change at
+all, and important features of behavior change can easily
+be overlooked.
+Consider the three sets of data that follow; each con-
+sists of a series of numbers representing consecutive mea-
+sures of some target behavior. The first data set shows the
+results of successive measures of the number of responses
+emitted under two different conditions (A and B):
+Condition A Condition B
+120, 125, 115, 130, 114, 110, 115, 121,
+126, 130, 123, 120, 110, 116, 107, 120,
+120, 127 115, 112
+Here are some data showing consecutive measures of
+the percentage of correct responses:
+80, 82, 78, 85, 80, 90, 85, 85, 90, 92
+The third data set consists of measures of responses
+per minute of a target behavior obtained on successive
+school days:
+65, 72, 63, 60, 55, 68, 71, 65, 65, 62, 70, 75, 79, 63, 60
+What do these numbers tell you? What conclusions
+can you draw from each data set? How long did it take
+you to reach your conclusions? How sure of them are
+you? What if the data sets contained many more mea-
+sures to interpret? How likely is it that others interested
+in the behavior change program or research study would
+reach the same conclusions? How could these data be di-
+rectly and effectively communicated to others?
+Graphs—relatively simple formats for visually dis-
+playing relationships among and between a series of mea-
+surements and relevant variables—help people “make
+sense” of quantitative information. Graphs are the major
+device with which applied behavior analysts organize,
+store, interpret, and communicate the results of their work.
+Figure 1 includes a graph for each of the three data sets
+presented previously. The top graph reveals a lower level
+of responding during Condition B than during Condi-
+tion A. The middle graph clearly shows an upward trend
+over time in the response measure. A variable pattern of
+responding, characterized by an increasing trend during
+the first part of each week and a decreasing trend toward
+the end of each week, is evident in the bottom graph. The
+graphs in Figure 1 illustrate three fundamental proper-
+ties of behavior change over time—level, trend, and vari-
+ability—each of which will be discussed in detail later in
+the chapter. The graphic display of behavioral data has
+proven an effective means of detecting, analyzing, and
+communicating these aspects of behavior change.
+Purpose and Benefits
+of Graphic Displays
+of Behavioral Data
+Numerous authors have discussed the benefits of using
+graphs as the primary vehicle for interpreting and com-
+municating the results of behavioral treatments and re-
+search (e.g., Baer, 1977; Johnston & Pennypacker, 1993a;
+Michael, 1974; Parsonson, 2003; Parsonson & Baer,
+1986, 1992; Sidman, 1960). Parsonson and Baer (1978)
+said it best:
+In essence, the function of the graph is to communicate,
+in a readily assimilable and attractive manner, descrip-
+tions and summaries of data that enable rapid and accu-
+rate analysis of the facts. (p. 134)
+There are at least six benefits of graphic display and
+visual analysis of behavioral data. First, plotting each
+measure of behavior on a graph right after the observa-
+tional period provides the practitioner or researcher with
+immediate access to an ongoing visual record of the par-
+ticipant’s behavior. Instead of waiting until the investi-
+gation or teaching program is completed, behavior change
+is evaluated continually, allowing treatment and experi-
+mental decisions to be responsive to the participant’s per-
+formance. Graphs provide the “close, continual contact
+with relevant outcome data” that can lead to “measurably
+superior instruction” (Bushell & Baer, 1994, p. 9).
+Second, direct and continual contact with the data in
+a readily analyzable format enables the researcher as well
+as the practitioner to explore interesting variations in be-
+havior as they occur. Some of the most important research
+findings about behavior have been made because scien-
+tists followed the leads suggested by their data instead
+of following predetermined experimental plans (Sidman,
+1960, 1994; Skinner, 1956).
+Third, graphs, like statistical analyses of behavior
+change, are judgmental aids: devices that help the prac-
+titioner or experimenter interpret the results of a study or
+treatment (Michael, 1974). In contrast to the statistical
+tests of inference used in group comparison research,
+however, visual analysis of graphed data takes less time,
+is relatively easy to learn, imposes no predetermined or
+arbitrary level for determining the significance of be-
+havior change, and does not require the data to conform
+to certain mathematical properties or statistical assump-
+tions to be analyzed.
+Fourth, visual analysis is a conservative method for
+determining the significance of behavior change. A be-
+havior change deemed statistically significant according
+to a test of mathematical probabilities may not look very
+impressive when the data are plotted on a graph that re-
+veals the range, variability, trends, and overlaps in the
+data within and across experimental or treatment condi-
+tions. Interventions that produce only weak or unstable
+effects are not likely to be reported as important findings
+in applied behavior analysis. Rather, weak or unstable
+effects are likely to lead to further experimentation in an
+effort to discover controlling variables that produce mean-
+ingful behavior change in a reliable and sustained man-
+ner. This screening out of weak variables in favor of
+robust interventions has enabled applied behavior ana-
+lysts to develop a useful technology of behavior change
+(Baer, 1977).2
+Fifth, graphs enable and encourage independent
+judgments and interpretations of the meaning and sig-
+nificance of behavior change. Instead of having to rely on
+conclusions based on statistical manipulations of the data
+or on an author’s interpretations, readers of published re-
+ports of applied behavior analysis can (and should) con-
+duct their own visual analysis of the data to form
+independent conclusions.3
+Sixth, in addition to their primary purpose of dis-
+playing relationships between behavior change (or lack
+thereof) and variables manipulated by the practitioner or
+researcher, graphs can also be effective sources of feed-
+back to the people whose behavior they represent (e.g.,
+DeVries, Burnettte, & Redmon, 1991; Stack & Milan,
+1993). Graphing one’s own performance has also been
+demonstrated to be an effective intervention for a vari-
+ety of academic and behavior change objectives (e.g.,
+Fink & Carnine, 1975; Winette, Neale, & Grier, 1979).
+Types of Graphs Used
+in Applied Behavior Analysis
+Visual formats for the graphic display of data most often
+used in applied behavior analysis are line graphs, bar
+graphs, cumulative records, semilogarithmic charts, and
+scatterplots.
+
+Line Graphs
+The simple line graph, or frequency polygon, is the most
+common graphic format for displaying data in applied
+behavior analysis. The line graph is based on a Cartesian
+plane, a two-dimensional area formed by the intersection
+of two perpendicular lines. Any point within the plane
+represents a specific relationship between the two di-
+mensions described by the intersecting lines. In applied
+behavior analysis, each point on a line graph shows the
+level of some quantifiable dimension of the target be-
+havior (i.e., the dependent variable) in relation to a spec-
+ified point in time and/or environmental condition (i.e.,
+the independent variable) in effect when the measure
+was taken. Comparing points on the graph reveals the
+presence and extent of changes in level, trend, and/or
+variability within and across conditions.
+Parts of a Basic Line Graph
+Although graphs vary considerably in their final appear-
+ance, all properly constructed line graphs share certain
+elements. The basic parts of a simple line graph are shown
+in Figure 2 and described in the following sections.
+1. Horizontal Axis. The horizontal axis, also called
+the x axis, or abscissa, is a straight horizontal line that
+most often represents the passage of time and the pres-
+ence, absence, and/or value of the independent variable.
+A defining characteristic of applied behavior analysis is
+the repeated measurement of behavior across time.
+Time is also the unavoidable dimension in which all
+manipulations of the independent variable occur. On
+most line graphs the passage of time is marked in equal
+intervals on the horizontal axis. In Figure 2 succes-
+sive 10-minute sessions during which the number of
+property destruction responses (including attempts) was
+measured are marked on the horizontal axis. In this
+study, 8 to 10 sessions were conducted per day (Fisher,
+Lindauer, Alterson, & Thompson, 1998).
+The horizontal axis on some graphs represents dif-
+ferent values of the independent variable instead of time.
+For example, Lalli, Mace, Livezey, and Kates (1998)
+scaled the horizontal axis on one graph in their study
+from less than 0.5 meters to 9.0 meters to show how the
+occurrence of self-injurious behavior by a girl with severe
+mental retardation decreased as the distance between the
+therapist and the girl increased.
+2. Vertical Axis. The vertical axis, also called the
+y axis, or ordinate, is a vertical line drawn upward from
+the left-hand end of the horizontal axis. The vertical axis
+most often represents a range of values of the dependent
+variable, which in applied behavior analysis is always
+some quantifiable dimension of behavior. The intersec-
+tion of the horizontal and vertical axes is called the
+origin and usually, though not necessarily, represents
+the zero value of the dependent variable. Each succes-
+sive point upward on the vertical axis represents a
+greater value of the dependent variable. The most com-
+mon practice is to mark the vertical axis with an equal-
+interval scale. On an equal-interval vertical axis equal
+distances on the axis represent equal amounts of behav-
+ior. The vertical axis in Figure 2 represents the number
+of property destruction responses (and attempts) per
+minute with a range of 0 to 4 responses per minute.
+3. Condition Change Lines. Condition change lines
+are vertical lines drawn upward from the horizontal
+axis to show points in time at which changes in the in-
+dependent variable occurred. The condition change
+lines in Figure 2 coincide with the introduction or
+withdrawal of an intervention the researchers called
+blocking. Condition change lines can be drawn as solid
+or dashed lines. When relatively minor changes occur
+within an overall condition, dashed vertical lines should
+be used to distinguish minor changes from major
+changes in conditions, which are shown by solid lines
+(see Figure 18).
+the more confidence one can place in the story told by
+the data path.
+7. Figure Caption. The figure caption is a concise
+statement that, in combination with the axis and condi-
+tion labels, provides the reader with sufficient informa-
+tion to identify the independent and dependent variables.
+The figure caption should explain any symbols or ob-
+served but unplanned events that may have affected the
+dependent variable (see Figure 6) and point out and
+clarify any potentially confusing features of the graph
+(see Figure 7).
+4. Condition Labels. Condition labels, in the form
+of single words or brief descriptive phrases, are printed
+along the top of the graph and parallel to the horizontal
+axis. These labels identify the experimental conditions
+(i.e., the presence, absence, or some value of the inde-
+pendent variable) that are in effect during each phase of
+the study.4
+5. Data Points. Each data point on a graph repre-
+sents two facts: (a) a quantifiable measure of the target
+behavior recorded during a given observation period
+and (b) the time and/or experimental conditions under
+which that particular measurement was conducted.
+Using two data points from Figure 2 as examples, we
+can see that during Session 5, the last session of the
+first baseline phase, property destruction and attempted
+property destruction responses occurred at a rate of ap-
+proximately 2 responses per minute; and in Session 9,
+the fourth session of the first blocking phase, 0 in-
+stances of the target behavior were recorded.
+6. Data Path. Connecting successive data points
+within a given condition with a straight line creates a
+data path. The data path represents the level and trend
+of behavior between successive data points, and it is a
+primary focus of attention in the interpretation and
+analysis of graphed data. Because behavior is rarely
+observed and recorded continuously in applied behav-
+ior analysis, the data path represents an estimate of the
+actual course taken by the behavior during the time
+elapsed between the two measures. The more mea-
+surements and resultant data points per unit of time
+(given an accurate observation and recording system),
+4The terms condition and phase are related but not synonymous. Properly
+used, condition indicates the environmental arrangements in effect at any
+given time; phase refers to a period of time within a study or behavior-
+change program. For example, the study shown in Figure 2 consisted of
+two conditions (baseline and blocking) and six phases.
+Variations of the Simple Line Graph:
+Multiple Data Paths
+The line graph is a remarkably versatile vehicle for dis-
+playing behavior change. Whereas Figure 2 is an ex-
+ample of the line graph in its simplest form (one data
+path showing a series of successive measures of behav-
+ior across time and experimental conditions) by the ad-
+dition of multiple data paths, the line graph can display
+more complex behavior–environment relations. Graphs
+with multiple data paths are used frequently in applied
+behavior analysis to show (a) two or more dimensions of
+the same behavior, (b) two or more different behaviors,
+(c) the same behavior under different and alternating ex-
+perimental conditions, (d) changes in target behavior rel-
+ative to the changing values of an independent variable,
+and (e) the behavior of two or more participants.
+Two or More Dimensions of the Same Behavior.
+Showing multiple dimensions of the dependent variable
+on the same graph enables visual analysis of the ab-
+solute and relative effects of the independent variable
+on those dimensions. Figure 3 shows the results of a
+study of the effects of training three members of a
+women’s college basketball team proper foul shooting
+form (Kladopoulos & McComas, 2001). The data path
+created by connecting the open triangle data points
+shows changes in the percentage of foul shots executed
+with the proper form, whereas the data path connecting
+the solid data points reveals the percentage of foul shots
+made. Had the experimenters recorded and graphed
+only the players’ foul shooting form, they would not
+have known whether any improvements in the target
+behavior on which training was focused (correct foul
+shooting form) coincided with improvements in the be-
+havior by which the social significance of the study
+would ultimately be judged—foul shooting accuracy.
+By measuring and plotting both form and outcome on
+the same graph, the experimenters were able to analyze
+the effects of their treatment procedures on two critical
+dimensions of the dependent variable.
+Two or More Different Behaviors. Multiple data
+paths are also used to facilitate the simultaneous com-
+parison of the effects of experimental manipulations on
+two or more different behaviors. Determining the co-
+variation of two behaviors as a function of changes in
+the independent variable is accomplished more easily if
+both can be displayed on the same set of axes. Figure
+4 shows the percentage of intervals in which a boy
+with autism exhibited stereotypy (e.g., repetitive body
+movements, rocking) across three conditions and the
+number of times that he raised his hand for attention (in
+the attention condition), signed for a break (in the de-
+mand condition), and signed for access to preferred tan-
+gible stimuli (in the no-attention condition) in a study
+investigating a strategy called functional communica-
+tion training (Kennedy, Meyer, Knowles, & Shukla,
+2000).5 By recording and graphing both stereotypic re-
+sponding and appropriate behavior, the investigators
+were able to determine whether increases in alternative
+communication responses (raising his hand and sign-
+ing) were accompanied by reductions in stereotypy.
+Note that a second vertical axis is used on Figure 4 to
+show the proper dimensional units and scaling for sign-
+ing frequency. Because of the differences in scale, read-
+ers of dual-vertical axis graphs must view them with
+care, particularly when assessing the magnitude of be-
+havior change.
+Measures of the Same Behavior under Different
+Conditions. Multiple data paths are also used to repre-
+sent measures of the same behavior taken under differ-
+ent experimental conditions that alternate throughout
+an experimental phase. Figure 5 shows the number of
+self-injurious response per minute by a 6-year-old girl
+with developmental disabilities under four different
+conditions (Moore, Mueller, Dubard, Roberts, & Sterling-
+Turner, 2002). Graphing an individual’s behavior under
+multiple conditions on the same set of axes allows di-
+rect visual comparisons of differences in absolute levels
+of responding at any given time as well as relative
+changes in performance over time.
+Changing Values of an Independent Variable.
+Multiple data path graphs are also used to show changes
+in the target behavior (shown on one data path) relative
+to changing values of the independent variable (repre-
+sented by a second data path). In each of the two graphs
+in Figure 6 one data path shows the duration of prob-
+lem behavior (plotted against the left-hand y axis scaled
+in seconds) relative to changes in noise level, which are
+depicted by the second data path (plotted against the
+right-hand y axis scaled in decibels) (McCord, Iwata,
+Galensky, Ellingson, & Thomson, 2001).
+The Same Behavior of Two or More Participants.
+Multiple data paths are sometimes used to show the be-
+havior of two or more participants on the same graph.
+Depending on the levels and variability of the data
+encompassed by each data path, a maximum of four dif-
+ferent data paths can be displayed effectively on one set
+of axes. However, there is no rule; Didden, Prinsen, and
+Sigafoos displayed five data paths in a single display
+(2000, p. 319). If too many data paths are displayed on the
+same graph, the benefits of making additional compar-
+isons may be outweighed by the distraction of too much
+visual “noise.” When more than four data paths must be
+included on the same graph, other methods of display
+can be incorporated.6 For example, Gutowski and Stromer
+(2003) effectively used striped and shaded bars in com-
+bination with conventional data paths to display the num-
+ber of names spoken and the percentage of correct
+matching-to-sample responses by individuals with men-
+tal retardation (see Figure 7).
+Bar Graphs
+The bar graph, or histogram, is a simple and versatile
+format for graphically summarizing behavioral data. Like
+the line graph, the bar graph is based on the Cartesian
+plane and shares most of the line graph’s features with
+one primary difference: The bar graph does not have dis-
+tinct data points representing successive response mea-
+sures through time. Bar graphs can take a wide variety of
+forms to allow quick and easy comparisons of perfor-
+mance across participants and/or conditions.
+Bar graphs serve two major functions in applied be-
+havior analysis. First, bar graphs are used for displaying
+and comparing discrete sets of data that are not related to
+one another by a common underlying dimension by
+which the horizontal axis can be scaled. For example,
+Gottschalk, Libby, and Graff (2000), in a study analyzing
+the effects of establishing operations on preference as-
+sessments, used bar graphs to show the percentage of tri-
+als in which four children reached toward and picked up
+different items (see Figure 8).
+Another common use of bar graphs is to give a visual
+summary of the performance of a participant or group
+of participants during the different conditions of an ex-
+periment. For example, Figure 9 shows the mean per-
+centage of spelling worksheet items completed and the
+mean percentage of completed items that were done cor-
+rectly by four students during baseline and combined
+generalization programming and maintenance conditions
+that followed training each child how to recruit teacher
+attention while they were working (Craft, Alber, &
+Heward, 1998).
+Bar graphs sacrifice the presentation of the variabil-
+ity and trends in behavior (which are apparent in a line
+graph) in exchange for the efficiency of summarizing and
+comparing large amounts of data in a simple, easy-to-
+interpret format. They should be viewed with the under-
+standing that they may mask important variability in the
+data. Although bar graphs are typically used to present a
+measure of central tendency, such as the mean or median
+score for each condition, the range of measures repre-
+sented by the mean can also be incorporated into the dis-
+play (e.g., see Figure 5 in Lerman, Kelley, Vorndran,
+Kuhn, & LaRue, 2002).
+Cumulative Records
+The cumulative record (or graph) was developed by
+Skinner as the primary means of data collection in the
+experimental analysis of behavior. A device called the
+cumulative recorder enables a subject to actually draw
+its own graph (see Figure 10). In a book cataloging 6
+years of experimental research on schedules of rein-
+forcement, Ferster and Skinner (1957) described cumu-
+lative records in the following manner:
+A graph showing the number of responses on the ordi-
+nate against time on the abscissa has proved to be the
+most convenient representation of the behavior observed
+in this research. Fortunately, such a “cumulative” record
+may be made directly at the time of the experiment. The
+record is raw data, but it also permits a direct inspection
+of rate and changes in rate not possible when the behav-
+ior is observed directly. . . . Each time the bird responds,
+the pen moves one step across the paper. At the same
+time, the paper feeds continuously. If the bird does not
+respond at all, a horizontal line is drawn in the direction
+of the paper feed. The faster the bird pecks, the steeper
+the line. (p. 23)
+When cumulative records are plotted by hand or cre-
+ated with a computer graphing program, which is most
+often the case in applied behavior analysis, the number of
+responses recorded during each observation period is
+added (thus the term cumulative) to the total number of
+responses recorded during all previous observation peri-
+ods. In a cumulative record the y axis value of any data
+point represents the total number of responses recorded
+since the beginning of data collection. The exception oc-
+curs when the total number of responses has exceeded
+the upper limit of the y axis scale, in which case the data
+path on a cumulative curve resets to the 0 value of the
+y axis and begins its ascent again. Cumulative records
+are almost always used with frequency data, although
+other dimensions of behavior, such as duration and la-
+tency, can be displayed cumulatively.
+Figure 11 is an example of a cumulative record
+from the applied behavior analysis literature (Neef, Iwata,
+& Page, 1980). It shows the cumulative number of
+spelling words mastered by a person with mental retar-
+dation during baseline and two training conditions. The
+graph shows that the individual mastered a total of 1 word
+during the 12 sessions of baseline (social praise for cor-
+rect spelling responses and rewriting incorrectly spelled
+words three times), a total of 22 words under the inter-
+spersal condition (baseline procedures plus the presen-
+tation of a previously learned word after each unknown
+word), and a total of 11 words under the high-density re-
+inforcement condition (baseline procedures plus social
+praise given after each trial for task-related behaviors
+such as paying attention and writing neatly).
+In addition to the total number of responses recorded
+at any given point in time, cumulative records show the
+overall and local response rates. Rate is the number of
+responses emitted per unit of time, usually reported as
+responses per minute in applied behavior analysis. An
+overall response rate is the average rate of response over
+a given time period, such as during a specific session,
+phase, or condition of an experiment. Overall rates are
+calculated by dividing the total number of responses
+recorded during the period by the number of observation
+periods indicated on the horizontal axis. In Figure 11
+the overall response rates are 0.46 and 0.23 words mas-
+tered per session for the interspersal and high-density re-
+inforcement conditions, respectively.7
+On a cumulative record, the steeper the slope, the
+higher the response rate. To produce a visual representa-
+tion of an overall rate on a cumulative graph, the first and
+last data points of a given series of observations should
+be connected with a straight line. A straight line con-
+necting Points a and c in Figure 11 would represent the
+learner’s overall rate of mastering spelling words during
+the interspersal condition. A straight line connecting
+Points a and e represents the overall rate during the high-
+density reinforcement condition. Relative rates of re-
+sponse can be determined by visually comparing one
+slope to another; the steeper the slope, the higher the rate
+of response. A visual comparison of Slopes a–c and a–e
+shows that the interspersal condition produced the higher
+overall response rate.
+Response rates often fluctuate within a given period.
+The term local response rate refers to the rate of re-
+sponse during periods of time smaller than that for which
+an overall rate has been given. Over the last four ses-
+sions of the study shown in Figure 11, the learner ex-
+hibited a local rate of responding during interspersal
+7Technically, Figure 11 does not represent true rates of response because
+the number of words spelled correctly was measured and not the rate, or
+speed, at which they were spelled. However, the slope of each data path rep-
+resents the different ”rates” of mastering the spelling words in each session
+within the context of a total of 10 new words presented per session.
+training (Slope b–c) that was considerably higher than
+his overall rate for that condition. At the same time his
+performance during the final four sessions of the high-
+density reinforcement condition (Slope d–e) shows a
+lower local response rate than his overall rate for that
+condition.
+A legend giving the slopes of some representative
+rates can aid considerably in the determination and com-
+parison of relative response rates both within and across
+cumulative curves plotted on the same set of axes (e.g.,
+see Kennedy & Souza, 1995, Figure 2). However, very
+high rates of responding are difficult to compare visually
+with one another on cumulative records.
+Although the rate of responding is directly proportional
+to the slope of the curve, at slopes above 80 degrees
+small differences in angle represent very large differ-
+ences in rate; and although these can be measured ac-
+curately, they cannot be evaluated easily by [visual]
+inspection. (Ferster & Skinner, 1957, pp. 24–25)
+Even though cumulative records derived from con-
+tinuous recording are the most directly descriptive dis-
+plays of behavioral data available, two other features of
+behavior, in addition to the comparison of very high rates,
+can be difficult to determine on some cumulative graphs.
+One, although the total number of responses since data
+collection began can be easily seen on a cumulative
+graph, the number of responses recorded for any given
+session can be hard to ascertain, given the number of data
+points and the scaling of the vertical axis. Two, gradual
+changes in slope from one rate to another can be hard to
+detect on cumulative graphs.
+Four situations in which a cumulative graph may be
+preferable to a noncumulative line graph are as follows.
+First, cumulative records are desirable when the total
+number of responses made over time is important or when
+progress toward a specific goal can be measured in cu-
+mulative units of behavior. The number of new words
+learned, dollars saved, or miles trained for an upcoming
+marathon are examples. One look at the most recent data
+point on the graph reveals the total amount of behavior up
+to that point in time.
+Second, a cumulative graph might also be more ef-
+fective than noncumulative graphs when the graph is used
+as a source of feedback for the participant. This is be-
+cause both total progress and relative rate of performance
+are easily detected by visual inspection (Weber, 2002).
+Third, a cumulative record should be used when the
+target behavior is one that can occur or not occur only
+once per observation session. In these instances the ef-
+fects of any intervention are easier to detect on a cumula-
+tive graph than on a noncumulative graph. Figure 12
+shows the same data plotted on a noncumulative graph
+and a cumulative graph. The cumulative graph clearly
+shows a relation between behavior and intervention,
+whereas the noncumulative graph gives the visual im-
+pression of greater variability in the data than really exists.
+Fourth, cumulative records can “reveal the intricate
+relations between behavior and environmental variables”
+(Johnston & Pennypacker, 1993a, p. 317) Figure 13 is
+an excellent example of how a cumulative graph enables
+a detailed analysis of behavior change (Hanley, Iwata, &
+Thompson, 2001). By plotting the data from single ses-
+sions cumulatively by 10-second intervals, the researchers
+revealed patterns of responding not shown by a graph of
+session-by-session data. Comparing the data paths for
+the three sessions for which the results were graphed cu-
+mulatively (Mult #106, Mixed #107, and Mixed #112)
+revealed two undesirable patterns of responding (in this
+case, pushing a switch that operated a voice output device
+that said “talk to me, please” as an alternative to self-
+injurious behavior and aggression) that are likely to occur
+during mixed schedules, and the benefits of including
+schedule-correlated stimuli (Mult #106).
+Semilogarithmic Charts
+All of the graphs discussed so far have been equal-inter-
+val graphs on which the distance between any two con-
+secutive points on each axis is always the same. On the
+x axis the distance between Session 1 and Session 2 is
+equal to the distance between Session 11 and Session 12;
+on the y axis, the distance between 10 and 20 responses
+per minute is equal to the distance between 35 and 45 re-
+sponses per minute. On an equal-interval graph equal ab-
+solute changes in behavior, whether an increase or
+decrease in performance, are expressed by equal distances
+on the y axis.
+Another way of looking at behavior change is to ex-
+amine proportional or relative change. Logarithmic
+scales are well suited to display and communicate pro-
+portional change. On a logarithmic scale equal relative
+changes in the variable being measured are represented
+by equal distances. Because behavior is measured and
+charted over time, which progresses in equal intervals,
+the x axis is marked off in equal intervals and only the
+y axis is scaled logarithmically. Hence, the term semi-
+logarithmic chart refers to graphs in which only one
+axis is scaled proportionally.
+On semilog charts all behavior changes of equal pro-
+portion are shown by equal vertical distances on the ver-
+tical axis, regardless of the absolute values of those
+changes. For example, a doubling of response rate from
+4 to 8 per minute would appear on a semilogarithmic
+chart as the same amount of change as a doubling of 50
+to 100 responses per minute. Likewise, a decrease in re-
+sponding from 75 to 50 responses per minute (a decrease
+of one third) would occupy the same distance on the ver-
+tical axis as a change from 12 to 8 responses per minute
+(a decrease of one third).
+Figure 14 shows the same data graphed on an
+equal-interval chart (sometimes called arithmetic or add-
+subtract charts) and on a semilogarithmic chart (some-
+times called ratio or multiply-divide charts). The behavior
+change that appears as an exponential curve on the arith-
+metic chart is a straight line when plotted on the semilog
+chart. The vertical axis in the semilog chart in Figure 14
+is scaled by log-base-2 or X2 cycles, which means that
+each cycle going up on the y axis represents a times-2 in-
+crease (i.e., a doubling) of the cycle below it.
+Standard Celeration Charts
+In the 1960s, Ogden Lindsley developed the Standard
+Celeration Chart to provide a standardized means of
+charting and analyzing how frequency of behavior
+changes over time (Lindsley, 1971; Pennypacker, Gutier-
+rez & Lindsley, 2003). The Standard Celeration Chart is
+a semilogarithmic chart with six X10 cycles on the ver-
+tical axis that can accommodate response rates as low as
+1 per 24 hours (0.000695 per minute) or as high as 1,000
+per minute.
+There are four standard charts, differentiated from one
+another by the scaling on the horizontal axis: a daily chart
+with 140 calendar days, a weekly chart, a monthly chart,
+and a yearly chart. The daily chart shown in Figure 15
+is used most often. Table 1 describes major parts of the
+Standard Celeration Chart and basic charting conventions.
+The size of the chart and the consistent scaling of the
+y axis and x axis do not make the Standard Celeration
+Chart standard, as is commonly believed. What makes
+the Standard Celeration Chart standard is its consistent
+display of celeration, a linear measure of frequency
+change across time, a factor by which frequency multi-
+plies or divides per unit of time. The terms acceleration
+and deceleration are used to describe accelerating per-
+formances or decelerating performances.
+A line drawn from the bottom left corner to the top
+right corner has a slope of 34° on all Standard Celera-
+tion Charts. This slope has a celeration value of X2 (read
+as “times-2”; celerations are expressed with multiples or
+divisors). A X2 celeration is a doubling in frequency per
+celeration period. The celeration period for the daily chart
+is per week; it is per month for the weekly chart, per 6
+months for the monthly chart, and per 5 years for the
+yearly chart.
+Table 1 Basic Charting Conventions for the Daily Standard Celeration Chart (See also Figure 15)
+Term Definition Convention
+1. Charted day A day on which the behavior is recorded and charted. 1. Chart the behavior frequency on the chart on
+the appropriate day line.
+2. Connect charted days except across phase
+change lines, no chance days, and ignored days.
+a) Acceleration target Responses of the performer intended frequency to accelerate.
+Chart a dot (•) on the appropriate day line.
+b) Deceleration target Responses of the performer intended frequency to decelerate.
+Chart an (x) on the appropriate day line.
+2. No chance day A day on which the behavior had no chance Skip day on daily chart.
+to occur.
+3. Ignored day A day on which the behavior could have occurred but no one recorded it. Skip day on daily chart. (Connect data across
+ignored days.)
+4. Counting-time bar (aka record floor) Designates on the chart the performer’s lowest possible performance (other than zero) in a counting time. Always designated as “once per counting time.”
+Draw solid horizontal line from the Tuesday to
+Thursday day lines on the chart at the “counting-
+time bar.”
+5. Zero performance No performance recorded during the recording period. time bar.”
+Chart on the line directly below the “counting-
+6. Phase change line A line drawn in the space between the last charted day of one intervention phase and the first charted day of a new intervention phase. Draw a vertical line between the intervention
+phases. Draw the line from the top of the data to
+the “counting-time bar.”
+7. Change indicator Words, symbols, or phrases written on the chart in the appropriate phase to indicate changes during that phase. Write word, symbol, and/or phrase. An arrow (➞)
+may be used to indicate the continuance of a
+change into a new phase.
+8. Aim star A symbol used to represent (a) the desired frequency, and (b) the desired date to achieve the frequency. Place the point of the caret . . .
+^ for acceleration data
+v for deceleration data
+. . . on the desired aim date. Place the horizontal
+bar on the desired frequency. The caret and
+horizontal line will create a “star.”
+9. Calendar synchronize A standard time for starting all charts. It requires three charts to cover a full year. The
+Sunday before Labor Day begins the first week of
+the first chart. The twenty-first week after Labor
+Day begins the second chart. The forty-first week
+after Labor Day begins the third chart.
+10. Celeration line
+A straight line drawn through 7–9 or more
+charted days. This line indicates the amount of
+improvement that has taken place in a given
+period of time. A new line is drawn for each
+phase for both acceleration and deceleration
+targets. (Note: For nonresearch projects it is
+acceptable to draw freehand celeration lines.) 
+An instructional decision-making system, called
+precision teaching, has been developed for use with the
+Standard Celeration Chart.8 Precision teaching is predi-
+cated on the position that (a) learning is best measured as
+a change in response rate, (b) learning most often occurs
+through proportional changes in behavior, and (c) past
+changes in performance can project future learning.
+Precision teaching focuses on celeration, not on the
+specific frequency of correct and incorrect responses as
+many believe. That frequency is not an emphasis on the
+Chart is clear because the Chart uses estimations for most
+frequency values. A practitioner or researcher might say,
+”I don’t use the chart because I can’t tell by looking at the
+chart if the student emitted 24, 25, 26, or 27 responses.”
+However, the purpose of the Chart makes such a fine dis-
+crimination irrelevant because celeration, not specific fre-
+quency, is the issue. A frequency of 24 or 27 will not
+change the line of progress—the celeration course.
+Advanced charting conventions used by precision
+teachers are illustrated in Figure 16 and described in
+Table 2. Detailed explanations of the Standard Celera-
+tion Chart and its uses can be found in Cooper, Kubina,
+and Malanga (1998); Graf and Lindsley (2002); and Pen-
+nypacker, Gutierrez, and Lindsley (2003).
+Scatterplots
+A scatterplot is a graphic display that shows the relative
+distribution of individual measures in a data set with re-
+spect to the variables depicted by the x and y axes. Data
+points on a scatterplot are unconnected. Scatterplots show
+how much changes in the value of the variable depicted
+by one axis correlate with changes in the value of the
+variable represented by the other axis. Patterns of data
+Table 2 Advanced Charting Conventions for the Daily Standard Celeration Chart (See also Figure 16)
+Term Definition Convention
+Frequency:
+1. Frequency change (FC) (aka frequency jump up or jump down) The multiply “×” or divide “÷” value that compares the final fre- quency of one phase to the beginning frequency in the next phase. Compute this by comparing (1) the frequency where the celeration line crosses the last day of one phase to (2) the frequency where the celeration line crosses the first day of the
+next phase (e.g., a frequency jump from 6/minute to 18/minute.
+FC = × 3.0).
+Place an “FC =” in the upper left
+cell of the analysis matrix.
+Indicate the value with a “×”
+or “÷
+” sign (e.g., FC = × 3.0).
+Celeration:
+2. Celeration calculation (quarter-intersect method) The process for graphically determining a celeration line (aka “the line of best fit”). (1) Divide the frequencies for each phase into four equal quarters (include ignored and no chance days),
+(2) locate the median frequency for each half, and (3) draw a
+celeration line connecting the quarter intersect points.
+See advanced charting
+conventions sample chart.
+3. Celeration finder A piece of mylar with standard celeration lines that can be used to compute celeration line values. Buy commercially or copy and
+cut out part of the vertical axis
+on the Standard Celeration Chart.
+4. Projection line A dashed line extending to the future from the celeration line. The projection offers a forecast that enables the calculation of the celeration change value.
+See advanced charting
+conventions sample chart.
+5. Celeration change (CC) (aka celeration turn up or turn down) The multiply “×” or divide “÷” value that compares the celeration of one phase to the celeration in the next phase (e.g., a celer- ation turn down from × 1.3 to ÷ 1.3. CC = ÷ 1.7). Place a “CC =” in the upper mid-
+dle cell of the analysis matrix
+with the value indicated with a
+“×” or “÷
+” sign (e.g., CC = ÷ 1.7).
+6. Celeration collection A group of three or more celerations for different performers relating to the same behavior over approximately the same time period. Numerically identify the high,
+middle, and low celeration in
+the celeration collection and
+indicate the total number of
+celerations in the collection.
+7. Bounce change (BC) The multiply “×” or divide “÷” value that compares the bounce in one phase to the bounce in the next phase. Computed by comparing (1) the total bounce of one phase to (2) the total bounce of the next phase (e.g., a bounce change from 5.0 to × 1.4, BC = ÷ 3.6). Place a “BC =” in the upper
+right cell of the analysis
+matrix with the value indicated
+with a multiply “×” or divide “÷
+”
+symbol (e.g., BC = ÷ 3.6).
+8. Analysis matrix The analysis matrix provides the numeric change information regarding the effects of the independent variable(s) on frequency, celeration, and bounce between two phases. Place the analysis matrix be-
+tween the two phases being
+compared. For acceleration tar-
+gets place the matrix above the
+data. For deceleration targets
+place the matrix below the data.
+Optional:
+9. Frequency change p-value (FCP) The frequency change p-value is the probability that the noted change in frequency would have occurred by chance. (Use the Fisher exact probability formula to compute the p-value.) Use “FCP =” and indicate the
+p-value in the lower left cell
+on the analysis matrix (e.g.,
+FCP = .0001).
+10. Celeration change p-value (CCP) The celeration change p-value is the probability that the change noted in celeration would have occurred by chance. (Use the Fisher exact probability formula to compute the p-value.) Use “CCP =” and indicate the
+p-value in the lower middle cell
+of the matrix (e.g., CCP = .0001).
+11. Bounce change p-value (BCP) The bounce change p-value is the probability that the change noted in bounce would have occurred by chance. (Use the Fisher exact probability formula to compute the p-value.) Use “BCP =” and indicate the
+p-value in the lower right cell
+of the analysis matrix (e.g.,
+BCP = .0001).
+points falling along lines on the plane or clusters suggest
+certain relationships.
+Scatterplots can reveal relationships among differ-
+ent subsets of data. For example, Boyce and Geller (2001)
+created the scatterplot shown in Figure 17 to see how
+the behavior of individuals from different demographic
+groups related to a ratio of driving speed and following
+distance that represents one element of safe driving (e.g.,
+the proportion of data points for young males falling in
+the at-risk area of the graph compared to the proportion
+of drivers from other groups). Each data point shows a
+single driver’s behavior in terms of speed and following
+distance and whether the speed and following distance
+combination is considered safe or at risk for accidents.
+Such data could be used to target interventions for certain
+demographic groups.
+Applied behavior analysts sometimes use scatterplots
+to discover the temporal distribution of a target behavior
+(e.g., Kahng et al., 1998; Symons, McDonald, & Wehby,
+1998; Touchette, MacDonald, & Langer, 1985). Touchette
+and colleagues described a procedure for observing and
+recording behavior that produces a scatterplot that graph-
+ically shows whether the behavior’s occurrence is typi-
+cally associated with certain time periods.Constructing Line Graphs
+The skills required to construct effective, distortion-free
+graphic displays are as important as any in the behavior
+analyst’s repertoire. As applied behavior analysis has de-
+veloped, so have certain stylistic conventions and expec-
+tations regarding the construction of graphs. An effective
+graph presents the data accurately, completely, and
+clearly, and makes the viewer’s task of understanding the
+data as easy as possible. The graph maker must strive to
+fulfill each of these requirements while remaining alert to
+features in the graph’s design or construction that might
+create distortion and bias—either the graph maker’s or
+that of a future viewer when interpreting the extent and
+nature of the behavior change depicted by the graph.
+Despite the graph’s prominent role in applied be-
+havior analysis, relatively few detailed treatments of how
+to construct behavioral graphs have been published. No-
+table exceptions have been chapters by Parsonson and
+Baer (1978, 1986) and a discussion of graphic display
+tactics by Johnston and Pennypacker (1980, 1993a). Rec-
+ommendations from these excellent sources and others
+(Journal of Applied Behavior Analysis, 2000; American
+Psychological Association, 2001; Tufte, 1983, 1990) con-
+tributed to the preparation of this section. Additionally,
+hundreds of graphs published in the applied behavior
+analysis literature were examined in an effort to discover
+those features that communicate necessary information
+most clearly.
+Although there are few hard-and-fast rules for con-
+structing graphs, adhering to the following conventions
+will result in clear, well-designed graphic displays con-
+sistent in format and appearance with current practice.
+Although most of the recommendations are illustrated
+by graphs presented throughout this text, Figures 18
+and 19 have been designed to serve as models for most
+of the practices suggested here. The recommendations
+given here generally apply to all behavioral graphs. How-
+ever, each data set and the conditions under which the
+data were obtained present their own challenges to the
+graph maker.
+Drawing, Scaling, and Labeling Axes
+Ratio of the Vertical and Horizontal Axes
+The relative length of the vertical axis to the horizontal
+axis, in combination with the scaling of the axes, deter-
+mines the degree to which a graph will accentuate or min-
+imize the variability in a given data set. The legibility of
+a graph is enhanced by a balanced ratio between the
+height and width so that data are neither too close together
+nor too spread apart. Recommendations in the behavioral
+literature for the ratio, or relative length, of the vertical
+axis to the horizontal axis range from 5:8 (Johnston &
+Pennypacker, 1980) to 3:4 (Katzenberg, 1975). Tufte
+(1983), whose book The Visual Display of Quantitative
+Information is a wonderful storehouse of guidelines and
+examples of effective graphing techniques, recommends
+a 1:1.6 ratio of vertical axis to horizontal axis.
+A vertical axis that is approximately two-thirds the
+length of the horizontal axis works well for most be-
+havioral graphs. When multiple sets of axes will be pre-
+sented atop one another in a single figure and/or when
+the number of data points to be plotted on the horizon-
+tal axis is very large, the length of the vertical axis rel-
+ative to the horizontal axis can be reduced (as shown in
+Figures 3 and 7).
+Scaling the Horizontal Axis
+The horizontal axis should be marked in equal intervals,
+with each unit representing from left to right the chrono-
+logical succession of equal time periods or response op-
+portunities in which the behavior was (or will be)
+measured and from which an interpretation of behavior
+change is to be made (e.g., days, sessions, trials). When
+many data points are to be plotted, it is not necessary to
+mark each point along the x axis. Instead, to avoid un-
+necessary clutter, regularly spaced points on the hori-
+zontal axis are indicated with tic marks numbered by 5s,
+10s, or 20s.
+When two or more sets of axes are stacked vertically
+and each horizontal axis represents the same time frame,
+it is not necessary to number the tic marks on the hori-
+zontal axes of the upper tiers. However, the hatch marks
+corresponding to those numbered on the bottom tier
+should be placed on each horizontal axis to facilitate com-
+parison of performance across tiers at any given point in
+time (see Figure 4).
+Representing Discontinuities of Time
+on the Horizontal Axis
+Behavior change, its measurement, and all manipulations
+of treatment or experimental variables occur within and
+across time. Therefore, time is a fundamental variable in
+all experiments that should not be distorted or arbitrarily
+represented in a graphic display. Each equally spaced unit
+on the horizontal axis should represent an equal passage
+of time. Discontinuities in the progression of time on the
+horizontal axis should be indicated by a scale break: an
+open spot in the axis with a squiggly line at each end.
+Scale breaks on the x axis can also be used to sig-
+nal periods of time when data were not collected or
+when regularly spaced data points represent consecu-
+tive measurements made at unequal intervals (see the
+numbering of school days for the follow-up condition in
+Figure 18).
+When measurement occurs across consecutive ob-
+servations (e.g., stories read, meals, interactions) rather
+than standard units of time, the horizontal axis still serves
+as a visual representation of the progression of time be-
+cause the data plotted against it have been recorded one
+after the other. The text accompanying such a figure
+should indicate the real time in which the consecutive
+measurements were made (e.g., “Two or three peer tu-
+toring sessions were conducted each school week”), and
+discontinuities in that time context should be clearly
+marked with scale breaks (see Figure 19).
+Labeling the Horizontal Axis
+The dimension by which the horizontal axis is scaled
+should be identified in a brief label printed and centered
+below and parallel to the axis.
+Scaling the Vertical Axis
+On an equal-interval graph the scaling of the vertical axis
+is the most significant feature of the graph in terms of its
+portrayal of changes in level and variability in the data.
+Common practice is to mark the origin at 0 (on cumula-
+tive graphs the bottom on the vertical axis must be 0) and
+then to mark off the vertical axis so that the full range of
+values represented in the data set are accommodated. In-
+creasing the distance on the vertical axis between each
+unit of measurement magnifies the variability in the data,
+whereas contracting the units of measurement on the ver-
+tical axis minimizes the portrayal of variability in the data
+set. The graph maker should plot the data set against sev-
+eral different vertical axis scales, watching for distortion
+of the graphic display that might lead to inappropriate
+interpretations.
+The social significance of various levels of behavior
+change for the behavior being graphed should be con-
+sidered in scaling the vertical axis. If relatively small
+numerical changes in performance are socially signifi-
+cant, the y-axis scale should reflect a smaller range of
+values. For example, to display data most effectively
+from a training program in which an industrial em-
+ployee’s percentage of correctly executed steps in a
+safety checklist increased from an unsafe preinterven-
+tion range of 80% to 90% to an accident-free postinter-
+vention level of 100%, the vertical axis should focus on
+the 80% to 100% range. On the other hand, the scaling
+of the vertical axis should be contracted when small nu-
+merical changes in behavior are not socially important
+and the degree of variability obscured by the compressed
+scale is of little interest.
+Horizontal numbering of regularly spaced tic marks
+on the vertical axis facilitates use of the scale. The verti-
+cal axis should not be extended beyond the hatch mark in-
+dicating the highest value on the axis scale.
+When the data set includes several measures of 0,
+starting the vertical axis at a point slightly above the hor-
+izontal axis keeps data points from falling directly on the
+axis. This produces a neater graph and helps the viewer
+discriminate 0-value data points from those representing
+measures close to 0 (see Figure 18).
+In most instances, scale breaks should not be used
+on the vertical axis, especially if a data path would cross
+the break. However, when two sets of data with widely
+different and nonoverlapping ranges are displayed against
+the same y axis, a scale break can be used to separate the
+range of measures encompassed by each data set (see
+Figure 19).
+In multiple-tier graphs, equal distances on each ver-
+tical axis should represent equal changes in behavior to
+aid the comparison of data across tiers. Also, whenever
+possible, similar positions on each vertical axis of
+multiple-tier graphs should represent similar absolute val-
+ues of the dependent variable. When the differences in
+behavioral measures from one tier to another would re-
+sult in an overly long vertical axis, a scale break can be
+used to highlight the difference in absolute values, again
+aiding a point-to-point comparison of y axis positions.
+Labeling the Vertical Axis
+A brief label, printed and centered to the left and paral-
+lel to the vertical axis, should identify the dimension by
+which the axis is scaled. On multiple-tiered graphs, one
+label identifying the dimension portrayed on all of the
+vertical axes can be centered along the axes as a group.
+Additional labels identifying the different behaviors (or
+some other relevant aspect) graphed within each set of
+axes are sometimes printed to the left and parallel to each
+vertical axis. These individual tier labels should be printed
+to the right of and in smaller-sized font than the label
+identifying the dimension by which all of the vertical
+axes are scaled.
+Identifying
+Experimental Conditions
+Condition Change Lines
+Vertical lines extending upward from the horizontal axis
+indicate changes in treatment or experimental procedures.
+Condition change lines should be placed after (to the right
+of) the data point representing the last measure prior to
+the change in conditions signified by the line and before
+(to the left of) the data point representing the first mea-
+sure obtained after the change in procedure. In this way
+data points fall clearly on either side of change lines and
+never on the lines themselves. Drawing condition change
+lines to a height equal to the height of the vertical axis
+helps the viewer estimate the value of data points near
+the top of the vertical axis range.
+Condition change lines can be drawn with either
+solid or dashed lines. However, when an experiment or a
+treatment program includes relatively minor changes
+within an ongoing condition, a combination of solid and
+dashed lines should be used to distinguish the major and
+minor changes in conditions. For example, the solid lines
+in Figure 18 change from baseline, to self-record, to
+self-record + tokens, to follow-up conditions, and dashed
+lines indicate changes in the schedule of reinforcement
+from CRF, to VR 5, to VR 10 within the self-record +
+tokens condition.
+When the same manipulation of an independent vari-
+able occurs at different points along the horizontal axes
+of multiple-tiered graphs, a dog-leg connecting the con-
+dition change lines from one tier to the next makes it easy
+to follow the sequence and timing of events in the ex-
+periment (see Figure 19).
+Unplanned events that occur during an experiment
+or treatment program, as well as minor changes in pro-
+cedure that do not warrant a condition change line, can be
+indicated by placing small arrows, asterisks, or other sym-
+bols next to the relevant data points (see Figure 6) or
+just under the x axis (see Figure 19). The figure caption
+should explain any special symbols.
+Condition Labels
+Labels identifying the conditions in effect during each
+period of an experiment are centered above the space de-
+lineated by the condition change lines. Whenever space
+permits, condition labels should be parallel to the horizontal
+axis. Labels should be brief but descriptive (e.g., Contin-
+gent Praise is preferable to Treatment), and the labels
+should use the same terms or phrases used in the accom-
+panying text describing the condition. Abbreviations may
+be used when space or design limitations prohibit print-
+ing the complete label. A single condition label should be
+placed above and span across labels identifying minor
+changes within that condition (see Figure 18). Num-
+bers are sometimes added to condition labels to indicate
+the number of times the condition has been in effect dur-
+ing the study (e.g., Baseline 1, Baseline 2).
+Plotting Data Points and Drawing
+Data Paths
+Data Points
+When graphing data by hand, behavior analysts must
+take great care to ensure that they plot each data point
+exactly on the coordinate of the horizontal and vertical
+axis values of the measurement it represents. The in-
+accurate placement of data points is an unnecessary
+source of error in graphic displays, which can lead to
+mistakes in clinical judgment and/or experimental
+method. Accurate placement is aided by careful selec-
+tion of graph paper with grid lines sized and spaced ap-
+propriately for the data to be plotted. When many
+different values must be plotted within a small distance
+on the vertical axis, a graph paper with many grid lines
+per inch should be used.9
+Should a data point fall beyond the range of values
+described by the vertical axis scale, it is plotted just above
+the scale it transcends with the actual value of the mea-
+surement printed in parentheses next to the data point.
+Breaks in the data path leading to and from the off-the-
+scale data point also help to highlight its discrepancy (see
+Figure 19, Session 19).
+Data points should be marked with bold symbols that
+are easily discriminated from the data path. When only
+one set of data is displayed on a graph, solid dots are most
+often used. When multiple data sets are plotted on the
+same set of axes, a different geometric symbol should be
+used for each set of data. The symbols for each data set
+should be selected so that the value of each data point
+can be determined when data points fall near or on the
+same coordinates on the graph (see Figure 18, Sessions
+9–11).
+Data Paths
+Data paths are created by drawing a straight line from
+the center of each data point in a given data set to the
+center of the next data point in the same set. All data
+points in a given data set are connected in this manner
+with the following exceptions:
+• Data points falling on either side of a condition
+change line are not connected.
+• Data points should not be connected across a sig-
+nificant span of time in which behavior was not
+measured. To do so implies that the resultant data
+path represents the level and trend of the behavior
+during the span of time in which no measurement
+was conducted.
+• Data points should not be connected across discon-
+tinuities of time in the horizontal axis (see Figure
+18, 1-week school vacation).
+• Data points on either side of a regularly scheduled
+measurement period in which data were not col-
+lected or were lost, destroyed, or otherwise not avail-
+able (e.g., participant’s absence, recording
+equipment failure) should not be joined together (see
+Figure 18, baseline condition of bottom graph).
+• Follow-up or postcheck data points should not be
+connected with one another (see Figure 18) un-
+less they represent successive measures spaced in
+time in the same manner as measures obtained dur-
+ing the rest of the experiment (see Figure 19).
+• If a data point falls beyond the values described by
+the vertical axis scale, breaks should be made in
+the data path connecting that data point with those
+that fall within the described range (Figure 19,
+top graph, Session 19 data point).
+When multiple data paths are displayed on the same
+graph, different styles of lines, in addition to different
+symbols for the data points, may be used to help distin-
+guish one data path from another (see Figure 19). The
+behavior represented by each data path should be clearly
+identified, either by printed labels with arrows drawn to
+the data path (see Figures 18 and 19) or by a legend
+showing models of the symbols and line styles (see Figure
+13). When two data sets travel the same path, their lines
+should be drawn close to and parallel with one another to
+help clarify the situation (see Figure 18, Sessions 9–11).
+Writing the Figure Caption
+Printed below the graph, the figure caption should give a
+concise but complete description of the figure. The cap-
+tion should also direct the viewer’s attention to any fea-
+tures of the graph that might be overlooked (e.g., scale
+changes) and should explain the meaning of any added
+symbols representing special events.
+Printing Graphs
+Graphs should be printed in only one color—black. Al-
+though the use of color can enhance the attractiveness of
+a visual display and can effectively highlight certain fea-
+tures, it is discouraged in the scientific presentation of
+data. Every effort must be made to let the data stand on
+their own. The use of color can encourage perceptions of
+performance or experimental effects that differ from per-
+ceptions of the same data displayed in black. The fact
+that graphs and charts may be reproduced in journals and
+books is another reason for using black only.
+Constructing Graphs
+with Computer Software
+Software programs for producing computer-generated
+graphs have been available and are becoming both in-
+creasingly sophisticated and easier to use. Most of the
+graphs displayed throughout this book were constructed
+with computer software. Even though computer graphics
+programs offer a tremendous time savings over hand-
+plotted graphs, careful examination should be made of
+the range of scales available and the printer’s capability
+for both accurate data point placement and precise print-
+ing of data paths.
+Carr and Burkholder (1998) provided an intro-
+duction to creating single-subject design graphs with
+Microsoft Excel. Silvestri (2005) wrote detailed,
+step-by-step instructions for creating behavioral graphs
+using Microsoft Excel. Her tutorial can be found on
+the companion Web site that accompanies this text,
+www.prenhall.com/cooper.
+Interpreting Graphically
+Displayed Behavioral Data
+The effects of an intervention that produces dramatic,
+replicable changes in behavior that last over time are read-
+ily seen in a well-designed graphic display. People with
+little or no formal training in behavior analysis can read
+the graph correctly in such cases. Many times, however, be-
+havior changes are not so large, consistent, or durable. Be-
+havior sometimes changes in sporadic, temporary, delayed,
+or seemingly uncontrolled ways; and sometimes behavior
+may hardly change at all. Graphs displaying these kinds of
+data patterns often reveal equally important and interesting
+subtleties about behavior and its controlling variables.
+Behavior analysts employ a systematic form of ex-
+amination known as visual analysis to interpret graphi-
+cally displayed data. Visual analysis of data from an
+applied behavior analysis study is conducted to answer
+two questions: (a) Did behavior change in a meaningful
+way, and (b) if so, to what extent can that change in be-
+havior be attributed to the independent variable? Although
+there are no formalized rules for visual analysis, the dy-
+namic nature of behavior, the scientific and technologi-
+cal necessity of discovering effective interventions, and
+the applied requirement of producing socially meaning-
+ful levels of performance all combine to focus the
+behavior analyst’s interpretive attention on certain
+fundamental properties common to all behavioral data: (a)
+the extent and type of variability in the data, (b) the level
+of the data, and (c) trends in the data. Visual analysis en-
+tails an examination of each of these characteristics both
+within and across the different conditions and phases of
+an experiment.
+As Johnston and Pennypacker (1993b) so aptly noted,
+“It is impossible to interpret graphic data without being
+influenced by various characteristics of the graph itself”
+(p. 320). Therefore, before attempting to interpret the
+meaning of the data displayed in a graph, the viewer
+should carefully examine the graph’s overall construc-
+tion. First, the figure legend, axis labels, and all condi-
+tion labels should be read to determine a basic
+understanding of what the graph is about. The viewer
+should then look at the scaling of each axis, taking note
+of the location, numerical value, and relative significance
+of any scale breaks.
+Next, a visual tracking of each data path should be
+made to determine whether data points are properly
+connected. Does each data point represent a single mea-
+surement or observation, or are the data “blocked” such
+that each data point represents an average or some other
+summary of multiple measurements? Do the data show
+the performance of an individual subject or the aver-
+age performance of a group of subjects? If blocked or
+group data are displayed, is a visual representation of
+the range or variation of scores provided (e.g., Armen-
+dariz & Umbreit, 1999; Epstein et al., 1981); or do the
+data themselves allow determination of the amount of
+variability that was collapsed in the graph? For exam-
+ple, if the horizontal axis is scaled in weeks and each
+data point represents a student’s average score for a
+week of daily five-word spelling tests, data points
+falling near 0 or at the top end of the closed scale, such
+as 4.8, pose little problem because they can be the re-
+sult of only minimal variability in the daily scores for
+that week. However, data points near the center of the
+scale, such as 2 to 3, can result from either stable or
+highly variable performance.
+If the viewer suspects distortion produced by a
+graph’s construction, interpretive judgments of the data
+should be withheld until the data are replotted on a new
+set of axes. Distortion due to a loss of important data fea-
+tures in summarizing is not so easily remedied. The viewer
+must consider the report incomplete and forestall any in-
+terpretive conclusions until he has access to the raw data.
+Only when the viewer is satisfied that the graph is
+properly constructed and does not visually distort the be-
+havioral and environmental events it represents, should
+the data themselves be examined. The data are then in-
+spected to find what they reveal about the behavior mea-
+sured during each condition of the study.
+Visual Analysis within Conditions
+Data within a given condition are examined to determine
+(a) the number of data points, (b) the nature and extent of
+variability in the data, (c) the absolute and relative level
+of the behavioral measure, and (d) the direction and de-
+gree of any trend(s) in the data.
+Number of Data Points
+First, the viewer should determine the quantity of data
+reported during each condition. This entails a simple
+counting of data points. As a general rule, the more mea-
+surements of the dependent variable per unit of time and
+the longer the period of time in which measurement oc-
+curred, the more confidence one can have in the data
+path’s estimation of the true course of behavior change
+(given, of course, a valid and accurate observation and
+measurement system).
+The number of data points needed to provide a be-
+lievable record of behavior during a given condition also
+depends on how many times the same condition has been
+repeated during the study. As a rule, fewer data points
+are needed in subsequent replications of an experimen-
+tal condition if the data depict the same level and trend
+in performance that were noted in earlier applications of
+the condition.
+The published literature of applied behavior analysis
+also plays a part in determining how many data points
+are sufficient. In general, less lengthy phases are required
+of experiments investigating relations between previously
+studied and well-established variables if the results are
+also similar to those of the previous studies. More data are
+needed to demonstrate new findings, whether or not new
+variables are under investigation.
+There are other exceptions to the rule of the-more-
+data-the-better. Ethical concerns do not permit the
+repeated measurement of certain behaviors (e.g.,
+self-injurious behavior) under an experimental condition
+in which there is little or no expectation for improvement
+(e.g., during a no-treatment baseline condition or a con-
+dition intended to reveal variables that exacerbate prob-
+lem behavior). Also, there is little purpose in repeated
+measurement in situations in which the subject cannot
+logically perform the behavior (e.g., measuring the num-
+ber of correct answers to long division problems when
+concurrent observations indicate that the student has not
+learned the necessary component skills of multiplication
+and subtraction). Nor are many data points required to
+demonstrate that behavior did not occur when in fact it
+had no opportunity to occur.
+Familiarity with the response class measured and the
+conditions under which it was measured may be the graph
+viewer’s biggest aid in determining how many data points
+constitute believability. The quantity of data needed in a
+given condition is also partly determined by the analytic
+tactics employed in a given study.
+Variability
+How often and the extent to which multiple measures of
+behavior yield different outcomes is called variability. A
+high degree of variability within a given condition usu-
+ally indicates that the researcher or practitioner has
+achieved little control over the factors influencing the be-
+havior. (An important exception to this statement is when
+the purpose of an intervention is to produce a high de-
+gree of variability.) In general, the greater the variability
+within a given condition, the greater the number of data
+points that are necessary to establish a predictable pat-
+tern of performance. By contrast, fewer data points are re-
+quired to present a predictable pattern of performance
+when those data reveal relatively little variability.
+Level
+The value on the vertical axis scale around which a set of
+behavioral measures converge is called level. In the visual
+analysis of behavioral data, level is examined within a
+condition in terms of its absolute value (mean, median,
+and/or range) on the y-axis scale, the degree of stability
+or variability, and the extent of change from one level to
+another. The graphs in Figure 20 illustrate four differ-
+ent combinations of level and variability.
+The mean level of a series of behavioral measures
+within a condition can be graphically illustrated by the ad-
+dition of a mean level line: a horizontal line drawn
+through a series of data points within a condition at that
+point on the vertical axis equaling the average value of the
+series of measures (e.g., Gilbert, Williams, & McLaugh-
+lin, 1996). Although mean level lines provide an easy-
+to-see summary of average performance within a given
+condition or phase, they should be used and interpreted
+with caution. With highly stable data paths, mean level
+lines pose no serious drawbacks. However, the less vari-
+ability there is within a series of data points, the less need
+there is for a mean level line. For instance, a mean level
+line would serve little purpose in Graph A in Figure 20.
+And although mean level lines have been added to Graphs
+B, C, and D in Figure 20, Graph B is the only one of the
+three for which a mean level line provides an appropri-
+ate visual summary of level. The mean level line in Graph
+C is not representative of any measure of behavior taken
+during the phase. The data points in Graph C show a be-
+havior best characterized as occurring at two distinct lev-
+els during the condition and beg for an investigation of the
+factor(s) responsible for the clear change in levels. The
+mean level line in Graph D is also inappropriate because
+the variability in the data is so great that only 4 of the 12
+data points fall close to the mean level line.
+A median level line is another method for visually
+summarizing the overall level of behavior in a condition.
+Because a median level line represents the most typical
+performance within a condition, it is not so influenced
+by one or two measures that fall far outside the range of
+the remaining measures. Therefore, one should use a me-
+dian level line instead of a mean level line to graphically
+represent the central tendency of a series of data points
+that include several outliers, either high or low.
+Change in level within a condition is determined by
+calculating the difference in absolute values on the y axis
+between the first and last data points within the condi-
+tion. Another method, somewhat less influenced by vari-
+ability in the data, is to compare the difference between
+the median value of the first three data points in the con-
+dition with the median value of the final three data points
+in the condition (Koenig & Kunzelmann, 1980).
+Trend
+The overall direction taken by a data path is its trend.
+Trends are described in terms of their direction (increas-
+ing, decreasing, or zero trend), degree or magnitude, and
+extent of variability of data points around the trend. The
+graphs in Figure 21 illustrate a variety of trends. The di-
+rection and degree of trend in a series of graphed data
+points can be visually represented by a straight line drawn
+through the data called a trend line or line of progress.
+Several methods for calculating and fitting trends lines to
+a series of data have been developed. One can simply in-
+spect the graphed data and draw a straight line that visu-
+ally provides the best fit through the data. For this
+freehand method, Lindsley (1985) suggested ignoring
+one or two data points that fall well beyond the range of
+the remaining values in a data series and fitting the trend
+line to the remaining scores. Although the freehand
+method is the fastest way of drawing trend lines and can
+be useful for the viewer of a published graph, hand-drawn
+trend lines may not always result in an accurate repre-
+sentation of trend and are typically not found in graphs
+of published studies.
+Trend lines can also be calculated using a mathe-
+matical formula called the ordinary least-squares linear
+regression equation (McCain & McCleary, 1979; Par-
+sonson & Baer, 1978). Trend lines determined in this
+fashion have the advantage of complete reliability: The
+same trend line will always result from the same data set.
+The disadvantage of this method is the many mathemat-
+ical operations that must be performed to calculate the
+trend line. A computer program that can perform the
+equation can eliminate the time concern in calculating a
+least-squares trend line.
+A method of calculating and drawing lines of
+progress that is more reliable than the freehand method
+and much less time-consuming than linear regression
+methods is the split-middle line of progress. The split-
+middle technique was developed by White (1971, 2005)
+for use with rate data plotted on semilogarithmic charts,
+and it has proven a useful technique for predicting future
+behavior from such data. Split-middle lines of progress
+can also be drawn for data plotted against an equal-
+interval vertical axis, but it must be remembered that such
+a line is only an estimate that summarizes the overall
+trend (Bailey, 1984). Figure 22 provides a step-by-step
+illustration of how to draw split-middle lines of progress.
+A trend line cannot be drawn by any method through a se-
+ries of data points spanning a scale break in the vertical
+axis and generally should not be drawn across scale
+breaks in the horizontal axis.
+The specific degree of acceleration or deceleration of
+trends in data plotted on semilogarithmic charts can be
+quantified in numerical terms. For example, on the daily
+Standard Celeration Chart a “times-2” celeration means
+that the response rate is doubling each week, and a “times-
+1.25” means that the response rate is accelerating by a fac-
+tor of one fourth each week. A “divide-by-2” celeration
+means that each week the response rate will be one half of
+what it was the week before, and a “divide-by-1.5” means
+that the frequency is decelerating by one third each week.
+There is no direct way to determine visually from
+data plotted on equal-interval charts the specific rates at
+which trends are increasing or decreasing. But visual
+comparison of trend lines drawn through data on equal-
+interval charts can provide important information about
+the relative rates of behavior change.
+A trend may be highly stable with all of the data
+points falling on or near the trend line (see Figure 21,
+Graphs C and E). Data paths can also follow a trend even
+though a high degree of variability exists among the data
+points (see Figure 21, Graphs D and F).
+Visual Analysis between Conditions
+After inspection of the data within each condition or
+phase of a study, visual analysis proceeds with a com-
+parison of data between conditions. Drawing proper con-
+clusions entails comparing the previously discussed
+properties of behavioral data—level, trend, and stability/
+variability—between different conditions and among sim-
+ilar conditions.
+A condition change line indicates that an indepen-
+dent variable was manipulated at a given point in time. To
+determine whether an immediate change in behavior oc-
+curred at that point in time, one needs to examine the dif-
+ference between the last data point before the condition
+change line and the first data point in the new condition.
+The data are also examined in terms of the overall
+level of performance between conditions. In general,
+when all data points in one condition fall outside the
+range of values for all data points in an adjacent condi-
+tion (that is, there is no overlap of data points between the
+highest values obtained in one condition and the lowest
+values obtained in the other condition), there is little
+doubt that behavior changed from one condition to the
+next. When many data points in adjacent conditions over-
+lap one another on the vertical axis, less confidence can
+be placed in the effect of the independent variable asso-
+ciated with the change in conditions.10
+Mean or median level lines can be helpful in exam-
+ining the overall level between conditions. However,
+using mean or median level lines to summarize and com-
+pare the overall central tendency of data across condi-
+tions poses two serious problems. First, the viewer of
+such a visual display must guard against letting “appar-
+ently large differences among measures of central ten-
+dency visually overwhelm the presence of equally large
+amounts of uncontrolled variability” (Johnston & Pen-
+nypacker, 1980, p. 351). Emphasis on mean changes in
+performance in a graphic display can lead the viewer to
+believe that a greater degree of experimental control was
+obtained than is warranted by the data. In the top graph
+of Figure 23 half of the data points in Condition B fall
+within the range of values of the measures taken during
+Condition A, but the mean level lines suggest a clear
+change in behavior. Second, measures of central tendency
+can obscure important trends in the data that warrant in-
+terpretations other than those suggested by the central
+tendency indicators. Although a mean or median line ac-
+curately represents the average or typical performance,
+neither provides any indication of increasing or decreas-
+ing performance. In the bottom graph of Figure 23, for
+example, the mean line suggests a higher level of per-
+formance in Condition B than in Condition A, but an ex-
+amination of trend yields a very different picture of
+behavior change within and between Conditions A and B.
+Those analyzing behavioral data should also note
+any changes in level that occur after a new condition has
+been in place for some time and any changes in level that
+occur early in a new condition but are later lost. Such de-
+layed or temporary effects can indicate that the indepen-
+dent variable must be in place for some time before
+behavior changes, or that the temporary level change was
+the result of an uncontrolled variable. Either case calls
+for further investigation in an effort to isolate and control
+relevant variables.
+Visual analysis of data between adjacent conditions
+includes an examination of the trends exhibited by the
+data in each condition to determine whether the trend
+found in the first condition changed in direction or slope
+during the subsequent condition. In practice, because each
+data point in a series contributes to level and trend, the
+two characteristics are viewed in conjunction with one
+another. Figure 24 presents stylized data paths illustrat-
+ing four basic combinations of change or lack of change
+in level and trend between adjacent conditions. Of course,
+many other data patterns could display the same charac-
+teristics. Idealized, straight-line data paths that eliminate
+the variability found in most repeated measures of be-
+havior have been used to highlight level and trend.
+Visual analysis includes not only an examination and
+comparison of changes in level and trend between adja-
+cent conditions, but also an examination of performance
+across similar conditions. Interpreting what the data from
+an applied behavior analysis mean requires more than
+visual analysis and the identification and description of
+level, trend, and variability. When behavior change is
+demonstrated over the course of a treatment program or
+research study, the next question to be asked is, Was the
+change in behavior a function of the treatment or experi-
+mental variables?
+Summary
+Applied behavior analysts document and quantify behav-
+ior change by direct and repeated measurement of behav-
+ior, and the product of those measurements called data.
+Graphs are relatively simple formats for visually display-
+ing relationships among and between a series of mea-
+surements and relevant variables.
+Purpose and Benefits of Graphic Display
+of Behavioral Data
+3. Graphing each measure of behavior as it is collected pro-
+vides the practitioner or researcher with an immediate and
+ongoing visual record of the participant’s behavior, al-
+lowing treatment and experimental decisions to be re-
+sponsive to the participant’s performance.
+4. Direct and continual contact with the data in a readily an-
+alyzable format enables the practitioner or researcher to
+identify and investigate interesting variations in behavior
+as they occur.
+5. As a judgmental aid for interpreting experimental results,
+graphic display is a fast, relatively easy-to-learn method
+that imposes no arbitrary levels of significance for evalu-
+ating behavior change.
+6. Visual analysis of graphed data is a conservative method
+for determining the significance of behavior change; only
+variables able to produce meaningful effects repeatedly
+are considered significant, and weak and unstable vari-
+ables are screened out.
+7. 8. Graphs enable and encourage independent judgments of
+the meaning and significance of behavior change by others.
+Graphs can serve as effective sources of feedback to the
+people whose behavior they represent.
+Types of Graphs Used in Applied Behavior Analysis
+9. Line graphs, the most commonly used format for the
+graphic display of behavioral data, are based on the Carte-
+sian plane, a two-dimensional area formed by the inter-
+section of two perpendicular lines.
+10. Major parts of the simple line graph are the horizontal axis
+(also called the x axis), the vertical axis (also called the
+y axis), condition change lines, condition labels, data
+points, the data path, and the figure caption.
+11. Graphs with multiple data paths on the same set of axes are
+used in applied behavior analysis to show (a) two or more
+dimensions of the same behavior, (b) two or more differ-
+ent behaviors, (c) the same behavior under different and al-
+ternating experimental conditions, (d) changes in target
+behavior relative to the changing values of an independent
+variable, and (e) the behavior of two or more participants.
+12. A second vertical axis, which is drawn on the right-hand
+side of the horizontal axis, is sometimes used to show dif-
+ferent scales for multiple data paths.
+13. Bar graphs are used for two primary purposes: (a) to dis-
+play discrete data not related by an underlying dimension
+that can be used to scale the horizontal axis and (b) to sum-
+marize and enable easy comparison of the performance of
+a participant or group of participants during the different
+conditions of an experiment.
+14. Each data point on a cumulative record represents the total
+number of responses emitted by the subject since mea-
+surement began. The steeper the slope of the data path on
+a cumulative graph, the higher the response rate.
+15. Overall response rate refers to the average rate of re-
+sponse over a given time period; a local response rate
+refers to the rate of response during a smaller period of
+time within a larger period for which an overall response
+rate has been given.
+16. Cumulative records are especially effective for displaying
+data when (a) the total number of responses made over
+time is important, (b) the graph is used as a source of feed-
+back to the subject, (c) the target behavior can occur only
+once per measurement period, and (d) a fine analysis of
+a single instance or portions of data from an experiment
+is desired.
+17. Semilogarithmic charts use a logarithmic-scaled y axis so
+that changes in behavior that are of equal proportion (e.g.,
+doublings of the response measure) are represented by
+equal distances on the vertical axis.
+18. The Standard Celeration Chart is a six-cycle multiply-
+divide graph that enables the standardized charting of cel-
+eration, a linear measure of frequency change across time,
+a factor by which frequency multiplies or divides per unit
+of time.
+19. A scatterplot shows the relative distribution of individual
+measures in a data set with respect to the variables de-
+picted by the x and y axes.
+Constructing Line Graphs
+20. The vertical axis is drawn to a length approximately two
+thirds that of the horizontal axis.
+21. 22. 23. 24. The horizontal axis is marked off in equal intervals, each
+representing from left to right the chronological succession
+of equal time periods within which behavior was measured.
+Discontinuities of time are indicated on the horizontal axis
+by scale breaks.
+The vertical axis is scaled relative to the dimension of be-
+havior measured, the range of values of the measures ob-
+tained, and the social significance of various levels of
+change in the target behavior.
+Condition change lines indicate changes in the treatment
+program or manipulations of an independent variable and
+are drawn to the same height as the vertical axis.
+25. A brief, descriptive label identifies each condition of an
+experiment or behavior change program.
+26. Data points should be accurately placed with bold, solid
+dots. When multiple data paths are used, different geo-
+metric symbols are used to distinguish each data set.
+27. Data paths are created by connecting successive data points
+with a straight line.
+28. Successive data points should not be connected when (a)
+they fall on either side of a condition change line; (b) they
+span a significant period of time in which behavior was
+not measured; (c) they span discontinuities of time on the
+horizontal axis; (d) they fall on either side of a regularly
+scheduled measurement period in which data were not col-
+lected or were lost, destroyed, or otherwise not available;
+(e) they fall in a follow-up or postcheck period that is not
+regularly spaced in time in the same manner as the rest of
+the study; or (f) one member of the pair falls outside the
+range of values described by the vertical axis.
+29. The figure caption provides a concise but complete de-
+scription of the graph, giving all of the information needed
+to interpret the display.
+30. Graphs should be printed in black ink only.
+Interpreting Graphically Displayed Behavioral Data
+31. Visual analysis of graphed data attempts to answer two
+questions: (a) did a socially meaningful change in behav-
+ior take place, and (b) if so, can the behavior change be at-
+tributed to the independent variable?
+32. Before beginning to evaluate the data displayed in a graph,
+a careful examination of the graph’s construction should
+be undertaken. If distortion is suspected from the features
+of the graph’s construction, the data should be replotted on
+a new set of axes before interpretation is attempted.
+33. Blocked data and data representing the average perfor-
+mance of a group of subjects should be viewed with the un-
+derstanding that significant variability may have been lost
+in the display.
+34. Visual analysis of data within a given condition focuses
+on the number of data points, the variability of perfor-
+mance, the level of performance, and the direction and de-
+gree of any trends in the data.
+35. As a general rule, the more data in a condition and the
+greater the stability of those data, the more confidence one
+can place in the data path’s estimate of behavior during
+that time. The more variability in the behavioral measures
+during a condition, the greater the need for additional data.
+36. Variability refers to the frequency and degree to which
+multiple measures of behavior yield different outcomes. A
+high degree of variability within a given condition usually
+indicates that little or no control has been achieved over the
+factors influencing the behavior.
+37. Level refers to the value on the vertical axis around which
+a series of data points converges. When the data in a given
+condition all fall at or near a specific level, the behavior is
+considered stable with respect to level; to the extent that
+the behavioral measures vary considerably from one to an-
+other, the data are described as showing variability with re-
+spect to level. In cases of extreme variability, no particular
+level of performance is evidenced.
+38. Mean or median level lines are sometimes added to graphic
+displays to represent the overall average or typical per-
+formance during a condition. Mean and median level lines
+should be used and interpreted with care because they can
+obscure important variability and trends in the data.
+39. Trend refers to the overall direction taken by a data path;
+trends are described in terms of their direction (increas-
+ing, decreasing, or zero trend), degree (gradual or steep),
+and the extent of variability of data points around the trend.
+40. Trend direction and degree can be visually represented by
+drawing a trend line, or line of progress, through a series
+of data points. Trend lines can be drawn freehand, using
+the least-squares regression equation, or using a method
+called the split-middle line of progress. Split-middle lines
+of progress can be drawn quickly and reliably and have
+proven useful in analyzing behavior change.
+41. Visual analysis of data across conditions determines
+whether change in level, variability, and/or trend occurred
+and to what extent any changes were significant.
