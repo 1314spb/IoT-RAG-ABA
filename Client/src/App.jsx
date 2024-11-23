@@ -1,15 +1,14 @@
-import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import MainLayout from './layouts/MainLayout'
-import MainFooter from './layouts/MainFooter'
 
 import Home from './pages/Home/Home'
+import Analysis from './pages/Analysis/Analysis'
+import Therapy from './pages/Therapy/Therapy'
 import History from './pages/History/History'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -17,15 +16,13 @@ function App() {
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route index element={<Home />} />
+            <Route path="services/analysis" element={<Analysis />} />
             <Route path="services/history" element={<History />} />
-            {/* 其他路由可以在這裡添加，例如：
-          
-          <Route path="contact" element={<Contact />} />
-          */}
+            <Route path="services/therapy" element={<Therapy />} />
+
           </Route>
         </Routes>
       </Router>
-      <MainFooter />
     </>
   )
 }
