@@ -66,7 +66,7 @@ const History = () => {
         axios.get(`/api/students/${student.id}/history`)
             .then(response => console.log(response.data))
             .catch(error => console.error("Axio error: ", error));
-
+        
         setDropdownOpen(false);
     };
 
