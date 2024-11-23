@@ -10,9 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.7.7",
+    "date-fns": "^4.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.28.0"
+    "react-router-dom": "^6.28.0",
+    "react-tailwindcss-datepicker": "^1.7.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",

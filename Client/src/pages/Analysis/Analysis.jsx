@@ -1,13 +1,17 @@
-import React from "react";
-import student1 from "../../assets/student/student1.jpg";
-import student2 from "../../assets/student/student2.jpg";
-import student3 from "../../assets/student/student3.jpg";
-import student4 from "../../assets/student/student4.jpg";
-import student5 from "../../assets/student/student5.jpg";
-import student6 from "../../assets/student/student6.jpg";
-import student7 from "../../assets/student/student7.jpg";
+import React, { useEffect } from "react";
+import student1 from "../../assets/students/student1.jpg";
+import student2 from "../../assets/students/student2.jpg";
+import student3 from "../../assets/students/student3.jpg";
+import student4 from "../../assets/students/student4.jpg";
+import student5 from "../../assets/students/student5.jpg";
+import student6 from "../../assets/students/student6.jpg";
+import student7 from "../../assets/students/student7.jpg";
 
 const Analysis = () => {
+    useEffect(() => {
+        document.title = "Analysis | ABA";
+    }, []);
+
     const students = [
         { id: 1, name: "John Doe", phone: "1234567890", image: student1 },
         { id: 2, name: "Mary Jane", phone: "1234567890", image: student2 },
@@ -25,7 +29,6 @@ const Analysis = () => {
     return (
         <section className="relative bg-stone-50 object-fill">
             <h6 className="font-manrope text-3xl leading-tight text-gray-900 mb-1.5 px-64 py-2">Analysis</h6>
-
             <div className="w-full py-24 relative z-10 backdrop-blur-3xl">
                 <div className="w-full max-w-7xl px-2 lg:px-8">
                     <div className="grid grid-cols-12 gap-8 max-w-4xl xl:max-w-full">
