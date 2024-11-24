@@ -1,13 +1,18 @@
-import os
+# Server/app.py
 from flask import Flask, send_from_directory
-from flask_sqlalchemy import SQLAlchemy
-from dotenv import load_dotenv
+from models import db
+from routes.history_route import history_bp
 
 app = Flask(__name__)
+app.config.from_object('instance.config.Config')
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db = SQLAlchemy(app)
+with app.app_context():
+    db.init_app(app)
+    db.create_all()
+    
+print(f"DATABASE CONNECTED")
+
+app.register_blueprint(history_bp)
 
 @app.route('/')
 def serve_index():

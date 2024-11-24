@@ -8,6 +8,7 @@ node_modules/
 Logbook/
 literature/
 .venv/
+.env
 README.md
 
 proposal/

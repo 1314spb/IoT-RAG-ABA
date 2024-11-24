@@ -27,13 +27,13 @@ const History = () => {
     const dropdownRef = useRef(null);
 
     const students = [
-        { id: 1, name: "John Doe", phone: "1234567890", image: student1 },
-        { id: 2, name: "Mary Jane", phone: "1234567890", image: student2 },
-        { id: 3, name: "Peter Parker", phone: "1234567890", image: student3 },
-        { id: 4, name: "Tony Stark", phone: "1234567890", image: student4 },
-        { id: 5, name: "Bruce Wayne", phone: "1234567890", image: student5 },
-        { id: 6, name: "Clark Kent", phone: "1234567890", image: student6 },
-        { id: 7, name: "Diana Prince", phone: "1234567890", image: student7 },
+        { id: 41, name: "John Doe", phone: "1234567890", image: student1 },
+        { id: 42, name: "Mary Jane", phone: "1234567890", image: student2 },
+        { id: 43, name: "Peter Parker", phone: "1234567890", image: student3 },
+        { id: 44, name: "Tony Stark", phone: "1234567890", image: student4 },
+        { id: 45, name: "Bruce Wayne", phone: "1234567890", image: student5 },
+        { id: 46, name: "Clark Kent", phone: "1234567890", image: student6 },
+        { id: 47, name: "Diana Prince", phone: "1234567890", image: student7 },
     ];
 
     const domains = [
@@ -63,7 +63,7 @@ const History = () => {
         console.log(`Clicked on: ${student.name}`);
         setSelectedStudent(student);
 
-        axios.get(`/api/students/${student.id}/history`)
+        axios.get(`/api/students/${student.id}`)
             .then(response => console.log(response.data))
             .catch(error => console.error("Axio error: ", error));
         
