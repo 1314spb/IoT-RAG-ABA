@@ -45,8 +45,9 @@ def get_student(student_id):
         return jsonify({
             'message': f'No sessions found for student_id {student_id}'
         }), 404
-        
+    
     sessions_data = [student_session_to_dict(session) for session in sessions]
+    
     return jsonify({
         'student_id': student_id,
         'sessions': sessions_data

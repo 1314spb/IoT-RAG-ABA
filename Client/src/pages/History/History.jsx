@@ -1,4 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
+import DataChart from './DataChart';
+
 import axios from 'axios';
 
 import Datepicker from "react-tailwindcss-datepicker";
@@ -18,32 +20,36 @@ import student5 from "../../assets/students/student5.jpg";
 import student6 from "../../assets/students/student6.jpg";
 import student7 from "../../assets/students/student7.jpg";
 
+const students = [
+    { id: 41, name: "John Doe", phone: "1234567890", image: student1 },
+    { id: 42, name: "Mary Jane", phone: "1234567890", image: student2 },
+    { id: 43, name: "Peter Parker", phone: "1234567890", image: student3 },
+    { id: 44, name: "Tony Stark", phone: "1234567890", image: student4 },
+    { id: 45, name: "Bruce Wayne", phone: "1234567890", image: student5 },
+    { id: 46, name: "Clark Kent", phone: "1234567890", image: student6 },
+    { id: 47, name: "Diana Prince", phone: "1234567890", image: student7 },
+];
+
+const domains = [
+    { id: 1, name: "Academic and Learning", Icon: Domain1 },
+    { id: 2, name: "Social Emotion", Icon: Domain2 },
+    { id: 3, name: "Communication", Icon: Domain3 },
+    { id: 4, name: "Sensory Motor Skill", Icon: Domain4 },
+    { id: 5, name: "Independent and Self-help", Icon: Domain5 },
+    { id: 6, name: "Behavioural Development", Icon: Domain6 },
+];
+
 const History = () => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const [selectedStudent, setSelectedStudent] = useState(null);
-    const [selectedDomain, setSelectedDomain] = useState(null);
-
+    const [selectedDomain, setSelectedDomain] = useState(domains[0]);
+    const [axioedData, setAxioedData] = useState([]);
     const [selectedDate, setSelectedDate] = useState({ startDate: null, endDate: null });
+
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
+
     const dropdownRef = useRef(null);
-
-    const students = [
-        { id: 41, name: "John Doe", phone: "1234567890", image: student1 },
-        { id: 42, name: "Mary Jane", phone: "1234567890", image: student2 },
-        { id: 43, name: "Peter Parker", phone: "1234567890", image: student3 },
-        { id: 44, name: "Tony Stark", phone: "1234567890", image: student4 },
-        { id: 45, name: "Bruce Wayne", phone: "1234567890", image: student5 },
-        { id: 46, name: "Clark Kent", phone: "1234567890", image: student6 },
-        { id: 47, name: "Diana Prince", phone: "1234567890", image: student7 },
-    ];
-
-    const domains = [
-        { id: 1, name: "Academic and Learning", Icon: Domain1 },
-        { id: 2, name: "Social Emotion", Icon: Domain2 },
-        { id: 3, name: "Communication", Icon: Domain3 },
-        { id: 4, name: "Sensory Motor Skill", Icon: Domain4 },
-        { id: 5, name: "Independent and Self-help", Icon: Domain5 },
-        { id: 6, name: "Behavioural Development", Icon: Domain6 },
-    ];
 
     useEffect(() => {
         document.title = "History - ABA";
@@ -59,14 +65,37 @@ const History = () => {
         };
     }, []);
 
-    const handleUserClick = (student) => {
-        console.log(`Clicked on: ${student.name}`);
-        setSelectedStudent(student);
+    useEffect(() => {
+        console.log("axioedData updated: ", axioedData);
+        console.log("Type of axioedData.sessions:", typeof axioedData.sessions);
+        console.log("Is axioedData.sessions an array?", Array.isArray(axioedData.sessions));
+    }, [axioedData]);
 
-        axios.get(`/api/students/${student.id}`)
-            .then(response => console.log(response.data))
-            .catch(error => console.error("Axio error: ", error));
-        
+    const axioStudentData = (studentId) => {
+        setLoading(true);
+        setError(null);
+
+        axios.get('/temp.json')
+            .then(response => {
+                setAxioedData(response.data);
+            })
+            .catch(() => setError("Cannot get student data"))
+            .finally(() => setLoading(false));
+
+        // axios.get(`/api/students/${studentId}`)
+        //     .then(response => {
+        //         setAxioedData(response.data)
+        //         console.log("axioedData: ", axioedData);
+        //     })
+        //     .catch(setError("Cannot axio student data"))
+        //     .finally(() => setLoading(false));
+    };
+
+    const handleStudentClick = (student) => {
+        console.log(`Clicked on: ${student.name}`);
+        setAxioedData([]);
+        setSelectedStudent(student);
+        axioStudentData(student.id);
         setDropdownOpen(false);
     };
 
@@ -139,7 +168,7 @@ const History = () => {
                                 {students.map((student) => (
                                     <li key={student.id}>
                                         <button
-                                            onClick={() => handleUserClick(student)}
+                                            onClick={() => handleStudentClick(student)}
                                             className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white w-full text-left"
                                         >
                                             <img
@@ -199,17 +228,26 @@ const History = () => {
                     </ul>
                 </div>
 
-                <div className="col-span-12 xl:col-span-9 pt-5">
-                    {selectedDomain ? (
+                <div className="col-span-9 xl:col-span-9 pt-5">
+                    {error && (
+                        <div className="p-6 bg-red-100 text-red-700 rounded-lg shadow mb-4">
+                            <p>{error}</p>
+                        </div>
+                    )}
+                    {loading ? (
                         <div className="p-6 bg-white rounded-lg shadow">
-                            <h3 className="text-2xl font-semibold mb-4">{selectedDomain.name}</h3>
-                            <p>這裡顯示 {selectedDomain.name} 的詳細信息。</p>
+                            <p>Loading...</p>
+                        </div>
+                    ) : axioedData && axioedData.sessions.length > 0 ? (
+                        <div className="p-6 bg-white rounded-lg shadow">
+                            <DataChart dataArray={axioedData.sessions} />
                         </div>
                     ) : (
                         <div className="p-6 bg-white rounded-lg shadow">
-                            <p>請選擇一個域來查看詳細信息。</p>
+                            <p>No data can be displayed</p>
                         </div>
-                    )}
+                    )
+                    }
                 </div>
 
             </div>
