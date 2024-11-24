@@ -61,8 +61,8 @@
 1. **克隆倉庫**
 
    ```bash
-   git clone https://github.com/yourusername/aba-task-generation.git
-   cd aba-task-generation
+   git clone https://github.com/1314spb/RAG-LLM4ABA.git
+   cd RAG-LLM4ABA
    ```
 
 2. **設置 Python 環境**
@@ -76,7 +76,7 @@
 3. **設置前端**
 
    ```bash
-   cd frontend
+   cd Client
    npm install
    npm run build
    cd ..
@@ -89,7 +89,7 @@
 5. **運行後端**
 
    ```bash
-   python app.py
+   python3 app.py
    ```
 
 6. **訪問應用**
@@ -165,46 +165,12 @@
 2. **文檔記錄**：記錄所有測試結果，包括成功和需要改進的地方，使用圖表和圖形以增加清晰度。
 3. **迭代測試**：根據反饋和性能指標不斷測試和調整，以實現最佳結果。
 
-## 參考文獻
-
-1. Rainbow Therapy, “Developing activity lists for ABA therapy,” Rainbow Therapy, [https://www.rainbowtherapy.org/developing-activity-lists-for-aba-therapy/](https://www.rainbowtherapy.org/developing-activity-lists-for-aba-therapy/) (訪問時間：2024年9月30日).
-2. BCBA Task List (5th ed.), [https://www.bacb.com/wp-content/uploads/2020/08/BCBA-task-list-5th-ed-240830-a.pdf](https://www.bacb.com/wp-content/uploads/2020/08/BCBA-task-list-5th-ed-240830-a.pdf) (訪問時間：2024年9月30日).
-3. J. Cooper, T. Heron, and W. Heward, Applied Behavior Analysis Global Edition. Harlow,: Pearson, 2020.
-
 ## 學術誠信聲明
 
 本項目遵守香港中文大學的學術誠信政策。提交的作品是原創，並且未經宣告地提交給多個不同的課程或目的。所有引用的資料來源均已正確標註。未經教師同意，未分發、分享或複製任何教學材料以獲取不正當的學術優勢。
 
 ---
 
-**學生姓名**：辛鍾浩 (s1155174349)  
-**學年與學期**：2024-2025 年 第 1 學期  
-**課程**：IERG-4998-XJ01 最終年專案 I  
-**作業評分教師**：陳婉茵教授  
-**提交文件名稱**：proposal.pdf  
-**提交類型**：個人  
-**作業編號**：1  
-**截止日期**：2024-10-02  
-**提交參考編號**：4025978  
-**提交時間**：2024-10-01 14:12:44
-
----
-
-**簽名**：辛鍾浩 (s1155174349)  
-**日期**：______________________________
-
----
-
-## 聯繫方式
-
-如有任何疑問或需要進一步資訊，請聯繫 [您的電子郵件地址]。
-
----
-
 ## 授權與許可
 
 本項目遵循 [MIT 許可證](LICENSE) 授權條款。
-
-# 總結
-
-這個 README.md 文件涵蓋了項目的關鍵方面，包括簡介、目標、關鍵組件、安裝與部署、使用說明、方法論、評估與測試、參考文獻以及學術誠信聲明。根據具體需求，您可以進一步擴展或調整每個部分的內容。
