@@ -23,10 +23,14 @@ ChartJS.register(
 
 const DataChart = ({ dataArray }) => {
     const availableFields = [
+        { key: 'noof_positive', label: 'Number of positive' },
+        { key: 'noof_negative', label: 'Number of negative' },
+        { key: 'noofOT', label: 'Number of OT' },
+        { key: 'noofP', label: 'Number of P' },
+        { key: 'noofUndo', label: 'Number of Undo' },
         { key: 'acceleration', label: 'Acceleration' },
         { key: 'bvp', label: 'BVP' },
-        { key: 'noof_negative', label: 'Number of negative' },
-        { key: 'noof_positive', label: 'Number of positive' },
+        { key: 'temperature', label: 'Temperature' },
     ];
 
     const [selectedFields, setSelectedFields] = useState(
@@ -89,7 +93,7 @@ const DataChart = ({ dataArray }) => {
 
     return (
         <div>
-        <div className="mb-4">
+            <div className="mb-4">
                 {availableFields.map((field) => (
                     <label key={field.key} className="inline-flex items-center mr-4">
                         <input

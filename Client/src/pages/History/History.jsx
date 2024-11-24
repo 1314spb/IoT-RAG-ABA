@@ -1,8 +1,7 @@
-import React, { useEffect, useState, useRef } from "react";
-import DataChart from './DataChart';
-
+import React, { useEffect, useState, useRef, useMemo } from "react";
 import axios from 'axios';
 
+import DataChart from './DataChart';
 import Datepicker from "react-tailwindcss-datepicker";
 
 import Domain1 from "../../assets/domains/domain1";
@@ -18,7 +17,6 @@ import student3 from "../../assets/students/student3.jpg";
 import student4 from "../../assets/students/student4.jpg";
 import student5 from "../../assets/students/student5.jpg";
 import student6 from "../../assets/students/student6.jpg";
-import student7 from "../../assets/students/student7.jpg";
 
 const students = [
     { id: 41, name: "John Doe", phone: "1234567890", image: student1 },
@@ -27,7 +25,6 @@ const students = [
     { id: 44, name: "Tony Stark", phone: "1234567890", image: student4 },
     { id: 45, name: "Bruce Wayne", phone: "1234567890", image: student5 },
     { id: 46, name: "Clark Kent", phone: "1234567890", image: student6 },
-    { id: 47, name: "Diana Prince", phone: "1234567890", image: student7 },
 ];
 
 const domains = [
@@ -43,7 +40,7 @@ const History = () => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const [selectedStudent, setSelectedStudent] = useState(null);
     const [selectedDomain, setSelectedDomain] = useState(domains[0]);
-    const [axioedData, setAxioedData] = useState([]);
+    const [axioedData, setAxioedData] = useState({ sessions: [] });
     const [selectedDate, setSelectedDate] = useState({ startDate: null, endDate: null });
 
     const [loading, setLoading] = useState(false);
@@ -67,32 +64,43 @@ const History = () => {
 
     useEffect(() => {
         console.log("axioedData updated: ", axioedData);
-        console.log("Type of axioedData.sessions:", typeof axioedData.sessions);
-        console.log("Is axioedData.sessions an array?", Array.isArray(axioedData.sessions));
     }, [axioedData]);
 
     const axioStudentData = (studentId) => {
         setLoading(true);
         setError(null);
 
-        axios.get('/temp.json')
-            .then(response => {
-                setAxioedData(response.data);
-            })
-            .catch(() => setError("Cannot get student data"))
-            .finally(() => setLoading(false));
-
-        // axios.get(`/api/students/${studentId}`)
+        // axios.get("/temp.json")
         //     .then(response => {
-        //         setAxioedData(response.data)
-        //         console.log("axioedData: ", axioedData);
+        //         console.log("Axioed temp data: ", response.data);
+        //         if (response.data.sessions.length === 0) {
+        //             setAxioedData({ sessions: [], student_id: response.data.student_id });
+        //         } else {
+        //             setAxioedData(response.data);
+        //         }
         //     })
-        //     .catch(setError("Cannot axio student data"))
+        //     .catch((err) => {
+        //         console.error(err);
+        //         setError("Cannot axio student data");
+        //     })
         //     .finally(() => setLoading(false));
+
+        axios.get(`/api/students/${studentId}`)
+            .then(response => {
+                if (response.data.sessions.length === 0) {
+                    setAxioedData({ sessions: [], student_id: response.data.student_id });
+                } else {
+                    setAxioedData(response.data);
+                }
+            })
+            .catch((err) => {
+                console.error(err);
+                setError("Cannot axio student data");
+            })
+            .finally(() => setLoading(false));
     };
 
     const handleStudentClick = (student) => {
-        console.log(`Clicked on: ${student.name}`);
         setAxioedData([]);
         setSelectedStudent(student);
         axioStudentData(student.id);
@@ -109,6 +117,25 @@ const History = () => {
         console.log("Selected dates:", newValue);
         setSelectedDate(newValue);
     };
+
+    const filteredSessions = useMemo(() => {
+        let sessions = axioedData.sessions || [];
+
+        // if (selectedDate.startDate && selectedDate.endDate) {
+        //     const start = new Date(selectedDate.startDate);
+        //     const end = new Date(selectedDate.endDate);
+        //     sessions = sessions.filter(session => {
+        //         const sessionDate = new Date(session.date);
+        //         return sessionDate >= start && sessionDate <= end;
+        //     });
+        // }
+
+        if (selectedDomain) {
+            sessions = sessions.filter(session => session.domain === selectedDomain.name);
+        }
+
+        return sessions;
+    }, [axioedData, selectedDate, selectedDomain]);
 
     return (
         <section className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -229,18 +256,18 @@ const History = () => {
                 </div>
 
                 <div className="col-span-9 xl:col-span-9 pt-5">
-                    {error && (
+                    {error !== null ? (
                         <div className="p-6 bg-red-100 text-red-700 rounded-lg shadow mb-4">
                             <p>{error}</p>
                         </div>
-                    )}
+                    ) : null}
                     {loading ? (
                         <div className="p-6 bg-white rounded-lg shadow">
                             <p>Loading...</p>
                         </div>
-                    ) : axioedData && axioedData.sessions.length > 0 ? (
+                    ) : filteredSessions && filteredSessions.length > 0 ? (
                         <div className="p-6 bg-white rounded-lg shadow">
-                            <DataChart dataArray={axioedData.sessions} />
+                            <DataChart dataArray={filteredSessions} />
                         </div>
                     ) : (
                         <div className="p-6 bg-white rounded-lg shadow">

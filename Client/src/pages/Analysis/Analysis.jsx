@@ -5,7 +5,6 @@ import student3 from "../../assets/students/student3.jpg";
 import student4 from "../../assets/students/student4.jpg";
 import student5 from "../../assets/students/student5.jpg";
 import student6 from "../../assets/students/student6.jpg";
-import student7 from "../../assets/students/student7.jpg";
 
 const Analysis = () => {
     useEffect(() => {
@@ -19,7 +18,6 @@ const Analysis = () => {
         { id: 4, name: "Tony Stark", phone: "1234567890", image: student4 },
         { id: 5, name: "Bruce Wayne", phone: "1234567890", image: student5 },
         { id: 6, name: "Clark Kent", phone: "1234567890", image: student6 },
-        { id: 7, name: "Diana Prince", phone: "1234567890", image: student7 },
     ];
 
     const handleStudentClick = (student) => {
