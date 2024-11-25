@@ -70,23 +70,9 @@ const History = () => {
         setLoading(true);
         setError(null);
 
-        axios.get("/temp.json")
-            .then(response => {
-                console.log("Axioed temp data: ", response.data);
-                if (response.data.sessions.length === 0) {
-                    setAxioedData({ sessions: [], student_id: response.data.student_id });
-                } else {
-                    setAxioedData(response.data);
-                }
-            })
-            .catch((err) => {
-                console.error(err);
-                setError("Cannot axio student data");
-            })
-            .finally(() => setLoading(false));
-
-        // axios.get(`/api/students/${studentId}`)
+        // axios.get("/temp.json")
         //     .then(response => {
+        //         console.log("Axioed temp data: ", response.data);
         //         if (response.data.sessions.length === 0) {
         //             setAxioedData({ sessions: [], student_id: response.data.student_id });
         //         } else {
@@ -98,6 +84,20 @@ const History = () => {
         //         setError("Cannot axio student data");
         //     })
         //     .finally(() => setLoading(false));
+
+        axios.get(`/api/students/${studentId}`)
+            .then(response => {
+                if (response.data.sessions.length === 0) {
+                    setAxioedData({ sessions: [], student_id: response.data.student_id });
+                } else {
+                    setAxioedData(response.data);
+                }
+            })
+            .catch((err) => {
+                console.error(err);
+                setError("Cannot axio student data");
+            })
+            .finally(() => setLoading(false));
     };
 
     const handleStudentClick = (student) => {
