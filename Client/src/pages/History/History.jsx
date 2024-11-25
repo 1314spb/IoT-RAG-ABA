@@ -38,7 +38,7 @@ const domains = [
 
 const History = () => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
-    const [selectedStudent, setSelectedStudent] = useState(null);
+    const [selectedStudent, setSelectedStudent] = useState(students[0]);
     const [selectedDomain, setSelectedDomain] = useState(domains[0]);
     const [axioedData, setAxioedData] = useState({ sessions: [] });
     const [selectedDate, setSelectedDate] = useState({ startDate: null, endDate: null });
@@ -63,30 +63,16 @@ const History = () => {
     }, []);
 
     useEffect(() => {
-        console.log("axioedData updated: ", axioedData);
-    }, [axioedData]);
+        axioStudentData(selectedStudent.id);
+    }, [selectedStudent]);
 
     const axioStudentData = (studentId) => {
         setLoading(true);
         setError(null);
 
-        // axios.get("/temp.json")
-        //     .then(response => {
-        //         console.log("Axioed temp data: ", response.data);
-        //         if (response.data.sessions.length === 0) {
-        //             setAxioedData({ sessions: [], student_id: response.data.student_id });
-        //         } else {
-        //             setAxioedData(response.data);
-        //         }
-        //     })
-        //     .catch((err) => {
-        //         console.error(err);
-        //         setError("Cannot axio student data");
-        //     })
-        //     .finally(() => setLoading(false));
-
-        axios.get(`/api/students/${studentId}`)
+        axios.get("/temp.json")
             .then(response => {
+                console.log("Axioed temp data: ", response.data);
                 if (response.data.sessions.length === 0) {
                     setAxioedData({ sessions: [], student_id: response.data.student_id });
                 } else {
@@ -98,6 +84,20 @@ const History = () => {
                 setError("Cannot axio student data");
             })
             .finally(() => setLoading(false));
+
+        // axios.get(`/api/students/${studentId}`)
+        //     .then(response => {
+        //         if (response.data.sessions.length === 0) {
+        //             setAxioedData({ sessions: [], student_id: response.data.student_id });
+        //         } else {
+        //             setAxioedData(response.data);
+        //         }
+        //     })
+        //     .catch((err) => {
+        //         console.error(err);
+        //         setError("Cannot axio student data");
+        //     })
+        //     .finally(() => setLoading(false));
     };
 
     const handleStudentClick = (student) => {
@@ -268,6 +268,13 @@ const History = () => {
                     ) : filteredSessions && filteredSessions.length > 0 ? (
                         <div className="p-6 bg-white rounded-lg shadow">
                             <DataChart dataArray={filteredSessions} />
+                            <button
+                                className="mt-4 bg-teal-100 hover:bg-teal-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                type="button"
+                                onClick={() => console.log("Clicked on AI Task Analysis")}
+                            >
+                                AI Task Generate
+                            </button>
                         </div>
                     ) : (
                         <div className="p-6 bg-white rounded-lg shadow">
