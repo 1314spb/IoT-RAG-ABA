@@ -33,31 +33,36 @@ const domains = [
     { id: 6, name: "Behavioural Development", Icon: Domain6 },
 ];
 
-const History = () => {
-    const [dropdownOpen, setDropdownOpen] = useState(false);
+const Generate = () => {
+    const [openDropdown, setOpenDropdown] = useState(null);
     const [selectedStudent, setSelectedStudent] = useState(students[0]);
     const [selectedDomain, setSelectedDomain] = useState(domains[0]);
+    const [additionalNeed, setAdditionalNeed] = useState('');
+
     const [axioedData, setAxioedData] = useState({ sessions: [] });
-    const [selectedDate, setSelectedDate] = useState({ startDate: null, endDate: null });
 
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
-    const dropdownRef = useRef(null);
+    const studentDropdownRef = useRef(null);
+    const domainDropdownRef = useRef(null);
 
     useEffect(() => {
-        document.title = "History - ABA";
+        document.title = "AI Task Generate";
 
         const handleClickOutside = (event) => {
-            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-                setDropdownOpen(false);
+            if (openDropdown === 'student' && studentDropdownRef.current && !studentDropdownRef.current.contains(event.target)) {
+                setOpenDropdown(null);
+            }
+            if (openDropdown === 'domain' && domainDropdownRef.current && !domainDropdownRef.current.contains(event.target)) {
+                setOpenDropdown(null);
             }
         };
         document.addEventListener("mousedown", handleClickOutside);
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
         };
-    }, []);
+    }, [openDropdown]);
 
     useEffect(() => {
         axioStudentData(selectedStudent.id);
@@ -100,14 +105,13 @@ const History = () => {
     const handleStudentClick = (student) => {
         setAxioedData([]);
         setSelectedStudent(student);
-        axioStudentData(student.id);
-        setDropdownOpen(false);
+        setOpenDropdown(null);
     };
 
     const handleDomainClick = (domain) => {
         console.log(`Clicked on: ${domain.name}`);
         setSelectedDomain(domain);
-        setDropdownOpen(false);
+        setOpenDropdown(null);
     };
 
     return (
@@ -117,161 +121,204 @@ const History = () => {
             <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-3 xl:col-span-3">
                     <h2 className="font-manrope text-3xl leading-tight text-gray-900 mb-1.5 pt-5 w-72">Parameters selection</h2>
-                    <div className="relative" ref={dropdownRef}>
-                        <button
-                            onClick={() => setDropdownOpen(!dropdownOpen)}
-                            aria-haspopup="true"
-                            aria-expanded={dropdownOpen}
-                            className="flex items-center h-10 whitespace-nowrap px-4 py-2 text-black bg-teal-100 hover:bg-teal-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                            type="button"
-                        >
-                            {selectedStudent ? (
-                                <>
-                                    <img
-                                        className="w-6 h-6 mr-2 rounded-full"
-                                        src={selectedStudent.image}
-                                        alt={`Profile picture of ${selectedStudent.name}`}
-                                        onError={(e) => {
-                                            e.target.onerror = null;
-                                            e.target.src = "/images/default-profile.png";
-                                        }}
-                                    />
-                                    <span>{selectedStudent.name}</span>
-                                </>
-                            ) : (
-                                <>
-                                    Students
-                                    <svg
-                                        className="w-2.5 h-2.5 ms-3"
-                                        aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 10 6"
-                                    >
-                                        <path
-                                            stroke="currentColor"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth="2"
-                                            d="m1 1 4 4 4-4"
-                                        />
-                                    </svg>
-                                </>
-                            )}
-                        </button>
 
-                        {dropdownOpen && (
-                            <div
-                                role="menu"
-                                aria-labelledby="dropdownUsersButton"
-                                className="z-20 bg-white rounded-lg shadow w-60 absolute mt-2 left-0 dark:bg-gray-700"
+                    <div className="mb-4">
+                        <label htmlFor="student-dropdown" className="flex block text-sm font-medium text-gray-700 mb-1">
+                            Select Student:
+                        </label>
+                        <div className="relative" ref={studentDropdownRef}>
+                            <button
+                                id="student-dropdown"
+                                onClick={() => setOpenDropdown(openDropdown === 'student' ? null : 'student')}
+                                aria-haspopup="true"
+                                aria-expanded={openDropdown === 'student'}
+                                aria-labelledby="student-label student-dropdown"
+                                className="flex items-center h-10 whitespace-nowrap px-4 py-2 text-black bg-teal-100 hover:bg-teal-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                type="button"
                             >
-                                <ul className="max-h-48 py-2 overflow-y-auto text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUsersButton">
-                                    {students.map((student) => (
-                                        <li key={student.id}>
-                                            <button
-                                                onClick={() => handleStudentClick(student)}
-                                                className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white w-full text-left"
-                                            >
-                                                <img
-                                                    className="w-6 h-6 me-2 rounded-full"
-                                                    src={student.image}
-                                                    alt={`Profile picture of ${student.name}`}
-                                                    onError={(e) => {
-                                                        e.target.onerror = null;
-                                                        e.target.src = "/images/default-profile.png";
-                                                    }}
-                                                />
-                                                {student.name}
-                                            </button>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        )}
+                                {selectedStudent ? (
+                                    <>
+                                        <img
+                                            className="w-6 h-6 mr-2 rounded-full"
+                                            src={selectedStudent.image}
+                                            alt={`Profile picture of ${selectedStudent.name}`}
+                                            onError={(e) => {
+                                                e.target.onerror = null;
+                                                e.target.src = "/images/default-profile.png";
+                                            }}
+                                        />
+                                        <span>{selectedStudent.name}</span>
+                                    </>
+                                ) : (
+                                    <>
+                                        Students
+                                        <svg
+                                            className="w-2.5 h-2.5 ms-3"
+                                            aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 10 6"
+                                        >
+                                            <path
+                                                stroke="currentColor"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth="2"
+                                                d="m1 1 4 4 4-4"
+                                            />
+                                        </svg>
+                                    </>
+                                )}
+                            </button>
+
+                            {openDropdown === 'student' && (
+                                <div
+                                    role="menu"
+                                    aria-labelledby="student-dropdown-label"
+                                    className="z-20 bg-white rounded-lg shadow w-60 absolute mt-2 left-0 dark:bg-gray-700"
+                                >
+                                    <ul className="max-h-48 py-2 overflow-y-auto text-gray-700 dark:text-gray-200" aria-labelledby="student-dropdown-label">
+                                        {students.map((student) => (
+                                            <li key={student.id}>
+                                                <button
+                                                    onClick={() => handleStudentClick(student)}
+                                                    className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white w-full text-left"
+                                                    role="menuitem"
+                                                >
+                                                    <img
+                                                        className="w-6 h-6 me-2 rounded-full"
+                                                        src={student.image}
+                                                        alt={`Profile picture of ${student.name}`}
+                                                        onError={(e) => {
+                                                            e.target.onerror = null;
+                                                            e.target.src = "/images/default-profile.png";
+                                                        }}
+                                                    />
+                                                    {student.name}
+                                                </button>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+                        </div>
                     </div>
 
-                    <div className="relative" ref={dropdownRef}>
-                        <button
-                            onClick={() => setDropdownOpen(!dropdownOpen)}
-                            aria-haspopup="true"
-                            aria-expanded={dropdownOpen}
-                            className="flex items-center h-10 whitespace-nowrap px-4 py-2 text-black bg-teal-100 hover:bg-teal-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                            type="button"
-                        >
-                            {selectedDomain ? (
-                                <>
-                                    <img
-                                        className="w-6 h-6 mr-2 rounded-full"
-                                        src={selectedDomain.Icon}
-                                        onError={(e) => {
-                                            e.target.onerror = null;
-                                            e.target.src = "/images/default-profile.png";
-                                        }}
-                                    />
-                                    <span>{selectedDomain.name}</span>
-                                </>
-                            ) : (
-                                <>
-                                    Domains
-                                    <svg
-                                        className="w-2.5 h-2.5 ms-3"
-                                        aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 10 6"
-                                    >
-                                        <path
-                                            stroke="currentColor"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth="2"
-                                            d="m1 1 4 4 4-4"
-                                        />
-                                    </svg>
-                                </>
-                            )}
-                        </button>
 
-                        {dropdownOpen && (
-                            <div
-                                role="menu"
-                                aria-labelledby="dropdownUsersButton"
-                                className="z-20 bg-white rounded-lg shadow w-60 absolute mt-2 left-0 dark:bg-gray-700"
+                    <div className="mb-4">
+                        <label htmlFor="domain-dropdown" className="flex block text-sm font-medium text-gray-700 mb-1">
+                            Select Domain:
+                        </label>
+                        <div className="relative" ref={domainDropdownRef}>
+                            <button
+                                id="domain-dropdown"
+                                onClick={() => setOpenDropdown(openDropdown === 'domain' ? null : 'domain')}
+                                aria-haspopup="true"
+                                aria-expanded={openDropdown === 'domain'}
+                                aria-labelledby="domain-label domain-dropdown"
+                                className="flex items-center h-10 whitespace-nowrap px-4 py-2 text-black bg-teal-100 hover:bg-teal-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                type="button"
                             >
-                                <ul className="max-h-48 py-2 overflow-y-auto text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUsersButton">
-                                    {domains.map((domain) => (
-                                        <li key={domain.id}>
-                                            <button
-                                                onClick={() => handleDomainClick(domain)}
-                                                className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white w-full text-left"
-                                            >
-                                                {domain.Icon ? (
-                                                    <domain.Icon className="h-10 w-10 text-gray-500" />
-                                                ) : (
-                                                    <img
-                                                        className="h-10 w-10 rounded-full"
-                                                        src="/images/default-domain.png"
-                                                        alt={domain.name}
-                                                    />
-                                                )}
-                                                {domain.name}
-                                            </button>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        )}
+                                {selectedDomain ? (
+                                    <>
+                                        {selectedDomain.Icon ? (
+                                            <selectedDomain.Icon className="w-6 h-6 mr-2 rounded-full" />
+                                        ) : (
+                                            <img
+                                                className="w-6 h-6 mr-2 rounded-full"
+                                                src="/images/default-domain.png"
+                                                alt={selectedDomain.name}
+                                            />
+                                        )}
+                                        <span>{selectedDomain.name}</span>
+                                    </>
+                                ) : (
+                                    <>
+                                        Domains
+                                        <svg
+                                            className="w-2.5 h-2.5 ms-3"
+                                            aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 10 6"
+                                        >
+                                            <path
+                                                stroke="currentColor"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth="2"
+                                                d="m1 1 4 4 4-4"
+                                            />
+                                        </svg>
+                                    </>
+                                )}
+                            </button>
+
+                            {openDropdown === 'domain' && (
+                                <div
+                                    role="menu"
+                                    aria-labelledby="domain-dropdown-label"
+                                    className="z-20 bg-white rounded-lg shadow w-60 absolute mt-2 left-0 dark:bg-gray-700"
+                                >
+                                    <ul className="max-h-48 py-2 overflow-y-auto text-gray-700 dark:text-gray-200" aria-labelledby="domain-dropdown-label">
+                                        {domains.map((domain) => (
+                                            <li key={domain.id}>
+                                                <button
+                                                    onClick={() => handleDomainClick(domain)}
+                                                    className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white w-full text-left text-sm"
+                                                    role="menuitem"
+                                                >
+                                                    {domain.Icon ? (
+                                                        <domain.Icon className="h-6 w-6 mr-2 text-gray-500" />
+                                                    ) : (
+                                                        <img
+                                                            className="h-6 w-6 mr-2 rounded-full"
+                                                            src="/images/default-domain.png"
+                                                            alt={domain.name}
+                                                        />
+                                                    )}
+                                                    {domain.name}
+                                                </button>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    <div className="mb-4">
+                        <label htmlFor="additional-need" className="flex block text-sm font-medium text-gray-700 mb-1">
+                            Additional Need:
+                        </label>
+                        <textarea
+                            id="additional-need"
+                            name="additional-need"
+                            value={additionalNeed}
+                            onChange={(e) => setAdditionalNeed(e.target.value)}
+                            rows={4}
+                            className="mt-1 block w-full p-2.5 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                            style={{ minHeight: '8em' }}
+                            placeholder="Enter any additional requirements here..."
+                        />
+                    </div>
+
+                    <div className="mb-4">
+                        <button
+                            type="button"
+                            className="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-lime-100 hover:bg-lime-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                        >
+                            Generate Task
+                        </button>
                     </div>
                 </div>
 
                 <div className="col-span-9 xl:col-span-9 pt-5">
-
+                    {/* 此處添加相關內容，如 DataChart */}
                 </div>
-
             </div>
         </section>
     );
 };
 
-export default History;
+export default Generate;
