@@ -6,6 +6,7 @@ import Home from './pages/Home/Home'
 import Analysis from './pages/Analysis/Analysis'
 import Therapy from './pages/Therapy/Therapy'
 import History from './pages/History/History'
+import Generate from './pages/Generate/Generate'
 import './App.css'
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
             <Route path="services/analysis" element={<Analysis />} />
             <Route path="services/history" element={<History />} />
             <Route path="services/therapy" element={<Therapy />} />
-
+            <Route path="services/ai_generate" element={<Generate />} />
           </Route>
         </Routes>
       </Router>
