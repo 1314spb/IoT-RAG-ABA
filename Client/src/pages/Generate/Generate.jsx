@@ -213,15 +213,7 @@ const History = () => {
                     )}
                 </div>
 
-                <div className="relative">
-                    <Datepicker
-                        value={selectedDate}
-                        onChange={handleDateChange}
-                        primaryColor={"teal"}
-                        containerClassName="w-72"
-                        inputClassName="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                </div>
+                
             </div>
 
             <div className="grid grid-cols-12 gap-4">
