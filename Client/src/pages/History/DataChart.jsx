@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
+import zoomPlugin from 'chartjs-plugin-zoom';
+import 'chartjs-adapter-date-fns';
+
 import { Line } from 'react-chartjs-2';
 import {
     Chart as ChartJS,
@@ -83,6 +86,28 @@ const DataChart = ({ dataArray }) => {
                 display: true,
                 text: 'Data Chart',
             },
+            zoom: {
+                zoom: {
+                    drag: {
+                        enabled: true,
+                        backgroundColor: 'rgba(0, 0, 255, 0.1)',
+                        borderColor: 'rgba(0, 0, 255, 0.3)',
+                        borderWidth: 1,
+                    },
+                    pinch: {
+                        enabled: true,
+                    },
+                    mode: 'x',
+                },
+                pan: {
+                    enabled: true,
+                    mode: 'x',
+                },
+                limits: {
+                    x: { min: 'original', max: 'original' },
+                    y: { min: 'original', max: 'original' },
+                },
+            },
         },
         scales: {
             y: {
@@ -91,6 +116,16 @@ const DataChart = ({ dataArray }) => {
                 position: 'left',
             },
         },
+    };
+
+    const resetZoom = () => {
+        const chart = ChartJS.getChart('dataChart');
+        if (chart) {
+            chart.resetZoom();
+            if (onZoom) {
+                onZoom(null);
+            }
+        }
     };
 
     return (
@@ -108,7 +143,25 @@ const DataChart = ({ dataArray }) => {
                     </label>
                 ))}
             </div>
-            <Line data={chartData} options={options} />
+            <Line
+                id="dataChart"
+                data={chartData}
+                options={options}
+                onZoomComplete={({ chart }) => {
+                    const xAxis = chart.scales.x;
+                    const start = new Date(xAxis.min).toISOString().split('T')[0];
+                    const end = new Date(xAxis.max).toISOString().split('T')[0];
+                    if (onZoom) {
+                        onZoom({ startDate: start, endDate: end });
+                    }
+                }}
+            />
+            <button
+                onClick={resetZoom}
+                className="mt-4 bg-teal-100 hover:bg-teal-200 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            >
+                Reset Zoom
+            </button>
         </div>
     );
 };

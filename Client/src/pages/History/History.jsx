@@ -1,3 +1,4 @@
+// src/pages/History/History.jsx
 import React, { useEffect, useState, useRef, useMemo } from "react";
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -81,26 +82,13 @@ const History = () => {
                 } else {
                     setAxioedData(response.data);
                 }
+                setSelectedDate({ startDate: null, endDate: null });
             })
             .catch((err) => {
                 console.error(err);
-                setError("Cannot axio student data");
+                setError("Cannot fetch data from the server");
             })
             .finally(() => setLoading(false));
-
-        // axios.get(`/api/students/${studentId}`)
-        //     .then(response => {
-        //         if (response.data.sessions.length === 0) {
-        //             setAxioedData({ sessions: [], student_id: response.data.student_id });
-        //         } else {
-        //             setAxioedData(response.data);
-        //         }
-        //     })
-        //     .catch((err) => {
-        //         console.error(err);
-        //         setError("Cannot axio student data");
-        //     })
-        //     .finally(() => setLoading(false));
     };
 
     const handleStudentClick = (student) => {
@@ -127,6 +115,26 @@ const History = () => {
             student_id: selectedStudent.id,
         };
         navigate('/services/ai_generate', { state: dataToStore });
+    };
+
+    // 處理從 DataChart 接收到的縮放選擇
+    const handleChartZoom = (zoomData) => {
+        if (zoomData) {
+            setSelectedDate({
+                startDate: zoomData.startDate,
+                endDate: zoomData.endDate,
+            });
+        } else {
+            setSelectedDate({ startDate: null, endDate: null });
+        }
+    };
+
+    const resetDateSelection = () => {
+        setSelectedDate({ startDate: null, endDate: null });
+        const chart = ChartJS.getChart('dataChart');
+        if (chart) {
+            chart.resetZoom();
+        }
     };
 
     const filteredSessions = useMemo(() => {
@@ -227,7 +235,7 @@ const History = () => {
                     )}
                 </div>
 
-                <div className="relative">
+                <div className="relative flex items-center">
                     <Datepicker
                         value={selectedDate}
                         onChange={handleDateChange}
@@ -278,14 +286,14 @@ const History = () => {
                         </div>
                     ) : filteredSessions && filteredSessions.length > 0 ? (
                         <div className="p-6 bg-white rounded-lg shadow">
-                            <DataChart dataArray={filteredSessions} />
                             <button
-                                className="mt-4 bg-teal-100 hover:bg-teal-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                className="mb-4 bg-lime-100 hover:bg-lime-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                                 type="button"
                                 onClick={handleAiGenerate}
                             >
                                 AI Task Generate
                             </button>
+                            <DataChart dataArray={filteredSessions} onZoom={handleChartZoom} />
                         </div>
                     ) : (
                         <div className="p-6 bg-white rounded-lg shadow">
@@ -294,10 +302,8 @@ const History = () => {
                     )
                     }
                 </div>
-
             </div>
         </section>
     );
-};
-
+}
 export default History;
