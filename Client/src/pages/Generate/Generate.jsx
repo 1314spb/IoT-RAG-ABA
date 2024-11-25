@@ -1,4 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
+import PassGeneratedTask from "./PassGeneratedTask";
+
 import axios from 'axios';
 
 import Domain1 from "../../assets/domains/domain1";
@@ -313,8 +315,13 @@ const Generate = () => {
                     </div>
                 </div>
 
-                <div className="col-span-9 xl:col-span-9 pt-5">
-                    {/* 此處添加相關內容，如 DataChart */}
+                <div className="col-span-9 xl:col-span-9 rounded-lg shadow grid grid-cols-10">
+                    <div className="col-span-7 bg-red-100 rounded-lg m-1">
+
+                    </div>
+                    <div className="col-span-3 bg-blue-100 rounded-lg m-1">
+                        <PassGeneratedTask student_id={44} />
+                    </div>
                 </div>
             </div>
         </section>

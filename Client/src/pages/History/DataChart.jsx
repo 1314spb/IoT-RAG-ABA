@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+
 import { Line } from 'react-chartjs-2';
 import {
     Chart as ChartJS,
@@ -109,6 +111,23 @@ const DataChart = ({ dataArray }) => {
             <Line data={chartData} options={options} />
         </div>
     );
+};
+
+DataChart.propTypes = {
+    dataArray: PropTypes.arrayOf(
+        PropTypes.shape({
+            date: PropTypes.string.isRequired,
+            noof_positive: PropTypes.number,
+            noof_negative: PropTypes.number,
+            noofOT: PropTypes.number,
+            noofP: PropTypes.number,
+            noofUndo: PropTypes.number,
+            acceleration: PropTypes.number,
+            bvp: PropTypes.number,
+            temperature: PropTypes.number,
+        })
+    ).isRequired,
+    student_id: PropTypes.number.isRequired,
 };
 
 export default DataChart;
