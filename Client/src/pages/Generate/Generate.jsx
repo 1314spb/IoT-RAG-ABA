@@ -118,11 +118,11 @@ const Generate = () => {
 
     return (
         <section className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h6 className="font-manrope text-3xl leading-tight text-gray-900 mb-1.5 py-2">AI Task Generate</h6>
+            <h6 className="font-mono text-3xl leading-tight text-gray-900 mb-1.5 py-2">AI Task Generate</h6>
 
             <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-3 xl:col-span-3">
-                    <h2 className="font-manrope text-3xl leading-tight text-gray-900 mb-1.5 pt-5 w-72">Parameters selection</h2>
+                    <h2 className="font-mono text-xl leading-tight text-gray-900 mb-1.5 pt-5 w-72">Parameters selection</h2>
 
                     <div className="mb-4">
                         <label htmlFor="student-dropdown" className="flex block text-sm font-medium text-gray-700 mb-1">
@@ -316,10 +316,10 @@ const Generate = () => {
                 </div>
 
                 <div className="col-span-9 xl:col-span-9 rounded-lg shadow grid grid-cols-10">
-                    <div className="col-span-7 bg-red-100 rounded-lg m-1">
+                    <div className="col-span-7 bg-gray-100 rounded-lg m-1">
 
                     </div>
-                    <div className="col-span-3 bg-blue-100 rounded-lg m-1">
+                    <div className="col-span-3 bg-blue-50 rounded-lg m-1">
                         <PassGeneratedTask student_id={44} />
                     </div>
                 </div>
