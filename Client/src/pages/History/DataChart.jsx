@@ -23,10 +23,11 @@ ChartJS.register(
     LineElement,
     Title,
     Tooltip,
-    Legend
+    Legend,
+    zoomPlugin
 );
 
-const DataChart = ({ dataArray }) => {
+const DataChart = ({ dataArray, onZoom }) => {
     const availableFields = [
         { key: 'noof_positive', label: 'Number of positive' },
         { key: 'noof_negative', label: 'Number of negative' },
@@ -97,6 +98,9 @@ const DataChart = ({ dataArray }) => {
                     pinch: {
                         enabled: true,
                     },
+                    // wheel: {
+                    //     enabled: true,
+                    // },
                     mode: 'x',
                 },
                 pan: {

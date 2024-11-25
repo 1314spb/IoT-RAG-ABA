@@ -249,7 +249,7 @@ const History = () => {
             <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-3 xl:col-span-3">
                     <h2 className="font-manrope text-3xl leading-tight text-gray-900 mb-1.5 pt-5 w-72">Domains</h2>
-                    <ul role="list" className="p-6 divide-y divide-slate-200 max-h-96 overflow-y-auto">
+                    <ul role="list" className="p-6 divide-y divide-slate-200 max-h-full overflow-y-auto">
                         {domains.map((domain) => (
                             <li key={domain.id} className="flex py-4 first:pt-0 last:pb-0">
                                 <button
