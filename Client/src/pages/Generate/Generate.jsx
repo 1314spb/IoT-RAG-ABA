@@ -1,4 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
+import { useLocation } from 'react-router-dom';
+
 import PassGeneratedTask from "./PassGeneratedTask";
 
 import axios from 'axios';
@@ -36,12 +38,20 @@ const domains = [
 ];
 
 const Generate = () => {
-    const [openDropdown, setOpenDropdown] = useState(null);
-    const [selectedStudent, setSelectedStudent] = useState(students[0]);
-    const [selectedDomain, setSelectedDomain] = useState(domains[0]);
-    const [additionalNeed, setAdditionalNeed] = useState('');
+    const location = useLocation();
+    const { domain, student_id } = location.state || {};
 
-    const [axioedData, setAxioedData] = useState({ sessions: [] });
+    const foundDomain = domains.find((d) => d.name === domain);
+    const foundStudent = students.find((s) => s.id === student_id);
+
+    const [axioedData, setAxioedData] = useState([]);
+    const [openDropdown, setOpenDropdown] = useState(null);
+    const [selectedStudent, setSelectedStudent] = useState(foundStudent ? foundStudent : students[0]);
+    const [selectedDomain, setSelectedDomain] = useState(foundDomain || domains[0]);
+    const [additionalNeed, setAdditionalNeed] = useState('');
+    
+    console.log("Axioed INIT Data: ", axioedData);
+
 
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
