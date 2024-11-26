@@ -78,13 +78,13 @@ const MainLayout = () => {
                       <Link to="/services/history" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600">Student History</Link>
                     </li>
                     <li>
+                      <Link to="/services/ai_generate" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600">AI Generate</Link>
+                    </li>
+                    <li>
                       <Link to="/services/therapy" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600">Therapy</Link>
                     </li>
                     <li>
                       <Link to="/services/analysis" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600">Analysis</Link>
-                    </li>
-                    <li>
-                      <Link to="/services/ai_generate" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600">AI Generate</Link>
                     </li>
                   </ul>
                 )}

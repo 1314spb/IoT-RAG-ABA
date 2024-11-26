@@ -26,7 +26,7 @@ const Analysis = () => {
 
     return (
         <section className="relative bg-stone-50 object-fill">
-            <h6 className="font-manrope text-3xl leading-tight text-gray-900 mb-1.5 px-64 py-2">Analysis</h6>
+            <h6 className="font-manrope text-3xl leading-tight text-gray-900 mb-1.5 px-64 py-2">Analysis Report</h6>
             <div className="w-full py-24 relative z-10 backdrop-blur-3xl">
                 <div className="w-full max-w-7xl px-2 lg:px-8">
                     <div className="grid grid-cols-12 gap-8 max-w-4xl xl:max-w-full">

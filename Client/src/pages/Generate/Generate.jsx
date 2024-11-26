@@ -52,7 +52,6 @@ const Generate = () => {
     
     console.log("Axioed INIT Data: ", axioedData);
 
-
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
@@ -60,7 +59,7 @@ const Generate = () => {
     const domainDropdownRef = useRef(null);
 
     useEffect(() => {
-        document.title = "AI Task Generate";
+        document.title = "AI Task Generate | ABA";
 
         const handleClickOutside = (event) => {
             if (openDropdown === 'student' && studentDropdownRef.current && !studentDropdownRef.current.contains(event.target)) {

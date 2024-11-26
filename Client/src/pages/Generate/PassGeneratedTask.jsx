@@ -70,12 +70,11 @@ const PassGeneratedTask = ({ className = '', student_id }) => {
                         return (
                             <li
                                 key={task.task_id}
-                                className={`border p-4 rounded-md cursor-pointer ${
-                                    task.status === "+" ? 'bg-green-100' :
-                                    task.status === "-" ? 'bg-red-100' :
-                                    task.status === "OT" ? 'bg-yellow-100' :
-                                    'bg-white'
-                                }`}
+                                className={`border p-4 rounded-md cursor-pointer ${task.status === "+" ? 'bg-green-100' :
+                                        task.status === "-" ? 'bg-red-100' :
+                                            task.status === "OT" ? 'bg-yellow-100' :
+                                                'bg-white'
+                                    }`}
                                 onClick={() => toggleExpand(task.task_id)}
                             >
                                 <div className="flex justify-between items-center">
