@@ -117,6 +117,23 @@ principal_components = pca.fit_transform(X)
 df_encoded['PC1'] = principal_components[:, 0]
 df_encoded['PC2'] = principal_components[:, 1]
 
+pca_components = pca.components_
+
+# 創建負載的 DataFrame
+loadings = pd.DataFrame(pca_components.T, columns=['PC1', 'PC2'], index=X.columns)
+
+print("PCA負載（各特徵在主成分中的權重）:")
+print(loadings)
+
+threshold = 0.3
+
+# 篩選對 PC1 貢獻較大的特徵
+high_loading_features_pc1 = loadings[abs(loadings['PC1']) > threshold].index.tolist()
+high_loading_features_pc2 = loadings[abs(loadings['PC2']) > threshold].index.tolist()
+
+print(f"PC1 高負載特徵: {high_loading_features_pc1}")
+print(f"PC2 高負載特徵: {high_loading_features_pc2}")
+
 plt.figure(figsize=(10, 7))
 sns.scatterplot(data=df_encoded, x='PC1', y='PC2', hue='Cluster', palette='viridis', s=100, alpha=0.7)
 plt.title('Clustering result (PCA to 2D)')
