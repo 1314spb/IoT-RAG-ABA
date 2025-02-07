@@ -29,8 +29,9 @@ print("\n缺失值情況:")
 print(df.isnull().sum())
 
 # 2.2 處理缺失值（如有）
-numerical_cols = ['BVP', 'GSR', 'wrist temp', 'acceleration_x',
-                  'acceleration_y', 'acceleration_z']
+numerical_cols = ['BVP', 'GSR', 'wrist temp', 'acceleration_x', 'acceleration_y', 'acceleration_z']
+# numerical_cols = ['GSR', 'wrist temp', 'acceleration_x', 'acceleration_y', 'acceleration_z']
+numerical_cols = ['GSR']
 
 from sklearn.impute import SimpleImputer
 
@@ -45,8 +46,10 @@ print("\n編碼後的 'Trial Result':")
 print(df[['Trial Reuslt', 'Trial_Result_Encoded']].head())
 
 # 2.4 選擇特徵並標準化
-features = ['BVP', 'GSR', 'wrist temp', 'acceleration_x',
-            'acceleration_y', 'acceleration_z']
+features = ['BVP', 'GSR', 'wrist temp', 'acceleration_x', 'acceleration_y', 'acceleration_z']
+# features = ['GSR', 'wrist temp', 'acceleration_x', 'acceleration_y', 'acceleration_z']
+# features = ['GSR']
+
 X = df[features]
 y = df['Trial_Result_Encoded']
 
@@ -94,9 +97,9 @@ print(f'Testing samples: {X_test.shape[0]}')
 
 # 4.2 建立並訓練模型
 models = {
-    'Logistic Regression': LogisticRegression(random_state=42, max_iter=1000),
-    'Decision Tree': DecisionTreeClassifier(random_state=42),
-    'Random Forest': RandomForestClassifier(random_state=42),
+    # 'Logistic Regression': LogisticRegression(random_state=42, max_iter=1000),
+    # 'Decision Tree': DecisionTreeClassifier(random_state=42),
+    # 'Random Forest': RandomForestClassifier(random_state=42),
     'Support Vector Machine - Linear': SVC(kernel='linear', random_state=42, probability=True),
 }
 
@@ -120,40 +123,40 @@ for name, model in models.items():
     print(classification_report(y_test, y_pred, zero_division=0))
 
 # 4.4 繪製邏輯回歸係數
-lr_model = models['Logistic Regression']
-coefficients = lr_model.coef_[0]
-feature_coefficients = pd.Series(coefficients, index=features).sort_values(ascending=False)
+# lr_model = models['Logistic Regression']
+# coefficients = lr_model.coef_[0]
+# feature_coefficients = pd.Series(coefficients, index=features).sort_values(ascending=False)
 
-plt.figure(figsize=(8, 6))
-sns.barplot(x=feature_coefficients, y=feature_coefficients.index, palette='viridis')
-plt.title('Logistic Regression - Feature coefficients')
-plt.xlabel('Coefficient')
-plt.ylabel('Feature')
-plt.show()
+# plt.figure(figsize=(8, 6))
+# sns.barplot(x=feature_coefficients, y=feature_coefficients.index, palette='viridis')
+# plt.title('Logistic Regression - Feature coefficients')
+# plt.xlabel('Coefficient')
+# plt.ylabel('Feature')
+# plt.show()
 
 # 4.4 繪製決策樹特徵重要性
-dt_model = models['Decision Tree']
-dt_importances = dt_model.feature_importances_
-dt_feature_importance = pd.Series(dt_importances, index=features).sort_values(ascending=False)
+# dt_model = models['Decision Tree']
+# dt_importances = dt_model.feature_importances_
+# dt_feature_importance = pd.Series(dt_importances, index=features).sort_values(ascending=False)
 
-plt.figure(figsize=(8, 6))
-sns.barplot(x=dt_feature_importance, y=dt_feature_importance.index, palette='viridis')
-plt.title('Decision Tree Feature Importance')
-plt.xlabel('Importance')
-plt.ylabel('Feature')
-plt.show()
+# plt.figure(figsize=(8, 6))
+# sns.barplot(x=dt_feature_importance, y=dt_feature_importance.index, palette='viridis')
+# plt.title('Decision Tree Feature Importance')
+# plt.xlabel('Importance')
+# plt.ylabel('Feature')
+# plt.show()
 
 # 4.4 隨機森林特徵重要性
-rf_model = models['Random Forest']
-importances = rf_model.feature_importances_
-feature_importance = pd.Series(importances, index=features).sort_values(ascending=False)
+# rf_model = models['Random Forest']
+# importances = rf_model.feature_importances_
+# feature_importance = pd.Series(importances, index=features).sort_values(ascending=False)
 
-plt.figure(figsize=(8, 6))
-sns.barplot(x=feature_importance, y=feature_importance.index, palette='viridis')
-plt.title('Random Forest Feature Importance')
-plt.xlabel('Importance')
-plt.ylabel('Feature')
-plt.show()
+# plt.figure(figsize=(8, 6))
+# sns.barplot(x=feature_importance, y=feature_importance.index, palette='viridis')
+# plt.title('Random Forest Feature Importance')
+# plt.xlabel('Importance')
+# plt.ylabel('Feature')
+# plt.show()
 
 svm_l = models['Support Vector Machine - Linear']
 svm_coefficients = svm_l.coef_[0]
