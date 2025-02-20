@@ -8,6 +8,7 @@ import Therapy from './pages/Therapy/Therapy'
 import History from './pages/History/History'
 import Generate from './pages/Generate/Generate'
 import Settings from './pages/Settings/Settings'
+import Contact from './pages/Contact/Contact'
 import './App.css'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="services/therapy" element={<Therapy />} />
             <Route path="services/ai_generate" element={<Generate />} />
             <Route path='settings' element={<Settings />} />
+            <Route path="contact" element={<Contact />} />
           </Route>
         </Routes>
       </Router>
