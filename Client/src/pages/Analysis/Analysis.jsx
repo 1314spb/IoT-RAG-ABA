@@ -27,12 +27,12 @@ const Analysis = () => {
     return (
         <section className="relative bg-stone-50 object-fill">
             <h6 className="font-manrope text-3xl leading-tight text-gray-900 mb-1.5 px-64 py-2">Analysis Report</h6>
-            <div className="w-full py-24 relative z-10 backdrop-blur-3xl">
-                <div className="w-full max-w-7xl px-2 lg:px-8">
+            <div className="w-full py-12 relative z-10 backdrop-blur-3xl">
+                <div className="w-full px-2 lg:px-8">
                     <div className="grid grid-cols-12 gap-8 max-w-4xl xl:max-w-full">
                         <div className="col-span-12 xl:col-span-5">
-                            <h2 className="font-manrope text-3xl leading-tight text-gray-900 mb-1.5">-------------------------------</h2>
-                            <h2 className="font-manrope text-3xl leading-tight text-gray-900 mb-1.5">Student Choosing List</h2>
+                            {/* <h2 className="font-manrope text-3xl leading-tight text-gray-900 mb-1.5">-------------------------------</h2> */}
+                            <h2 className="font-manrope text-3xl leading-tight text-gray-900 mb-1.5 select-none">Students</h2>
 
                             <ul role="list" className="p-6 divide-y divide-slate-200 max-h-96 overflow-y-auto">
                                 {students.map((student) => (
@@ -54,7 +54,7 @@ const Analysis = () => {
                         </div>
 
                         <div className="col-span-12 xl:col-span-7 px-2.5 py-5 sm:p-8 bg-gradient-to-b from-white/25 to-white xl:bg-white rounded-2xl max-xl:row-start-1">
-                            
+
                         </div>
                     </div>
                 </div>
