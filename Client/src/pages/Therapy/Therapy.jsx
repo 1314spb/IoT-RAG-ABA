@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import axios from 'axios';
+import { Dropdown } from "flowbite-react";
 
 import student1 from "../../assets/students/student1.jpg";
 import student2 from "../../assets/students/student2.jpg";
@@ -25,11 +26,35 @@ const Therapy = () => {
     const [selectedStudent, setSelectedStudent] = useState(students[0]);
     const [selectedDate, setSelectedDate] = useState(new Date());
     const [expandedTaskIds, setExpandedTaskIds] = useState([]);
+    const [editingTaskIds, setEditingTaskIds] = useState([]);
+
+    const [editingData, setEditingData] = useState({});
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     const studentDropdownRef = useRef(null);
 
     // console.log("Selected Student: ", selectedStudent);
+
+    const onStatusChange = (taskId, newStatus) => {
+        if (editingTaskIds.includes(taskId)) {
+
+            setEditingData((prev) => ({
+                ...prev,
+                [taskId]: {
+                    ...prev[taskId],
+                    trialresult: newStatus,
+                },
+            }));
+        } else {
+
+            setAxioedData((prevData) => {
+                const updatedSessions = prevData.sessions.map((task) =>
+                    task.id === taskId ? { ...task, trialresult: newStatus } : task
+                );
+                return { ...prevData, sessions: updatedSessions };
+            });
+        }
+    };
 
     useEffect(() => {
         document.title = "AI Task Generate | ABA";
@@ -47,15 +72,63 @@ const Therapy = () => {
 
     useEffect(() => {
         axioStudentData(selectedStudent.id);
-        axioedData.sessions.forEach(task => {
-            console.log('Task ID:', task.id);
-        });
+        // axioedData.sessions.forEach(task => {
+        //     console.log('Task ID:', task.id);
+        // });
     }, [selectedStudent]);
 
     const toggleExpand = (taskId) => {
         setExpandedTaskIds((prev) =>
             prev.includes(taskId) ? prev.filter((id) => id !== taskId) : [...prev, taskId]
         );
+    };
+
+    const toggleEditing = (taskId) => {
+        setEditingTaskIds((prev) => {
+            if (prev.includes(taskId)) {
+
+                const newIds = prev.filter((id) => id !== taskId);
+                setEditingData((current) => {
+                    const newEditingData = { ...current };
+                    delete newEditingData[taskId];
+                    return newEditingData;
+                });
+                return newIds;
+            } else {
+                const task = axioedData.sessions.find((t) => t.id === taskId);
+                setEditingData((prevEditingData) => ({
+                    ...prevEditingData,
+                    [taskId]: { ...task },
+                }));
+                return [...prev, taskId];
+            }
+        });
+    };
+
+    const updateEditingData = (taskId, field, value) => {
+        setEditingData((prev) => ({
+            ...prev,
+            [taskId]: {
+                ...prev[taskId],
+                [field]: value,
+            },
+        }));
+    };
+
+    const onSave = (taskId) => {
+        const updatedTask = editingData[taskId];
+        setAxioedData((prevData) => {
+            const updatedSessions = prevData.sessions.map((task) =>
+                task.id === taskId ? { ...updatedTask } : task
+            );
+            return { ...prevData, sessions: updatedSessions };
+        });
+        setEditingTaskIds((prev) => prev.filter((id) => id !== taskId));
+        setEditingData((prev) => {
+            const newEditingData = { ...prev };
+            delete newEditingData[taskId];
+            return newEditingData;
+        });
     };
 
     const axioStudentData = (studentId) => {
@@ -230,6 +303,8 @@ const Therapy = () => {
                             <ul className="space-y-2 p-2 text-sm max-h-96 overflow-y-auto">
                                 {axioedData.sessions.map(task => {
                                     const isExpanded = expandedTaskIds.includes(task.id);
+                                    const isEditing = editingTaskIds.includes(task.id);
+
                                     return (
                                         <li
                                             key={task.id}
@@ -261,13 +336,93 @@ const Therapy = () => {
                                                 <div className="mt-2 text-left">
                                                     <p className='text-left'>{task.description}</p>
 
-                                                    <button
-                                                        onClick={(e) => {
-                                                            e.stopPropagation();
-                                                        }}
-                                                        className="mt-2 px-2 py-1 text-xs bg-blue-500 text-white rounded">
-                                                        Edit
-                                                    </button>
+                                                    {!isEditing && (
+                                                        <button
+                                                            onClick={(e) => {
+                                                                e.stopPropagation();
+                                                                toggleEditing(task.id);
+                                                            }}
+                                                            className="mt-2 px-2 py-1 text-xs bg-blue-500 text-white rounded"
+                                                        >
+                                                            Edit
+                                                        </button>
+                                                    )}
+
+                                                    {isEditing && (
+                                                        <div className="mt-2 border-t pt-2">
+                                                            <label htmlFor="edit-task" className="block text-sm font-medium text-gray-700 mb-1">Edit Task:</label>
+                                                            <input
+                                                                type="text"
+                                                                onClick={(e) => e.stopPropagation()}
+                                                                defaultValue={task.task}
+                                                                onChange={(e) => updateEditingData(task.id, "task", e.target.value)}
+                                                                className="w-full mb-2 p-1 border rounded"
+                                                                placeholder="Edit Task"
+                                                            />
+
+                                                            <label htmlFor="edit-subtask" className="block text-sm font-medium text-gray-700 mb-1">Edit Sub-task:</label>
+                                                            <input
+                                                                type="text"
+                                                                onClick={(e) => e.stopPropagation()}
+                                                                defaultValue={task.subtask}
+                                                                onChange={(e) => updateEditingData(task.id, "subtask", e.target.value)}
+                                                                className="w-full mb-2 p-1 border rounded"
+                                                                placeholder="Edit Sub-task"
+                                                            />
+
+                                                            <label htmlFor="edit-description" className="block text-sm font-medium text-gray-700 mb-1">Edit Description:</label>
+                                                            <textarea
+                                                                onClick={(e) => e.stopPropagation()}
+                                                                defaultValue={task.description}
+                                                                onChange={(e) => updateEditingData(task.id, "description", e.target.value)}
+                                                                className="w-full mb-2 p-1 border rounded"
+                                                                placeholder="Edit Description"
+                                                            />
+
+                                                            <label htmlFor="edit-trialresult" className="block text-sm font-medium text-gray-700 mb-1">Edit Status:</label>
+
+                                                            <div onClick={(e) => e.stopPropagation()} className="mb-4">
+                                                                <Dropdown label={editingData[task.id]?.trialresult || task.trialresult} inline={true}>
+                                                                    <Dropdown.Item
+                                                                        onClick={() => onStatusChange(task.id, "+")}
+                                                                        className={`${(editingData[task.id]?.trialresult || task.trialresult) === "+" ? "bg-blue-100 text-black" : ""} rounded-none`}
+                                                                    >
+                                                                        +
+                                                                    </Dropdown.Item>
+                                                                    <Dropdown.Item
+                                                                        onClick={() => onStatusChange(task.id, "-")}
+                                                                        className={`${(editingData[task.id]?.trialresult || task.trialresult) === "-" ? "bg-blue-100 text-black" : ""} rounded-none`}
+                                                                    >
+                                                                        -
+                                                                    </Dropdown.Item>
+                                                                    <Dropdown.Item
+                                                                        onClick={() => onStatusChange(task.id, "P")}
+                                                                        className={`${(editingData[task.id]?.trialresult || task.trialresult) === "P" ? "bg-blue-100 text-black" : ""} rounded-none`}
+                                                                    >
+                                                                        P
+                                                                    </Dropdown.Item>
+                                                                    <Dropdown.Item
+                                                                        onClick={() => onStatusChange(task.id, "OT")}
+                                                                        className={`${(editingData[task.id]?.trialresult || task.trialresult) === "OT" ? "bg-blue-100 text-black" : ""} rounded-none`}
+                                                                    >
+                                                                        OT
+                                                                    </Dropdown.Item>
+                                                                </Dropdown>
+                                                            </div>
+
+                                                            <button
+                                                                onClick={(e) => {
+                                                                    e.stopPropagation();
+                                                                    onSave(task.id);
+                                                                }}
+                                                                className="px-2 py-1 text-xs bg-green-500 text-white rounded"
+                                                            >
+                                                                Save
+                                                            </button>
+
+                                                        </div>
+                                                    )}
+
                                                 </div>
                                             )}
                                         </li>
@@ -278,6 +433,7 @@ const Therapy = () => {
                     </div>
                 </div>
             </div>
+
         </section>
     );
 };
