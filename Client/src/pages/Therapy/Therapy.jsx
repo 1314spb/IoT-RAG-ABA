@@ -1,26 +1,16 @@
 import React, { useEffect, useState, useRef } from "react";
-import Calendar from 'react-calendar';
+import { useNavigate } from "react-router-dom";
+
 import 'react-calendar/dist/Calendar.css';
 import axios from 'axios';
 import { Dropdown } from "flowbite-react";
 
-import student1 from "../../assets/students/student1.jpg";
-import student2 from "../../assets/students/student2.jpg";
-import student3 from "../../assets/students/student3.jpg";
-import student4 from "../../assets/students/student4.jpg";
-import student5 from "../../assets/students/student5.jpg";
-import student6 from "../../assets/students/student6.jpg";
-
-const students = [
-    { id: 41, name: "John Doe", phone: "1234567890", image: student1 },
-    { id: 42, name: "Mary Jane", phone: "1234567890", image: student2 },
-    { id: 43, name: "Peter Parker", phone: "1234567890", image: student3 },
-    { id: 44, name: "Tony Stark", phone: "1234567890", image: student4 },
-    { id: 45, name: "Bruce Wayne", phone: "1234567890", image: student5 },
-    { id: 46, name: "Clark Kent", phone: "1234567890", image: student6 },
-];
+import CalendarPicker from "../../components/CalendarPicker";
+import { students } from "../../demoData/studentsData";
 
 const Therapy = () => {
+    const navigate = useNavigate();
+
     const [axioedData, setAxioedData] = useState({ sessions: [], student_id: null });
     const [openDropdown, setOpenDropdown] = useState(false);
     const [selectedStudent, setSelectedStudent] = useState(students[0]);
@@ -274,25 +264,14 @@ const Therapy = () => {
                                 id="add-button"
                                 className="flex items-center h-10 whitespace-nowrap px-4 py-2 text-black bg-teal-100 hover:bg-teal-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                                 type="button"
+                                onClick={() => navigate("/services/add")}
                             >
                                 Add to db
                             </button>
                         </div>
                     </div>
 
-                    <div className="mb-4">
-                        <label htmlFor="inline-calendar" className="flex block text-sm font-medium text-gray-700 mb-1">
-                            Select Date:
-                        </label>
-                        <div id="inline-calendar" className="bg-white rounded-lg shadow p-4 dark:bg-gray-700">
-                            <Calendar
-                                onChange={setSelectedDate}
-                                value={selectedDate}
-                                className="react-calendar"
-                                locale="en-US"
-                            />
-                        </div>
-                    </div>
+                    <CalendarPicker selectedDate={selectedDate} setSelectedDate={setSelectedDate} />
                 </div>
 
                 <div className="col-span-8 xl:col-span-8 rounded-lg shadow p-1">
