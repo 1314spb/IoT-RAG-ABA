@@ -38,7 +38,7 @@ const StudentDropdown = ({
           }
           aria-haspopup="true"
           aria-expanded={openDropdown === "student"}
-          className="flex items-center h-10 px-4 py-2 text-black bg-teal-100 hover:bg-teal-200 rounded-lg"
+          className="flex items-center h-10 px-4 py-2 text-black bg-gray-100 hover:bg-gray-200 rounded-lg"
           type="button"
         >
           {selectedStudent ? (

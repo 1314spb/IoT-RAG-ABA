@@ -1,101 +1,43 @@
-// src/pages/History/History.jsx
-import React, { useEffect, useState, useRef, useMemo } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+
+import Datepicker from "react-tailwindcss-datepicker";
 
 import DataChart from './DataChart';
 import StudentDropdown from '../../components/StudentDropdown';
-import Datepicker from "react-tailwindcss-datepicker";
+
+import { axioStudentData } from "../../utils/axioStudentData";
 
 import { students } from "../../demoData/studentsData";
 import { domains } from "../../demoData/domainsData";
 
 const History = () => {
 	const navigate = useNavigate();
+	const [axioedData, setAxioedData] = useState({ sessions: [], student_id: null });
+	const [selectedDate, setSelectedDate] = useState({ startDate: null, endDate: null });
 
-	const [openStudentDropdown, setOpenStudentDropdown] = useState(false);
-	const [openDomainDropdown, setOpenDomainDropdown] = useState(false);
-	const [dropdownOpen, setDropdownOpen] = useState(false);
+	const [openDropdown, setOpenDropdown] = useState(false);
 	const [selectedStudent, setSelectedStudent] = useState(students[0]);
 	const [selectedDomain, setSelectedDomain] = useState(domains[0]);
-	const [axioedData, setAxioedData] = useState({ sessions: [] });
-	const [selectedDate, setSelectedDate] = useState({ startDate: null, endDate: null });
 
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(null);
 
-	const dropdownRef = useRef(null);
-
 	useEffect(() => {
 		document.title = "History - ABA";
-
-		const handleClickOutside = (event) => {
-			if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-				setDropdownOpen(false);
-			}
-		};
-		document.addEventListener("mousedown", handleClickOutside);
-		return () => {
-			document.removeEventListener("mousedown", handleClickOutside);
-		};
 	}, []);
 
 	useEffect(() => {
-		axioStudentData(selectedStudent.id);
+		axioStudentData(selectedStudent.id, { setLoading, setError, setAxioedData, setSelectedDate })
 	}, [selectedStudent]);
 
-	const axioStudentData = (studentId) => {
-		setLoading(true);
-		setError(null);
-
-		axios.get("/temp.json")
-			.then(response => {
-				console.log("Axioed temp data: ", response.data);
-				if (response.data.sessions.length === 0) {
-					setAxioedData({ sessions: [], student_id: response.data.student_id });
-				} else {
-					setAxioedData(response.data);
-				}
-				setSelectedDate({ startDate: null, endDate: null });
-			})
-			.catch((err) => {
-				console.error(err);
-				setError("Cannot fetch data from the server");
-			})
-			.finally(() => setLoading(false));
-
-		// axios.get(`/api/students/${studentId}`)
-		//     .then(response => {
-		//         console.log("Axioed data: ", response.data);
-		//         if (response.data.sessions.length === 0) {
-		//             setAxioedData({ sessions: [], student_id: response.data.student_id });
-		//         } else {
-		//             setAxioedData(response.data);
-		//         }
-		//         setSelectedDate({ startDate: null, endDate: null });
-		//     })
-		//     .catch((err) => {
-		//         console.error(err);
-		//         setError("Cannot fetch data from the server");
-		//     })
-		//     .finally(() => setLoading(false));
-	};
-
-	const handleStudentClick = (student) => {
-		setAxioedData([]);
-		setSelectedStudent(student);
-		axioStudentData(student.id);
-		setDropdownOpen(false);
-	};
-
 	const handleDomainClick = (domain) => {
-		console.log(`Clicked on: ${domain.name}`);
+		// console.log(`Clicked on: ${domain.name}`);
 		setSelectedDomain(domain);
-		setDropdownOpen(false);
 	};
 
 	const handleDateChange = (newValue) => {
-		console.log("Selected dates:", newValue);
+		// console.log("Selected dates:", newValue);
 		setSelectedDate(newValue);
 	};
 
@@ -115,14 +57,6 @@ const History = () => {
 			});
 		} else {
 			setSelectedDate({ startDate: null, endDate: null });
-		}
-	};
-
-	const resetDateSelection = () => {
-		setSelectedDate({ startDate: null, endDate: null });
-		const chart = ChartJS.getChart('dataChart');
-		if (chart) {
-			chart.resetZoom();
 		}
 	};
 
@@ -154,8 +88,8 @@ const History = () => {
 					students={students}
 					selectedStudent={selectedStudent}
 					setSelectedStudent={setSelectedStudent}
-					openDropdown={openStudentDropdown}
-					setOpenDropdown={setOpenStudentDropdown}
+					openDropdown={openDropdown}
+					setOpenDropdown={setOpenDropdown}
 				/>
 
 				<div className="relative flex items-center">
