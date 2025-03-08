@@ -1,11 +1,9 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from 'react-router-dom';
 
 import PassGeneratedTask from "./PassGeneratedTask";
 import StudentDropdown from "../../components/StudentDropdown";
 import DomainDropdown from "../../components/DomainDropdown";
-
-import axios from 'axios';
 
 import { domains } from "../../demoData/domainsData"
 import { students } from "../../demoData/studentsData"
@@ -17,74 +15,14 @@ const Generate = () => {
 	const foundDomain = domains.find((d) => d.name === domain);
 	const foundStudent = students.find((s) => s.id === student_id);
 
-	const [axioedData, setAxioedData] = useState([]);
 	const [openDropdown, setOpenDropdown] = useState(null);
 	const [selectedStudent, setSelectedStudent] = useState(foundStudent ? foundStudent : students[0]);
 	const [selectedDomain, setSelectedDomain] = useState(foundDomain || domains[0]);
 	const [additionalNeed, setAdditionalNeed] = useState('');
 
-	console.log("Axioed INIT Data: ", axioedData);
-
-	const [loading, setLoading] = useState(false);
-	const [error, setError] = useState(null);
-
-	const studentDropdownRef = useRef(null);
-	const domainDropdownRef = useRef(null);
-
 	useEffect(() => {
 		document.title = "AI Task Generate | ABA";
-
-		const handleClickOutside = (event) => {
-			if (openDropdown === 'student' && studentDropdownRef.current && !studentDropdownRef.current.contains(event.target)) {
-				setOpenDropdown(null);
-			}
-			if (openDropdown === 'domain' && domainDropdownRef.current && !domainDropdownRef.current.contains(event.target)) {
-				setOpenDropdown(null);
-			}
-		};
-		document.addEventListener("mousedown", handleClickOutside);
-		return () => {
-			document.removeEventListener("mousedown", handleClickOutside);
-		};
-	}, [openDropdown]);
-
-	useEffect(() => {
-		axioStudentData(selectedStudent.id);
-	}, [selectedStudent]);
-
-	const axioStudentData = (studentId) => {
-		setLoading(true);
-		setError(null);
-
-		axios.get("/temp_filter.json")
-			.then(response => {
-				console.log("Axioed temp data: ", response.data);
-				if (response.data.sessions.length === 0) {
-					setAxioedData({ sessions: [], student_id: response.data.student_id });
-				} else {
-					setAxioedData(response.data);
-				}
-			})
-			.catch((err) => {
-				console.error(err);
-				setError("Cannot axio student data");
-			})
-			.finally(() => setLoading(false));
-
-		// axios.get(`/api/students/${studentId}`)
-		//     .then(response => {
-		//         if (response.data.sessions.length === 0) {
-		//             setAxioedData({ sessions: [], student_id: response.data.student_id });
-		//         } else {
-		//             setAxioedData(response.data);
-		//         }
-		//     })
-		//     .catch((err) => {
-		//         console.error(err);
-		//         setError("Cannot axio student data");
-		//     })
-		//     .finally(() => setLoading(false));
-	};
+	}, []);
 
 	return (
 		<section className="container mx-auto px-4 sm:px-6 lg:px-8">
