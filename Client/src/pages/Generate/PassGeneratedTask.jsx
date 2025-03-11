@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import PropTypes from 'prop-types';
+
+import { axioPassGeneratedTask } from '../../utils/axioPassGeneratedTask';
 
 const PassGeneratedTask = ({ className = '', student_id }) => {
 	const [tasks, setTasks] = useState([]);
@@ -12,28 +13,8 @@ const PassGeneratedTask = ({ className = '', student_id }) => {
 	useEffect(() => {
 		if (!student_id) return;
 
-		const axioTasks = async () => {
-			setLoading(true);
-			setError(null);
-			try {
-				// const response = await axios.get(`/api/tasks?student_id=${student_id}`);
-				const response = await axios.get(`/temp_past_generated_tasks.json`);
-				const sortedTasks = response.data.sort((a, b) => new Date(b.date) - new Date(a.date));
-				setTasks(sortedTasks);
-			} catch (err) {
-				console.error(err);
-				setError('Cannot connect to server');
-			} finally {
-				setLoading(false);
-			}
-		};
-
-		axioTasks();
+		axioPassGeneratedTask({ setLoading, setError, setTasks, student_id });
 	}, [student_id]);
-
-	useEffect(() => {
-		console.log(tasks);
-	}, [tasks]);
 
 	const toggleExpand = (taskId) => {
 		setExpandedTaskIds((prev) =>

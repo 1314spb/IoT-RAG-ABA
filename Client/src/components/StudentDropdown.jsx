@@ -1,4 +1,3 @@
-// src/components/StudentDropdown.jsx
 import React, { useRef, useEffect } from "react";
 
 const StudentDropdown = ({

@@ -83,7 +83,7 @@ const History = () => {
 		<section className="container mx-auto px-4 sm:px-6 lg:px-8">
 			<h6 className="font-mono text-3xl leading-tight text-gray-900 mb-1.5 py-2">Student History</h6>
 
-			<div className="bg-red-100 p-4 rounded-md flex justify-start items-center gap-x-4">
+			<div className="bg-red-200 p-4 rounded-md flex justify-start items-center gap-x-4">
 				<StudentDropdown
 					students={students}
 					selectedStudent={selectedStudent}
