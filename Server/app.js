@@ -1,7 +1,7 @@
 if (typeof BigInt.prototype.toJSON !== 'function') {
-  BigInt.prototype.toJSON = function() {
-    return this.toString();
-  };
+	BigInt.prototype.toJSON = function () {
+		return this.toString();
+	};
 }
 
 const express = require('express');
@@ -31,14 +31,16 @@ app.use(cors());
 // 4. Morgan：記錄 HTTP 請求，方便除錯
 const accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' });
 app.use(morgan('dev'));
-app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length]', { stream: accessLogStream }));
+app.use(
+	morgan(
+		':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length]',
+		{ stream: accessLogStream }
+	)
+);
 
 const originalConsoleLog = console.log;
 console.log = function (...args) {
-	// 先印出到標準輸出
 	originalConsoleLog.apply(console, args);
-
-	// 加入 timestamp 與換行符號
 	const logMessage = `[${new Date().toISOString()}] ${args.join(' ')}\n`;
 	accessLogStream.write(logMessage);
 };
@@ -62,7 +64,7 @@ const apiRouter = require('./routes/api');
 app.use('/api', apiRouter);
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../Client/dist/index.html'));
+	res.sendFile(path.join(__dirname, '../Client/dist/index.html'));
 });
 
 // -------------------------
