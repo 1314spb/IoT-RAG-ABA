@@ -11,6 +11,7 @@ const DomainDropdown = ({
 
   useEffect(() => {
     const handleClickOutside = (event) => {
+      console.log("Hello from DomainDropdown.jsx");
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setOpenDropdown(null);
       }

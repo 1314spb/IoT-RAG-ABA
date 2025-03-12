@@ -11,15 +11,21 @@ const StudentDropdown = ({
 
   useEffect(() => {
     const handleClickOutside = (event) => {
+      console.log("Hello from StudentDropdown.jsx");
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setOpenDropdown(null);
       }
     };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
   }, [setOpenDropdown]);
 
+  useEffect(() => {
+    console.log("Generate 組件中的 selectedStudent 更新為:", selectedStudent);
+  }, [selectedStudent]);
+
   const handleStudentClick = (student) => {
+    console.log("Student clicked:", student);
     setSelectedStudent(student);
     setOpenDropdown(null);
   };
@@ -32,9 +38,10 @@ const StudentDropdown = ({
       <div className="relative" ref={dropdownRef}>
         <button
           id="student-dropdown"
-          onClick={() =>
+          onClick={() => {
             setOpenDropdown(openDropdown === "student" ? null : "student")
-          }
+            // console.log("Hello ha");
+          }}
           aria-haspopup="true"
           aria-expanded={openDropdown === "student"}
           className="flex items-center h-10 px-4 py-2 text-black bg-gray-100 hover:bg-gray-200 rounded-lg"

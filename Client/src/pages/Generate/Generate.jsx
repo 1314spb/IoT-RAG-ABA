@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { useLocation } from 'react-router-dom';
+import React, { useLayoutEffect, useState } from "react";
 
 import PassGeneratedTask from "./PassGeneratedTask";
 import StudentDropdown from "../../components/StudentDropdown";
@@ -11,21 +10,15 @@ import { domains } from "../../demoData/domainsData"
 import { students } from "../../demoData/studentsData"
 
 const Generate = () => {
-	const location = useLocation();
-	const { domain, student_id } = location.state || {};
-
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(false);
-
-
-	const foundDomain = domains.find((d) => d.name === domain);
-	const foundStudent = students.find((s) => s.id === student_id);
-
-	const [openDropdown, setOpenDropdown] = useState(null);
-	const [selectedStudent, setSelectedStudent] = useState(foundStudent ? foundStudent : students[0]);
-	const [selectedDomain, setSelectedDomain] = useState(foundDomain || domains[0]);
-	const [additionalNeed, setAdditionalNeed] = useState('');
 	const [generatedTask, setGeneratedTask] = useState(null);
+
+	const [openStudentDropdown, setOpenStudentDropdown] = useState(false);
+	const [openDomainDropdown, setOpenDomainDropdown] = useState(false);
+	const [selectedStudent, setSelectedStudent] = useState(students[0]);
+	const [selectedDomain, setSelectedDomain] = useState(domains[0]);
+	const [additionalNeed, setAdditionalNeed] = useState('');
 
 	const handleGenerateTask = async () => {
 		setLoading(true);
@@ -36,13 +29,20 @@ const Generate = () => {
 			additionalNeed: additionalNeed.trim(),
 		};
 
-		const response_data = await axioGenerate(payload);
-		// console.log("response_data:", response_data);
+		try {
+			const response_data = await axioGenerate(payload);
+			// console.log("response_data:", response_data);
+		} catch (err) {
+			setError(err);
+			console.error("Error:", err);
+		} finally {
+			setLoading(false);
+		}
 	};
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		document.title = "AI Task Generate | ABA";
-	}, []);
+	});
 
 	return (
 		<section className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -56,16 +56,16 @@ const Generate = () => {
 						students={students}
 						selectedStudent={selectedStudent}
 						setSelectedStudent={setSelectedStudent}
-						openDropdown={openDropdown}
-						setOpenDropdown={setOpenDropdown}
+						openDropdown={openStudentDropdown}
+						setOpenDropdown={setOpenStudentDropdown}
 					/>
 
 					<DomainDropdown
 						domains={domains}
 						selectedDomain={selectedDomain}
 						setSelectedDomain={setSelectedDomain}
-						openDropdown={openDropdown}
-						setOpenDropdown={setOpenDropdown}
+						openDropdown={openDomainDropdown}
+						setOpenDropdown={setOpenDomainDropdown}
 					/>
 
 					<div className="mt-4">
@@ -97,9 +97,21 @@ const Generate = () => {
 
 				<div className="col-span-9 xl:col-span-9 rounded-lg shadow grid grid-cols-10">
 					<div className="col-span-7 bg-gray-100 rounded-lg m-1">
+						{loading && <p>Loading generated task...</p>}
+						{error && <p className="text-red-500">Error: {error}</p>}
+						{generatedTask ? (
+							<div>
+								<h3 className="font-bold text-xl mb-2">Generated Task</h3>
+								<pre className="whitespace-pre-wrap">
+									{JSON.stringify(generatedTask, null, 2)}
+								</pre>
+							</div>
+						) : (
+							!loading && <p>No generated task to display yet.</p>
+						)}
 					</div>
 					<div className="col-span-3 bg-blue-50 rounded-lg m-1">
-						<PassGeneratedTask student_id={44} />
+						<PassGeneratedTask student_id={selectedStudent.id} />
 					</div>
 				</div>
 			</div>

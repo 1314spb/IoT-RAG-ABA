@@ -55,3 +55,5 @@ print("Accuracy: {:.2f}%".format(accuracy_score(y_test, y_pred)*100))
 # print(classification_report(y_test, y_pred, target_names=le.classes_))
 
 # %%
+
+# %%

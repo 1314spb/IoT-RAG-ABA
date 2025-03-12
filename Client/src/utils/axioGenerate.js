@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const axioGenerate = async ({ payload }) => {
+const axioGenerate = async ({ payload }) => {
   try {
     console.log("payload:", payload);
 
@@ -12,3 +12,5 @@ export const axioGenerate = async ({ payload }) => {
     console.error(err);
   }
 }
+
+export default axioGenerate;
