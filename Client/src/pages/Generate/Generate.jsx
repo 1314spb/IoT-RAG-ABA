@@ -5,12 +5,18 @@ import PassGeneratedTask from "./PassGeneratedTask";
 import StudentDropdown from "../../components/StudentDropdown";
 import DomainDropdown from "../../components/DomainDropdown";
 
+import axioGenerate from "../../utils/axioGenerate"
+
 import { domains } from "../../demoData/domainsData"
 import { students } from "../../demoData/studentsData"
 
 const Generate = () => {
 	const location = useLocation();
 	const { domain, student_id } = location.state || {};
+
+	const [loading, setLoading] = useState(false);
+	const [error, setError] = useState(false);
+
 
 	const foundDomain = domains.find((d) => d.name === domain);
 	const foundStudent = students.find((s) => s.id === student_id);
@@ -19,6 +25,20 @@ const Generate = () => {
 	const [selectedStudent, setSelectedStudent] = useState(foundStudent ? foundStudent : students[0]);
 	const [selectedDomain, setSelectedDomain] = useState(foundDomain || domains[0]);
 	const [additionalNeed, setAdditionalNeed] = useState('');
+	const [generatedTask, setGeneratedTask] = useState(null);
+
+	const handleGenerateTask = async () => {
+		setLoading(true);
+
+		const payload = {
+			student_id: selectedStudent.id,
+			domain: selectedDomain.name,
+			additionalNeed: additionalNeed.trim(),
+		};
+
+		const response_data = await axioGenerate(payload);
+		// console.log("response_data:", response_data);
+	};
 
 	useEffect(() => {
 		document.title = "AI Task Generate | ABA";
@@ -68,6 +88,7 @@ const Generate = () => {
 						<button
 							type="button"
 							className="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-lime-100 hover:bg-lime-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+							onClick={handleGenerateTask}
 						>
 							Generate Task
 						</button>

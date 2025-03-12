@@ -36,7 +36,7 @@ const DataChart = ({ dataArray, onZoom }) => {
 		{ key: 'noofUndo', label: 'Number of Undo' },
 		{ key: 'acceleration', label: 'Acceleration' },
 		{ key: 'bvp', label: 'BVP' },
-		{ key: 'temperature', label: 'Temperature' },
+		{ key: 'wristtemp', label: 'Temperature' },
 	];
 
 	const [selectedFields, setSelectedFields] = useState(

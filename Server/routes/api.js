@@ -1,6 +1,11 @@
 const express = require('express');
-const router = express.Router();
+const axios = require("axios");
+const fs = require('fs');
+
+const save_payload = require('../utils/save_payload');
+
 const pool = require('../db');
+const router = express.Router();
 
 router.get('/past_gen_tasks', async (req, res) => {
   const { student_id } = req.query;
@@ -71,5 +76,49 @@ router.get('/students/:student_id', async (req, res) => {
   }
 });
 
+router.post('/generate', async (req, res) => {
+  const { student_id, domain, additionalNeed } = req.body;
+  // student_id: int
+  // domain: string
+  // additionalNeed: string
+
+  if (!student_id || !domain) {
+    return res.status(400).json({ error: 'Missing required parameters' });
+  }
+
+  let conn;
+  try {
+    conn = await pool.getConnection();
+    const pass_tasks_query = "SELECT id, domain, task, subtask, trialresult FROM student_sessions WHERE student_id = ? AND domain = ?";
+    const pass_tasks = await conn.query(pass_tasks_query, [student_id, domain]);
+
+    const generated_tasks_query = "SELECT task_id, domain, task, subtask, description, date, status FROM student_pass_generated_task WHERE student_id = ? AND domain = ?";
+    const pass_generated_task = await conn.query(generated_tasks_query, [student_id, domain]);
+
+    // console.log("pass_tasks:", pass_tasks);
+    // console.log("pass_generated_task:", pass_generated_task);
+
+    const targetIP = "http://localhost:5000";
+    const payload = {
+      student_id,
+      domain,
+      additionalNeed,
+      pass_tasks,
+      pass_generated_task
+    };
+    
+    // Save payload to a file
+    save_payload(payload);
+
+    // const response = await axios.post(`${targetIP}/service/generate`, payload);
+
+    // console.log("response:", response.data);
+
+    return res.status(201).json({ id: result.insertId });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ error: error.message });
+  }
+});
 
 module.exports = router;

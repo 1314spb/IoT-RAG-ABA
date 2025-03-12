@@ -20,9 +20,9 @@ export const axioStudentData = (studentId, { setLoading, setError, setAxioedData
       if (response.data.sessions.length === 0) {
         setAxioedData({ sessions: [], student_id: response.data.student_id });
       } else {
+        
         setAxioedData(response.data);
       }
-      // 重置日期選擇
       setSelectedDate({ startDate: null, endDate: null });
     })
     .catch(err => {
