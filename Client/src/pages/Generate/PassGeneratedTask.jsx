@@ -61,7 +61,7 @@ const PassGeneratedTask = ({ className = '', student_id }) => {
 								<div className="flex justify-between items-center">
 									<div>
 										<p className='flex'><strong>Task:</strong>&nbsp;{task.task}</p>
-										<p className='flex'><strong>Sub-task:</strong>&nbsp;{task.sub_task}</p>
+										<p className='flex'><strong>Sub-task:</strong>&nbsp;{task.subtask}</p>
 										<p className='flex'><strong>Status:</strong>&nbsp;{task.status}</p>
 										<p className='flex text-xs text-zinc-400'>{task.date}</p>
 									</div>

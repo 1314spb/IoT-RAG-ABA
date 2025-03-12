@@ -17,22 +17,11 @@ router.get('/past_gen_tasks', async (req, res) => {
   let conn;
   try {
     conn = await pool.getConnection();
-    // 使用原生 SQL 語法查詢資料表 past_generated_tasks
+    
     const query = 'SELECT * FROM student_pass_generated_task WHERE student_id = ?';
-    console.log("query:", query);
-    console.log("student_id:", student_id);
     const rows = await conn.query(query, [student_id]);
+    console.log("rows:", rows.length);
 
-    // console.log("rows:", JSON.stringify(rows, null, 2));
-
-    // 檢查是否有資料回傳
-    if (!rows || rows.length === 0) {
-      return res.status(404).json({
-        message: `No past generated tasks found for student_id ${student_id}`
-      });
-    }
-
-    // 直接回傳查詢結果（rows 已經是純 JavaScript 物件）
     return res.status(200).json(rows);
   }
   catch (err) {

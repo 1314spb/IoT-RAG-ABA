@@ -13,8 +13,8 @@ export const axioStudentData = (studentId, { setLoading, setError, setAxioedData
   setLoading(true);
   setError(null);
 
-  axios.get("/temp_filter.json")
-  // axios.get(`/api/students/${studentId}`)
+  // axios.get("/temp_filter.json")
+  axios.get(`/api/students/${studentId}`)
     .then(response => {
       console.log("Axioed temp data: ", response.data);
       if (response.data.sessions.length === 0) {
