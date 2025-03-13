@@ -4,7 +4,6 @@ export const axioPassGeneratedTask = async ({ setLoading, setError, setTasks, st
   setLoading(true);
   setError(null);
   try {
-    console.log("Hello from axioPassGeneratedTask");
     // const response = await axios.get('/temp_past_generated_tasks.json');
     const response = await axios.get(`/api/past_gen_tasks?student_id=${student_id}`);
 

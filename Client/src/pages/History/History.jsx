@@ -1,11 +1,10 @@
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState, useMemo, useLayoutEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 
 import Datepicker from "react-tailwindcss-datepicker";
 
 import DataChart from './DataChart';
 import StudentDropdown from '../../components/StudentDropdown';
-import DomainDropdown from '../../components/DomainDropdown';
 
 import { axioStudentData } from "../../utils/axioStudentData";
 
@@ -24,7 +23,7 @@ const History = () => {
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(null);
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		document.title = "History - ABA";
 	}, []);
 
@@ -43,11 +42,7 @@ const History = () => {
 	};
 
 	const handleAiGenerate = () => {
-		const dataToStore = {
-			domain: selectedDomain.name,
-			student_id: selectedStudent.id,
-		};
-		navigate('/services/ai_generate', { state: dataToStore });
+		navigate('/services/ai_generate');
 	};
 
 	const handleChartZoom = (zoomData) => {
@@ -112,7 +107,7 @@ const History = () => {
 							<li key={domain.id} className="flex py-4 first:pt-0 last:pb-0">
 								<button
 									onClick={() => handleDomainClick(domain)}
-									className="flex items-center w-full text-left focus:outline-none hover:bg-gray-100 p-2 rounded"
+									className={`flex items-center w-full text-left focus:outline-none hover:bg-green-100 p-2 rounded ${selectedDomain.id === domain.id ? 'bg-green-200' : ''}`}
 								>
 									{domain.Icon ? (
 										<domain.Icon className="h-10 w-10 text-gray-500" />

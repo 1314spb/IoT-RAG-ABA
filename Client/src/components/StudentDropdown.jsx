@@ -11,7 +11,6 @@ const StudentDropdown = ({
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      console.log("Hello from StudentDropdown.jsx");
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setOpenDropdown(null);
       }
@@ -19,10 +18,6 @@ const StudentDropdown = ({
     document.addEventListener("click", handleClickOutside);
     return () => document.removeEventListener("click", handleClickOutside);
   }, [setOpenDropdown]);
-
-  useEffect(() => {
-    console.log("Generate 組件中的 selectedStudent 更新為:", selectedStudent);
-  }, [selectedStudent]);
 
   const handleStudentClick = (student) => {
     console.log("Student clicked:", student);

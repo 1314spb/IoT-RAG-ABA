@@ -6,6 +6,7 @@
         "task": "Task 1",
         "sub_task": "Sub-Task 1",
         "description": "This is a description of the task 1",
+        "reason": "Testing reason",
         "date": "2021-09-01",
         "status": "+"
     },
@@ -16,6 +17,7 @@
         "task": "Task 2",
         "sub_task": "Sub-Task 2",
         "description": "This is a description of the task 2",
+        "reason": "Testing reason",
         "date": "2021-09-02",
         "status": "-"
     },
@@ -26,6 +28,7 @@
         "task": "Task 3",
         "sub_task": "Sub-Task 3",
         "description": "This is a description of the task 3",
+        "reason": "Testing reason",
         "date": "2021-09-03",
         "status": "+"
     },
@@ -36,6 +39,7 @@
         "task": "Task 4",
         "sub_task": "Sub-Task 4",
         "description": "This is a description of the task 4",
+        "reason": "Testing reason",
         "date": "2021-09-04",
         "status": "OT"
     },
@@ -46,6 +50,7 @@
         "task": "Task 5",
         "sub_task": "Sub-Task 5",
         "description": "This is a description of the task 5",
+        "reason": "Testing reason",
         "date": "2021-09-05",
         "status": "P"
     },
@@ -56,6 +61,7 @@
         "task": "Task 6",
         "sub_task": "Sub-Task 6",
         "description": "This is a description of the task 6",
+        "reason": "Testing reason",
         "date": "2021-09-06",
         "status": "OT"
     },
@@ -66,6 +72,7 @@
         "task": "Task 7",
         "sub_task": "Sub-Task 7",
         "description": "This is a description of the task 7",
+        "reason": "Testing reason",
         "date": "2021-09-07",
         "status": "+"
     },
@@ -76,6 +83,7 @@
         "task": "Task 8",
         "sub_task": "Sub-Task 8",
         "description": "This is a description of the task 8",
+        "reason": "Testing reason",
         "date": "2021-09-08",
         "status": "-"
     }

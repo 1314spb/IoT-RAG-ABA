@@ -11,7 +11,6 @@ const DomainDropdown = ({
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      console.log("Hello from DomainDropdown.jsx");
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setOpenDropdown(null);
       }
@@ -28,7 +27,7 @@ const DomainDropdown = ({
 
   return (
     <div className="relative" ref={dropdownRef}>
-      <label className="text-sm font-medium text-gray-700 flex mb-1">Domain</label>
+      <label className="text-sm font-medium text-gray-700 flex mb-1">Select Domain:</label>
       <button
         id="domain-dropdown"
         onClick={() =>
@@ -46,7 +45,7 @@ const DomainDropdown = ({
               <span>{selectedDomain.name}</span>
             </>
           ) : (
-            <span>Domain</span>
+            <span>Select Domain</span>
           )}
         </div>
 

@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import { Dropdown } from "flowbite-react";
 import Datepicker from "react-tailwindcss-datepicker";
 import 'react-calendar/dist/Calendar.css';
-import { Dropdown } from "flowbite-react";
 
 import { axioStudentData } from "../../utils/axioStudentData";
 
 import StudentDropdown from "../../components/StudentDropdown";
+import Pagination from "../../components/Pagination";
+
 import { students } from "../../demoData/studentsData";
 
 const Therapy = () => {
@@ -22,8 +23,24 @@ const Therapy = () => {
 	const [editingTaskIds, setEditingTaskIds] = useState([]);
 	const [editingData, setEditingData] = useState({});
 
+	const [currentPage, setCurrentPage] = useState(1);
+	const itemsPerPage = 10;
+
+	const indexOfLastItem = currentPage * itemsPerPage;
+	const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+	const currentSessions = axioedData.sessions.slice(indexOfFirstItem, indexOfLastItem);
+	const totalPages = Math.ceil(axioedData.sessions.length / itemsPerPage);
+
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(null);
+
+	useLayoutEffect(() => {
+		document.title = "ABA | Therapy";
+	});
+
+	useEffect(() => {
+		setCurrentPage(1);
+	}, [axioedData.sessions]);
 
 	const onStatusChange = (taskId, newStatus) => {
 		if (editingTaskIds.includes(taskId)) {
@@ -45,10 +62,6 @@ const Therapy = () => {
 			});
 		}
 	};
-
-	useEffect(() => {
-		document.title = "AI Task Generate | ABA";
-	}, []);
 
 	useEffect(() => {
 		axioStudentData(selectedStudent.id, { setLoading, setError, setAxioedData, setSelectedDate });
@@ -290,6 +303,7 @@ const Therapy = () => {
 									);
 								})}
 							</ul>
+
 						)}
 					</div>
 				</div>

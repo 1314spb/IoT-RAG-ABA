@@ -78,6 +78,7 @@ const PassGeneratedTask = ({ className = '', student_id }) => {
 								{isExpanded && (
 									<div className="mt-2">
 										<p className='text-left'>{task.description}</p>
+										<p className='text-left'>{task.reason}</p>
 									</div>
 								)}
 							</li>
