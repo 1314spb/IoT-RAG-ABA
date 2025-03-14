@@ -7,7 +7,7 @@ import 'react-calendar/dist/Calendar.css';
 import { axioStudentData } from "../../utils/axioStudentData";
 
 import StudentDropdown from "../../components/StudentDropdown";
-import Pagination from "../../components/Pagination";
+import taskOnSave from "../../utils/taskOnSave";
 
 import { students } from "../../demoData/studentsData";
 
@@ -23,24 +23,12 @@ const Therapy = () => {
 	const [editingTaskIds, setEditingTaskIds] = useState([]);
 	const [editingData, setEditingData] = useState({});
 
-	const [currentPage, setCurrentPage] = useState(1);
-	const itemsPerPage = 10;
-
-	const indexOfLastItem = currentPage * itemsPerPage;
-	const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-	const currentSessions = axioedData.sessions.slice(indexOfFirstItem, indexOfLastItem);
-	const totalPages = Math.ceil(axioedData.sessions.length / itemsPerPage);
-
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(null);
 
 	useLayoutEffect(() => {
 		document.title = "ABA | Therapy";
 	});
-
-	useEffect(() => {
-		setCurrentPage(1);
-	}, [axioedData.sessions]);
 
 	const onStatusChange = (taskId, newStatus) => {
 		if (editingTaskIds.includes(taskId)) {
@@ -110,22 +98,6 @@ const Therapy = () => {
 		}));
 	};
 
-	const onSave = (taskId) => {
-		const updatedTask = editingData[taskId];
-		setAxioedData((prevData) => {
-			const updatedSessions = prevData.sessions.map((task) =>
-				task.id === taskId ? { ...updatedTask } : task
-			);
-			return { ...prevData, sessions: updatedSessions };
-		});
-		setEditingTaskIds((prev) => prev.filter((id) => id !== taskId));
-		setEditingData((prev) => {
-			const newEditingData = { ...prev };
-			delete newEditingData[taskId];
-			return newEditingData;
-		});
-	};
-
 	if (loading) {
 		return <div>Loading...</div>;
 	}
@@ -160,13 +132,15 @@ const Therapy = () => {
 							</button>
 						</div>
 					</div>
-					<Datepicker
-						value={selectedDate}
-						onChange={handleDateChange}
-						primaryColor="teal"
-						containerClassName="w-full"
-						inputClassName="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 mt-1"
-					/>
+					<div className="relative">
+						<Datepicker
+							value={selectedDate}
+							onChange={handleDateChange}
+							primaryColor="teal"
+							containerClassName="w-full"
+							inputClassName="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 mt-1"
+						/>
+					</div>
 				</div>
 
 				<div className="col-span-8 xl:col-span-8 rounded-lg shadow p-1">
@@ -287,7 +261,12 @@ const Therapy = () => {
 															<button
 																onClick={(e) => {
 																	e.stopPropagation();
-																	onSave(task.id);
+																	taskOnSave(
+																		editingData[task.id],
+																		setAxioedData,
+																		setEditingTaskIds,
+																		setEditingData
+																	);
 																}}
 																className="px-2 py-1 text-xs bg-green-500 text-white rounded"
 															>

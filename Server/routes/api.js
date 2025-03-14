@@ -44,7 +44,6 @@ router.get('/students/:student_id', async (req, res) => {
     const query = 'SELECT * FROM student_sessions WHERE student_id = ? LIMIT 5000';
     const rows = await conn.query(query, [student_id]);
 
-    // 直接回傳查詢結果（rows 已經是純 JavaScript 物件）
     return res.status(200).json({
       student_id,
       sessions: rows
@@ -56,6 +55,7 @@ router.get('/students/:student_id', async (req, res) => {
     if (conn) conn.release();
   }
 });
+
 
 router.post('/generate', async (req, res) => {
   const { student_id, domain, additionalNeed } = req.body;
@@ -101,5 +101,44 @@ router.post('/generate', async (req, res) => {
     return res.status(500).json({ error: error.message });
   }
 });
+
+
+router.patch("/taskOnSave/:id", async (req, res) => {
+  const { id } = req.params;
+  const allowedFields = ["task", "subtask", "trialresult", "description"];
+
+  const fields = [];
+  const values = [];
+
+  allowedFields.forEach((field) => {
+    if (req.body[field] !== undefined) {
+      fields.push(`${field} = ?`);
+      values.push(req.body[field]);
+    }
+  });
+
+  if (fields.length === 0) {
+    return res.status(400).json({ success: false, message: "No valid fields to update" });
+  }
+
+  let conn;
+  try{
+    conn = await pool.getConnection();
+    const sql = `UPDATE student_sessions SET ${fields.join(", ")} WHERE id = ?`;
+    values.push(id);
+    const result = await conn.query(sql, values);
+
+    if (result.affectedRows === 0) {
+      return res.status(404).json({ success: false, message: "Task not found" });
+    }
+    return res.json({ success: true, message: "Task updated successfully" });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ success: false, message: error.message });
+  } finally {
+    if (conn) conn.release();
+  }
+});
+
 
 module.exports = router;
