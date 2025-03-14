@@ -3,6 +3,7 @@ const axios = require("axios");
 const fs = require('fs');
 
 const save_payload = require('../utils/save_payload');
+const cal_percent = require('../utils/cal_percent');
 
 const pool = require('../db');
 const router = express.Router();
@@ -76,6 +77,11 @@ router.post('/generate', async (req, res) => {
     const generated_tasks_query = "SELECT task_id, domain, task, subtask, description, date, status FROM student_pass_generated_task WHERE student_id = ? AND domain = ?";
     const pass_generated_task = await conn.query(generated_tasks_query, [student_id, domain]);
 
+    console.log("Calculating average percent...");
+    const task_percent = cal_percent(pass_tasks);
+
+    const gen_task_percent = cal_percent(pass_generated_task);
+
     // console.log("pass_tasks:", pass_tasks);
     // console.log("pass_generated_task:", pass_generated_task);
 
@@ -85,7 +91,9 @@ router.post('/generate', async (req, res) => {
       domain,
       additionalNeed,
       pass_tasks,
-      pass_generated_task
+      pass_generated_task,
+      task_percent,
+      gen_task_percent,
     };
 
     // Save payload to a file
@@ -122,7 +130,7 @@ router.patch("/taskOnSave/:id", async (req, res) => {
   }
 
   let conn;
-  try{
+  try {
     conn = await pool.getConnection();
     const sql = `UPDATE student_sessions SET ${fields.join(", ")} WHERE id = ?`;
     values.push(id);
