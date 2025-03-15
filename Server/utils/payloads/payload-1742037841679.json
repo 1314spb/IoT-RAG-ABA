@@ -1,0 +1,38 @@
+{
+  "Academic_and_Learning": {
+    "plus_sum": 4452,
+    "minus_sum": 2205,
+    "p_sum": 12233,
+    "ot_sum": 194
+  },
+  "Social_Emotion": {
+    "plus_sum": 7532,
+    "minus_sum": 3490,
+    "p_sum": 19869,
+    "ot_sum": 366
+  },
+  "Communication": {
+    "plus_sum": 7473,
+    "minus_sum": 3541,
+    "p_sum": 20323,
+    "ot_sum": 350
+  },
+  "Sensory_Motor_Skill": {
+    "plus_sum": 5066,
+    "minus_sum": 2390,
+    "p_sum": 13501,
+    "ot_sum": 217
+  },
+  "Independent_and_Self_help": {
+    "plus_sum": 1959,
+    "minus_sum": 954,
+    "p_sum": 5328,
+    "ot_sum": 87
+  },
+  "Behavioural_Development": {
+    "plus_sum": 427,
+    "minus_sum": 211,
+    "p_sum": 1226,
+    "ot_sum": 30
+  }
+}

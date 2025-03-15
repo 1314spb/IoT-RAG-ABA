@@ -20,7 +20,7 @@ export const axioStudentData = (studentId, { setLoading, setError, setAxioedData
       if (response.data.sessions.length === 0) {
         setAxioedData({ sessions: [], student_id: response.data.student_id });
       } else {
-        
+
         setAxioedData(response.data);
       }
       setSelectedDate({ startDate: null, endDate: null });

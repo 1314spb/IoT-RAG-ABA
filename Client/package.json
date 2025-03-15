@@ -10,12 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.13.5",
-    "@emotion/styled": "^11.13.5",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
     "@fontsource/roboto": "^5.1.0",
     "@material-tailwind/react": "^2.1.10",
     "@mui/icons-material": "^6.1.8",
-    "@mui/material": "^6.1.8",
+    "@mui/material": "^6.4.7",
+    "@mui/styled-engine-sc": "^6.4.6",
+    "@mui/x-charts": "^7.27.1",
+    "@mui/x-data-grid": "^7.27.3",
     "axios": "^1.7.7",
     "chart.js": "^4.4.6",
     "chartjs-adapter-date-fns": "^3.0.0",
@@ -28,7 +31,8 @@
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0",
-    "react-tailwindcss-datepicker": "^1.7.2"
+    "react-tailwindcss-datepicker": "^1.7.2",
+    "styled-components": "^6.1.15"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
