@@ -5,7 +5,7 @@ import { students } from "../../demoData/studentsData";
 import axioGetSum from "../../utils/axioGetSum";
 
 import StudentDropdown from "../../components/StudentDropdown";
-import { PieChart } from '@mui/x-charts/PieChart';
+import { PieChart, pieArcLabelClasses } from '@mui/x-charts/PieChart';
 
 const Analysis = () => {
 	const [openStudentDropdown, setOpenStudentDropdown] = useState(false);
@@ -73,7 +73,7 @@ const Analysis = () => {
 							const data = [
 								{ id: 'Plus', value: sum[category].value.plus_sum, label: "+" },
 								{ id: 'Minus', value: sum[category].value.minus_sum, label: "-" },
-								{ id: 'P Sum', value: sum[category].value.p_sum, label: "P", color: 'yellow' },
+								{ id: 'P Sum', value: sum[category].value.p_sum, label: "P", color: 'orange' },
 								{ id: 'OT Sum', value: sum[category].value.ot_sum, label: "OT" },
 							];
 
@@ -94,6 +94,12 @@ const Analysis = () => {
 												}
 											},
 										]}
+										sx={{
+											[`& .${pieArcLabelClasses.root}`]: {
+												fill: 'white',
+												fontSize: 14,
+											},
+										}}
 										width={260}
 										height={260}
 									/>
