@@ -7,7 +7,6 @@ const taskOnSave = async (
   setEditingData
 ) => {
   const taskId = editedTask.id;
-
   try {
     const response = await axios.patch(`/api/taskOnSave/${taskId}`, editedTask);
     console.log("Task updated on server:", response.data);

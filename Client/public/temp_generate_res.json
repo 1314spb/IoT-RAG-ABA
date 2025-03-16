@@ -1,3 +1,6 @@
 {
-  "content": "In the heart of the city, there lies a small park that offers a tranquil escape from the bustling streets. The trees sway gently in the breeze, and the sound of birds chirping fills the air. Families gather for picnics, while joggers make their way along the winding paths. The park serves as a reminder of the beauty of nature amidst the urban landscape, providing a peaceful haven for anyone seeking a moment of relaxation."
+  "task": "Test task",
+  "subtask": "Test subtask",
+  "description": "In the heart of the city, there lies a small park that offers a tranquil escape from the bustling streets. The trees sway gently in the breeze, and the sound of birds chirping fills the air. Families gather for picnics, while joggers make their way along the winding paths. The park serves as a reminder of the beauty of nature amidst the urban landscape, providing a peaceful haven for anyone seeking a moment of relaxation.",
+  "reason": "Testing Reason"
 }

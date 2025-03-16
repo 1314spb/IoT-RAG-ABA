@@ -6,7 +6,7 @@ import Datepicker from "react-tailwindcss-datepicker";
 import DataChart from './DataChart';
 import StudentDropdown from '../../components/StudentDropdown';
 
-import { axioStudentData } from "../../utils/axioStudentData";
+import axioStudentData from "../../utils/axioStudentData";
 
 import { students } from "../../demoData/studentsData";
 import { domains } from "../../demoData/domainsData";

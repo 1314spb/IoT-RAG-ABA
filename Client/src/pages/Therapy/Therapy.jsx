@@ -4,7 +4,7 @@ import { Dropdown } from "flowbite-react";
 import Datepicker from "react-tailwindcss-datepicker";
 import 'react-calendar/dist/Calendar.css';
 
-import { axioStudentData } from "../../utils/axioStudentData";
+import axioStudentData from "../../utils/axioStudentData";
 
 import StudentDropdown from "../../components/StudentDropdown";
 import taskOnSave from "../../utils/taskOnSave";

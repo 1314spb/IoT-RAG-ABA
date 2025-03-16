@@ -1,4 +1,5 @@
 import React, { useLayoutEffect, useState } from "react";
+import { motion } from 'framer-motion';
 
 import PassGeneratedTask from "./PassGeneratedTask";
 import StudentDropdown from "../../components/StudentDropdown";
@@ -31,7 +32,8 @@ const Generate = () => {
 
 		try {
 			const response_data = await axioGenerate(payload);
-			// console.log("response_data:", response_data);
+			console.log("response_data:", response_data);
+			setGeneratedTask(response_data);
 		} catch (err) {
 			setError(err);
 			console.error("Error:", err);
@@ -100,12 +102,24 @@ const Generate = () => {
 						{loading && <p>Loading generated task...</p>}
 						{error && <p className="text-red-500">Error: {error}</p>}
 						{generatedTask ? (
-							<div>
-								<h3 className="font-bold text-xl mb-2">Generated Task</h3>
-								<pre className="whitespace-pre-wrap">
-									{JSON.stringify(generatedTask, null, 2)}
-								</pre>
-							</div>
+							<motion.div
+								className="p-4"
+								initial={{ opacity: 0, y: 10 }}
+								animate={{ opacity: 1, y: 0 }}
+								transition={{ duration: 0.5 }}
+							>
+								<p className="text-3xl flex"><strong>Task</strong></p>
+								<p className="pl-4 flex">{generatedTask.task}</p>
+
+								<p className="text-3xl flex pt-2"><strong>Sub-Task</strong></p>
+								<p className="pl-4 flex">{generatedTask.subtask}</p>
+
+								<p className="text-3xl flex pt-2"><strong>Description</strong></p>
+								<p className="pl-4 flex text-justify">{generatedTask.description}</p>
+
+								<p className="text-3xl flex pt-2"><strong>Reason</strong></p>
+								<p className="pl-4 flex">{generatedTask.reason}</p>
+							</motion.div>
 						) : (
 							!loading && <p>No generated task to display yet.</p>
 						)}
