@@ -133,12 +133,11 @@ This project aims to develop an integrated system that combines IoT technology w
 3. **迭代測試**：根據反饋和性能指標不斷測試和調整，以實現最佳結果。
 
 ## Reference
-[1]: J.O. Cooper, T. E. Heron, and W. L. Heward, Applied behavior analysis. Pearson UK, 2020.
-[2]: H. S. Roane, W. W. Fisher, and J. E. Carr, “Applied behavior analysis as treatment for autism spectrum disorder,” The Journal of pediatrics, vol. 175, pp. 27–32, 2016.
-[3]: T. Eckes, U. Buhlmann, H.-D. Holling, and A. Möllmann, “Comprehensive aba-based interventions in the treatment of children with autism spectrum disorder–a meta-analysis,” BMC psychiatry, vol. 23, no. 1, p. 133, 2023.
-[4]: R. M. Foxx, “Applied behavior analysis treatment of autism: The state of the art,” Child and adolescent psychiatric clinics of North America, vol. 17, no. 4, pp. 821–834, 2008.
-[5]: R. Y.-Y. Chan, C. M. V. Wong, and Y. N. Yum, “Predicting behavior change in students with special education needs using multimodal learning analytics,” IEEE Access, vol. 11, pp. 63 238–63 251, 2023.
-
+[1]: J.O. Cooper, T. E. Heron, and W. L. Heward, Applied behavior analysis. Pearson UK, 2020. \\
+[2]: H. S. Roane, W. W. Fisher, and J. E. Carr, “Applied behavior analysis as treatment for autism spectrum disorder,” The Journal of pediatrics, vol. 175, pp. 27–32, 2016. \\
+[3]: T. Eckes, U. Buhlmann, H.-D. Holling, and A. Möllmann, “Comprehensive aba-based interventions in the treatment of children with autism spectrum disorder–a meta-analysis,” BMC psychiatry, vol. 23, no. 1, p. 133, 2023. \\
+[4]: R. M. Foxx, “Applied behavior analysis treatment of autism: The state of the art,” Child and adolescent psychiatric clinics of North America, vol. 17, no. 4, pp. 821–834, 2008. \\
+[5]: R. Y.-Y. Chan, C. M. V. Wong, and Y. N. Yum, “Predicting behavior change in students with special education needs using multimodal learning analytics,” IEEE Access, vol. 11, pp. 63 238–63 251, 2023. \\
 
 
 ## Acknowledgement
