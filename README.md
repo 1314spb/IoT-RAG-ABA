@@ -1,144 +1,111 @@
-# 整合圖像識別與基於檢索增強生成（RAG）的大型語言模型，用於有特殊教育需求兒童的個性化 ABA 任務生成
+# RAG-ABA: Fine-Tuned Retrieval-Augmented Generation for Personalized ABA Task Generation
 
-## 目錄
+## Table of Contents
 
-- [簡介](#簡介)
-- [項目目標](#項目目標)
-- [關鍵組件](#關鍵組件)
-- [安裝與部署](#安裝與部署)
-- [使用說明](#使用說明)
-- [方法論](#方法論)
-- [評估與測試](#評估與測試)
-- [參考文獻](#參考文獻)
-- [學術誠信聲明](#學術誠信聲明)
+- [Introduction](#Introduction)
+- [Obejective](#Objective)
+- [Deployment](#Deployment)
+- [Instructions](#Instructions)
+- [Methodology](#Methodology)
+- [Evaluation](#Evaluation)
+- [Reference](#Reference)
+- [Acknowledgement](#Acknowledgement)
+- [License](#License)
 
-## 簡介
+## Introduction
 
-有特殊教育需求（Special Educational Needs, SEN）的兒童需要個性化的干預措施，以有效支持其發展。應用行為分析（Applied Behavior Analysis, ABA）是一種廣泛認可的方法，用於創建量身定制的行為干預。然而，設計個性化的 ABA 任務既耗時，又可能無法實時考慮兒童情感和行為狀態的動態變化。傳統的 ABA 任務生成缺乏所需的適應性和個性化，無法及時響應兒童當前的情感和行為信號，從而可能降低干預效果。
+Applied Behavior Analysis (ABA) is a recognized, evidence-based framework for improving socially significant behaviors in children with Special Educational Needs (SEN), primarily by structuring interventions around reinforcement, prompting, and shaping principles [1], [2], [3]. These interventions, while effective, demand extensive planning, monitoring, and real-time adaptation, which can overwhelm practitioners and limit scalability. In conventional implementations, ABA specialists must manually adjust tasks to keep pace with each child’s quickly evolving emotional and behavioral states, diminishing the possibility of delivering timely and context-sensitive interventions [4], [5].
 
-## 項目目標
 
-本項目的目的是開發一個集成系統，結合圖像識別技術與基於檢索增強生成（RAG）的大型語言模型（LLM），實時生成針對有特殊教育需求兒童的個性化 ABA 任務。該系統旨在提高 ABA 任務設計的效率和精確性，並能夠根據兒童的即時情感和行為反應動態調整任務內容。
+## Objective
 
-## 關鍵組件
+This project aims to develop an integrated system that combines IoT technology with a Retrieval-Augmented Generation (RAG) Large Language Model (LLM) to generate personalized ABA tasks in real-time for children with Special Educational Needs. The system is designed to enhance the efficiency and accuracy of ABA task design and dynamically adjust task content based on the child's real-time emotional and behavioral responses.
 
-### 1. 圖像識別模組
+## Deployment
 
-- **數據收集**：編譯代表兒童各種情感狀態和行為的圖像和視頻數據集。
-- **預處理**：調整圖像大小、正規化，必要時轉換為灰階以便分析。
-- **面部表情識別**：使用預訓練模型（如 FER2013、ResNet）來分類情感狀態，如快樂、悲傷和焦慮。
-- **行為分析**：實施如 MediaPipe 之類的工具檢測身體姿勢和手勢，識別如坐立不安或避開目光等行為。
+### Prerequisites
 
-### 2. 基於 RAG 的 ABA 任務生成系統
+- Docker
+- High performance GPU (Recommend NVIDIA RTX 3090 or above)
 
-- **數據預處理**：清理和結構化 ABA 任務數據集，確保目標、行為、干預措施和結果的一致性。
-- **索引**：使用 BM25 或 Elasticsearch 對清理後的數據集進行索引，以實現高效檢索。
-- **RAG 模型集成**：在 ABA 任務數據集上微調預訓練的 LLM（如 GPT-3、Llama2）以理解任務結構和內容。
-- **任務生成**：當檢測到特定情感或行為狀態時，RAG 系統檢索相關任務並生成新的、定制化的 ABA 任務，以適應兒童當前的狀態。
+### Deployment Step
 
-### 3. 系統集成
-
-- 使用 Python 框架（如 Flask、Django）開發後端，以處理實時圖像輸入和任務生成。
-- 實施 API 以促進圖像識別模組與 RAG 系統之間的通信。
-- 確保實時數據流，使系統能夠動態響應兒童的情感和行為信號。
-
-### 4. 硬件與部署
-
-- 使用高性能 GPU（如 NVIDIA RTX 3090、A100）支持實時圖像處理和 LLM 操作。
-- 在雲平台（如 AWS）上部署系統，確保可擴展性和可訪問性，並通過用戶友好的網頁或應用界面提供給治療師、教育者和家長使用。
-
-## 安裝與部署
-
-### 先決條件
-
-- Python 3.8+
-- Node.js 和 npm
-- Docker（可選，用於容器化部署）
-- 高性能 GPU（建議 NVIDIA RTX 3090 或以上）
-
-### 安裝步驟
-
-1. **克隆倉庫**
+1. Clone the repository from GitHub
 
    ```bash
    git clone https://github.com/1314spb/RAG-LLM4ABA.git
    cd RAG-LLM4ABA
    ```
 
-2. **設置 Python 環境**
+2. Use docker-compose to build and run the application
 
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # 在 Windows 上使用 `venv\Scripts\activate`
-   pip install -r requirements.txt
+   docker-compose up --build
    ```
 
-3. **設置前端**
+3. Open a browser and visit `http://localhost:80` to view the application.
 
    ```bash
-   cd Client
-   npm install
-   npm run build
-   cd ..
+   http://localhost:80
    ```
 
-4. **配置環境變量**
+## Instructions
 
-   創建一個 `.env` 文件，並根據需要設置相關變量，如 API 密鑰、數據庫連接等。
+### Page
+1. **Home Page**
 
-5. **運行後端**
+   The home page provides an overview of the system and its functionalities.
 
-   ```bash
-   python3 app.py
-   ```
+2. **History Page**
 
-6. **訪問應用**
+   The history page displays the history of data with the child, including the date, student, and domain.
 
-   打開瀏覽器，訪問 `http://localhost:5000` 查看應用。
+3. **Generate Page**
 
-## 使用說明
+   The generate page allows users to select a student, date, and domain to generate personalized ABA tasks.
 
-1. **選擇學生**
+4. **Therapy Page**
 
-   點擊 "Students" 按鈕，從下拉菜單中選擇一位學生。系統將加載該學生的歷史會話數據。
+   The therapy page displays the all past ABA tasks for the selected student.
 
-2. **選擇日期範圍**
+5. **Add Page**
 
-   使用日期選擇器設置感興趣的日期範圍，系統將基於選定的日期範圍篩選會話數據。
+   The add page allows users to add new task, including task, subtask, domain, status, description and date for the selected student.
 
-3. **選擇領域**
+6. **Analysis Page**
 
-   從左側的 "Domains" 列表中選擇一個領域，系統將根據選定的領域篩選會話數據。
+   The analysis page provides a detailed visual piechart of the child's performance based on the uploaded tasks' status.
 
-4. **查看圖表**
+## Methodology
 
-   基於選定的學生、日期和領域，系統將顯示相應的數據圖表，並提供如何根據當前情感和行為狀態生成個性化的 ABA 任務。
+### IoT Sensory Data Collection
 
-## 方法論
+1. **Data Collection**: Collect IoT data, including temperature, acceration, GSR and BVP from using sensors.
+2. **Data Preprocessing**: Clean and preprocess the raw data, including normalization and feature extraction.
+3. **Feature Engineering**: Extract features from the preprocessed data, such as mean, variance, and frequency domain features.
 
-### 圖像識別用於情感和行為分析
+### RAG Model Training
 
-1. **數據收集**：收集代表不同情感和行為狀態的兒童圖像和視頻。
-2. **預處理**：調整圖像大小，正規化，必要時轉換為灰階。
-3. **面部表情識別**：使用預訓練模型（如 FER2013、ResNet）分類情感狀態。
-4. **行為分析**：使用 MediaPipe 檢測身體姿勢和手勢，識別具體行為。
+1. **Data Preprocessing**: Clean and structure the ABA task dataset, ensuring consistency in target, behavior, intervention, and outcome.
+2. **RAG Model Integration**: Fine-tune a pre-trained LLM (Llama3) on the ABA task dataset to understand task structure and content.
+3. **Task Generation**: When specific emotion or behavior states are detected, the RAG system retrieves relevant tasks and generates new, customized ABA tasks to adapt to the child's current state.
 
-### RAG 系統用於 ABA 任務生成
+### System Integration
 
-1. **數據預處理**：清理和結構化 ABA 任務數據集。
-2. **索引**：使用 BM25 或 Elasticsearch 索引數據集。
-3. **RAG 模型集成**：在 ABA 任務數據集上微調 LLM，以理解任務結構。
-4. **任務生成**：根據檢測到的情感和行為狀態，檢索相關任務並生成定制化任務。
+1. **Front-end (React.js)**: Develop a user-friendly web interface for therapists, educators, and parents to interact with the system.
+2. **Back-end (Express.js)**: Implement a back-end server to handle task and IoT input and task generation.
+3. **Database (MariaDB)**: Store ABA task data and IoT sensory data for future analysis and reference.
+4. **API Implement**: Implement API to facilitate communication between the IoT sensor module, the RAG system and AI server.
+   1. `GET: /api/pass_gen_tasks`: Take all pass generated task data of selected student from the database.
+   2. `GET: api/students/:student_id`: Take all the task data of selected student from the database.
+   3. `GET: /api/task_sum`: Take the sum of all the tasks' status data from the database.
+   4. `POST: /api/generate`: Generate a new task for the selected student and save it to the database.
+   5. `PATCH: /api/taskOnSave/:id`: Update the task detail and status of the selected task in the database.
+3. **Hardware and Deployment**: Use high-performance GPU (NVIDIA RTX 3090 or above) to support real-time image processing and LLM operations. Deploy the system on a cloud platform (AWS) to ensure scalability and accessibility.
 
-### 系統集成與部署
+## Evaluation
 
-1. **後端開發**：使用 Flask 或 Django 開發後端，處理實時圖像輸入和任務生成。
-2. **API 實施**：實現 API 以連接圖像識別模組與 RAG 系統。
-3. **硬件與部署**：使用高性能 GPU 支持實時處理，並在雲平台上部署系統。
-
-## 評估與測試
-
-### 模型評估
+### Model Evaluation
 
 - **檢索模組**：測試檢索的準確性和相關性。
 - **生成模組**：評估生成輸出的質量和連貫性。
@@ -165,12 +132,19 @@
 2. **文檔記錄**：記錄所有測試結果，包括成功和需要改進的地方，使用圖表和圖形以增加清晰度。
 3. **迭代測試**：根據反饋和性能指標不斷測試和調整，以實現最佳結果。
 
-## 學術誠信聲明
+## Reference
+[1]: J.O. Cooper, T. E. Heron, and W. L. Heward, Applied behavior analysis. Pearson UK, 2020.
+[2]: H. S. Roane, W. W. Fisher, and J. E. Carr, “Applied behavior analysis as treatment for autism spectrum disorder,” The Journal of pediatrics, vol. 175, pp. 27–32, 2016.
+[3]: T. Eckes, U. Buhlmann, H.-D. Holling, and A. Möllmann, “Comprehensive aba-based interventions in the treatment of children with autism spectrum disorder–a meta-analysis,” BMC psychiatry, vol. 23, no. 1, p. 133, 2023.
+[4]: R. M. Foxx, “Applied behavior analysis treatment of autism: The state of the art,” Child and adolescent psychiatric clinics of North America, vol. 17, no. 4, pp. 821–834, 2008.
+[5]: R. Y.-Y. Chan, C. M. V. Wong, and Y. N. Yum, “Predicting behavior change in students with special education needs using multimodal learning analytics,” IEEE Access, vol. 11, pp. 63 238–63 251, 2023.
 
-本項目遵守香港中文大學的學術誠信政策。提交的作品是原創，並且未經宣告地提交給多個不同的課程或目的。所有引用的資料來源均已正確標註。未經教師同意，未分發、分享或複製任何教學材料以獲取不正當的學術優勢。
 
----
 
-## 授權與許可
+## Acknowledgement
 
-本項目遵循 [MIT 許可證](LICENSE) 授權條款。
+This project adheres to the academic integrity policy of The Chinese University of Hong Kong. The submitted work is original and has not been submitted to multiple courses or purposes without declaration. All cited sources are correctly referenced. No teaching materials are distributed, shared, or copied to gain unfair academic advantage without the permission of the instructor.
+
+## License
+
+This project is licensed under the terms of the [MIT license](LICENSE).
