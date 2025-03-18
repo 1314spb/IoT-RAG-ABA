@@ -1,0 +1,28 @@
+- Domain: Sensory Motor Skill
+- Task: "Obstacle Course"
+- Sub task: Navigating a course with different obstacles, such as balance beams, hurdles, and tunnels
+- Description: This task aims to improve gross motor skills, balance, and coordination by engaging the individual in navigating a challenging obstacle course.
+- Materials: 
+  - A designated obstacle course with various obstacles (e.g., balance beams, hurdles, tunnels, cones)
+  - Optional: music or other auditory stimuli to enhance the sensory experience
+- Procedure:
+  1. Set up the obstacle course with a variety of challenges, such as balance beams, hurdles, and tunnels.
+  2. Encourage the individual to navigate the course, providing support and guidance as needed.
+  3. Monitor and record the individual's progress, taking note of their ability to successfully complete the course and their overall engagement with the activity.
+- Data Collection:
+  - Time taken to complete the course
+  - Accuracy and success in navigating obstacles
+  - Individual's self-report of their experience (e.g., enjoyment, frustration)
+- Variations:
+  - Increase or decrease the difficulty of the course by adding or removing obstacles
+  - Change the layout of the course to challenge the individual in different ways
+  - Incorporate auditory or visual stimuli to enhance the sensory experience
+- Reinforcement:
+  - Verbal praise and encouragement
+  - Physical praise (e.g., high-fives, hugs)
+  - Tangible rewards (e.g., stickers, small toys)
+- Skills Developed:
+  - Gross motor skills
+  - Balance
+  - Coordination
+  - Self-regulation and self-motivation

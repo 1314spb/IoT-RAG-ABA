@@ -1,0 +1,18 @@
+- Domain: Social Emotion
+- Task: Emotion Recognition and Expression
+- Sub task: Matching Facial Expressions to Emotions
+- Description: The child learns to identify and match different facial expressions with corresponding emotions, enhancing their ability to recognize and understand various emotional states.
+- Materials: Emotion cards with pictures of facial expressions, emotion word cards
+- Procedure:
+  1. Present the child with a set of emotion cards showing different facial expressions.
+  2. Introduce emotion word cards (e.g., happy, sad, angry, surprised).
+  3. Ask the child to match the facial expression cards with the correct emotion word cards.
+  4. Gradually increase the complexity by introducing more subtle emotions.
+  5. Practice expressing these emotions through role-play or mirror exercises.
+- Data Collection: Record the number of correct matches and expressions produced by the child in each session.
+- Variations:
+  1. Use digital images or videos instead of physical cards.
+  2. Incorporate body language along with facial expressions.
+  3. Use real-life scenarios to contextualize emotions.
+- Reinforcement: Provide verbal praise and small rewards for correct matches and accurate expressions.
+- Skills Developed: Emotion recognition, empathy, social awareness, nonverbal communication

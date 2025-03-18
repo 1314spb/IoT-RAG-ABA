@@ -1,0 +1,44 @@
+- Domain: Behavioral Development
+
+- Task: Self-Care Skills
+
+- Sub task: Toothbrushing
+
+- Description: Teaching the client to independently perform proper toothbrushing technique.
+
+- Materials:
+  - Toothbrush and toothpaste
+  - Visual schedule of toothbrushing steps
+  - Timer
+  - Mirror
+  - Tooth model (optional)
+
+- Procedure:
+  1. Introduce toothbrushing using a visual schedule
+  2. Model proper technique using a tooth model or mirror
+  3. Use hand-over-hand guidance to teach brushing motions
+  4. Gradually fade physical prompts
+  5. Implement a timer for appropriate brushing duration
+  6. Practice daily at consistent times
+
+- Data Collection:
+  - Percentage of steps completed independently
+  - Duration of brushing
+  - Frequency of prompts required
+
+- Variations:
+  - Use flavored toothpaste for sensory-sensitive clients
+  - Incorporate songs or games to make the task more engaging
+  - Practice with different types of toothbrushes (manual, electric)
+
+- Reinforcement:
+  - Verbal praise for each completed step
+  - Sticker chart for consistent daily brushing
+  - Small reward for achieving independence in task
+
+- Skills Developed:
+  - Personal hygiene
+  - Fine motor skills
+  - Task sequencing
+  - Time management
+  - Independence in daily living skills

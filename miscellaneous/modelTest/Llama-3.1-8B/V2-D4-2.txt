@@ -1,0 +1,33 @@
+- Domain: Sensory Motor Skill
+- Task: Balancing on a Balance Beam
+- Subtask: 
+  - Subtask 1: Improving balance and equilibrium
+  - Subtask 2: Enhancing gross motor skills
+- Description: This task is designed to improve balance and equilibrium in children with autism spectrum disorder (ASD) or other developmental delays. Balancing on a balance beam involves standing on a narrow surface, which helps develop balance, equilibrium, and gross motor skills.
+- Materials: 
+  - A balance beam (e.g., a narrow board or a line on the floor)
+  - Cones or markers to mark the beam
+  - A soft surface for landing (e.g., a mat or a crash pad)
+- Procedure:
+  1. Begin with a wide beam or a line on the floor.
+  2. Demonstrate how to stand on the beam and balance.
+  3. Encourage the child to imitate the actions.
+  4. Gradually narrow the beam or raise it off the ground.
+  5. Rotate the beam or change its location to maintain interest.
+- Data Collection: 
+  - Observe the child's ability to balance on the beam.
+  - Record the frequency and duration of successful balance.
+  - Evaluate the child's ability to recover from balance loss.
+- Variations:
+  - Use different types of balance beams (e.g., a wobble board, a balance beam with a curve).
+  - Incorporate obstacles or challenges on the beam (e.g., cones, blocks).
+  - Modify the beam to accommodate different heights or abilities.
+- Reinforcement: 
+  - Praise the child for successful balance.
+  - Offer verbal encouragement and positive reinforcement.
+  - Use visual aids, such as stickers or stars, to track progress.
+- Skills Developed: 
+  - Balance and equilibrium
+  - Gross motor skills
+  - Postural awareness
+  - Stability

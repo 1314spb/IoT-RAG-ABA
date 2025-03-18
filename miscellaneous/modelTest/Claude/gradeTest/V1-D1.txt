@@ -1,0 +1,18 @@
+- Domain: Academic and Learning
+- Task: Category: Expressive
+- Subtask: Naming Shapes
+- Description: The learner will correctly name basic geometric shapes when presented with visual representations.
+- Materials: Flashcards or physical objects representing various shapes (circle, square, triangle, rectangle, oval)
+- Procedure:
+  1. Present a shape to the learner
+  2. Ask, "What shape is this?"
+  3. Wait up to 5 seconds for a response
+  4. Provide praise for correct answers or gentle correction for incorrect answers
+  5. Repeat with different shapes
+- Data Collection: Record correct/incorrect responses for each trial, calculate percentage of correct responses per session
+- Variations:
+  1. Use real-world objects that represent shapes
+  2. Ask learner to draw the shape when given its name
+  3. Present multiple shapes and ask learner to identify a specific one
+- Reinforcement: Verbal praise, stickers, or small rewards for correct responses or improvements
+- Skills Developed: Expressive language, shape recognition, vocabulary expansion, visual discrimination

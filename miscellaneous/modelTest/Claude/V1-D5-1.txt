@@ -1,0 +1,21 @@
+- Domain: Independent and Self-help
+- Task: Tooth Brushing
+- Sub task: Applying Toothpaste
+- Description: Teaching the individual to independently apply an appropriate amount of toothpaste to their toothbrush
+- Materials: Toothbrush, toothpaste, mirror, sink
+- Procedure:
+  1. Place materials within reach
+  2. Prompt individual to pick up toothbrush
+  3. Guide individual to hold toothbrush correctly
+  4. Prompt individual to pick up toothpaste
+  5. Demonstrate how to open toothpaste cap
+  6. Guide individual to squeeze small amount of toothpaste onto brush
+  7. Prompt individual to close toothpaste cap
+  8. Gradually fade physical prompts as individual shows progress
+- Data Collection: Record successful independent steps completed out of total steps
+- Variations:
+  - Use visual aids showing steps
+  - Practice with different types of toothpaste containers
+  - Incorporate into full tooth brushing routine
+- Reinforcement: Praise for each step completed, sticker chart for full task completion
+- Skills Developed: Fine motor skills, sequencing, self-care, independence

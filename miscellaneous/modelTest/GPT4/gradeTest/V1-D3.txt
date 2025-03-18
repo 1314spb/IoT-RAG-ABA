@@ -1,0 +1,10 @@
+Domain: Communication
+Task: P.E.C.S.: Phase 4 - Sentences - In PECS book
+Sub task: Create a complete sentence using picture icons
+Description: The child will use the PECS book to create a complete sentence (e.g., "I want [item]") by combining the "I want" symbol with a picture of the desired item.
+Materials: PECS book, picture icons of various items, "I want" symbol.
+Procedure: The therapist will present the child with a motivating item and prompt the child to create a sentence by attaching the "I want" symbol followed by the picture of the item. Physical and verbal prompts will be gradually faded as the child becomes independent in using the PECS book to communicate.
+Data Collection: Record the number of successful independent attempts to create a complete sentence out of total trials.
+Variations: Use different motivating items and different sentence structures (e.g., "I see [item]") to generalize the skill.
+Reinforcement: Provide the requested item as a reward after the child successfully forms the sentence, paired with verbal praise.
+Skills Developed: Sentence formation, communication initiation, increased independence in requesting items, picture-to-word association.

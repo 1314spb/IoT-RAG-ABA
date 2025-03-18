@@ -1,0 +1,16 @@
+Domain: Behavioral Development
+Task: Following Instructions
+Sub task: Responding to simple verbal commands
+Description: The child will practice following simple verbal instructions to improve listening skills and compliance with directives.
+Materials: Everyday items (e.g., toys, books, chairs), visual cues (optional)
+Procedure:
+Give the child a simple instruction, such as "Pick up the toy" or "Sit in the chair."
+Wait for the child to follow the instruction, providing guidance or modeling as needed.
+Gradually increase the complexity of the instructions (e.g., "Pick up the toy and put it on the table").
+Reduce prompting over time to encourage independence.
+Data Collection: Record the number of instructions followed correctly and independently during each session.
+Variations:
+Use a variety of instructions across different environments.
+Add multiple-step instructions as the child becomes more proficient.
+Reinforcement: Offer praise, tokens, or a preferred activity after each successful response to an instruction.
+Skills Developed: Listening, comprehension, following directions, and impulse control.

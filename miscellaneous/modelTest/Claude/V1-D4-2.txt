@@ -1,0 +1,18 @@
+- Domain: Sensory Motor Skill
+- Task: Balance Beam Walk
+- Sub task: Walking heel-to-toe on a line
+- Description: The child will walk heel-to-toe along a straight line or low balance beam, maintaining balance
+- Materials: Masking tape or low balance beam, timer
+- Procedure:
+  1. Create a straight line on the floor using tape or set up a low balance beam
+  2. Demonstrate the heel-to-toe walking technique
+  3. Assist the child in starting the walk, providing hand support if needed
+  4. Encourage the child to walk the entire length independently
+  5. Gradually increase the distance and reduce physical support
+- Data Collection: Record the distance walked without losing balance or stepping off the line
+- Variations:
+  1. Add obstacles to step over
+  2. Incorporate arm positions (e.g., arms out, hands on hips)
+  3. Introduce backward walking
+- Reinforcement: Verbal praise, stickers for completed walks
+- Skills Developed: Balance, proprioception, body awareness, motor planning, concentration

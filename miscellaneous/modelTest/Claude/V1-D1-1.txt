@@ -1,0 +1,18 @@
+- Domain: Academic and Learning
+- Task: Fraction Comparison
+- Sub task: Greater Than, Less Than, Equal To
+- Description: The learner will compare two fractions using the symbols >, <, or = to indicate their relative values.
+- Materials: Fraction cards, comparison symbol cards (>, <, =), whiteboard, dry-erase marker
+- Procedure:
+  1. Present two fraction cards to the learner.
+  2. Ask the learner to compare the fractions.
+  3. Instruct the learner to select the appropriate comparison symbol.
+  4. Have the learner write the complete comparison on the whiteboard.
+  5. Provide feedback and correction if needed.
+- Data Collection: Record correct responses out of total trials, noting any patterns in errors
+- Variations:
+  1. Use improper fractions
+  2. Compare fractions with different denominators
+  3. Include mixed numbers
+- Reinforcement: Verbal praise, token economy, or preferred activity upon reaching a predetermined goal
+- Skills Developed: Mathematical reasoning, fraction comprehension, symbol recognition, comparative analysis

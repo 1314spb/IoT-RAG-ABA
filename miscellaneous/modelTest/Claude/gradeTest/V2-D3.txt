@@ -1,0 +1,38 @@
+- Domain: Communication
+- Task: P.E.C.S.: Phase 4 - Sentences - In PECS book
+- Subtask: Building sentences using "I want" and item cards
+- Description: The client will learn to construct simple sentences using the "I want" card and an item card in their PECS book to make requests.
+- Materials:
+  - PECS book
+  - "I want" sentence starter card
+  - Various item cards representing preferred items
+  - Sentence strip
+  - Actual preferred items
+- Procedure:
+  1. Open the PECS book to the page with the "I want" card and item cards.
+  2. Present a preferred item to the client.
+  3. Wait for the client to initiate communication by reaching for the PECS book.
+  4. Prompt the client to place the "I want" card on the sentence strip if needed.
+  5. Guide the client to select the appropriate item card and place it next to the "I want" card.
+  6. Encourage the client to remove the completed sentence strip and hand it to the communication partner.
+  7. Read the sentence aloud: "I want [item]" while pointing to each card.
+  8. Immediately provide the requested item to the client.
+  9. Gradually fade prompts as the client becomes more proficient.
+- Data Collection:
+  - Record the number of independent sentence constructions per session
+  - Note any prompts required and their level (full physical, partial physical, gestural, verbal)
+  - Track the variety of items requested
+- Variations:
+  - Increase the number of item cards available
+  - Introduce attribute cards (e.g., colors, sizes) in later stages
+  - Practice in different settings or with different communication partners
+- Reinforcement:
+  - Immediate access to the requested item upon correct sentence construction
+  - Social praise for successful communication
+  - Token economy system for consistent use of sentences
+- Skills Developed:
+  - Sentence construction
+  - Requesting using complete sentences
+  - Combining multiple elements in communication
+  - Discriminating between sentence starter and item cards
+  - Expanding vocabulary through new item cards

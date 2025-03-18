@@ -1,0 +1,18 @@
+- Domain: Behavioral Development
+- Task: Emotional Regulation
+- Sub task: Emotion Matching Game
+- Description: Teach the child to identify and match emotions using pictures and real-life scenarios
+- Materials: Emotion cards with facial expressions, scenario cards
+- Procedure:
+  1. Lay out emotion cards face-up
+  2. Show the child a scenario card
+  3. Ask the child to identify and point to the corresponding emotion
+  4. Discuss why the scenario might lead to that emotion
+  5. Encourage the child to share a personal experience related to the emotion
+- Data Collection: Record correct matches, incorrect attempts, and level of prompting required
+- Variations:
+  1. Use mirror for child to practice facial expressions
+  2. Create emotion-scenario matching pairs
+  3. Role-play scenarios and guess emotions
+- Reinforcement: Praise, token system, or preferred activity for correct matches and engagement
+- Skills Developed: Emotional intelligence, social awareness, communication, empathy

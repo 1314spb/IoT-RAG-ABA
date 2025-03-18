@@ -1,0 +1,21 @@
+- Domain: Social Emotion
+- Task: Greetings: Responding
+- Subtask: Verbal response to greetings
+- Description: Teaching the child to appropriately respond to various greetings in social situations
+- Materials: None required, but picture cards of different greeting scenarios can be helpful
+- Procedure:
+  1. Therapist approaches the child and says a greeting (e.g., "Hello", "Hi", "Good morning")
+  2. Prompt the child to respond appropriately (e.g., "Hello", "Hi", "Good morning to you too")
+  3. Gradually fade prompts as the child becomes more proficient
+  4. Practice with different greetings and in various settings
+- Data Collection: Record the number of correct responses out of total opportunities
+- Variations:
+  - Use different tones of voice for greetings
+  - Practice with various people (therapist, parents, peers)
+  - Incorporate non-verbal greetings (wave, handshake)
+- Reinforcement: Praise, high-fives, or small rewards for correct responses
+- Skills Developed:
+  - Social awareness
+  - Verbal communication
+  - Turn-taking in conversation
+  - Appropriate social etiquette

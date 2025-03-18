@@ -1,0 +1,18 @@
+- Domain: Communication
+- Task: Sequencing Pictures to Tell a Story
+- Sub task: Arranging 3-5 picture cards in correct order
+- Description: The child will arrange a set of picture cards in the correct sequence to tell a simple story
+- Materials: Set of 3-5 picture cards depicting a simple story sequence
+- Procedure:
+  1. Present the picture cards to the child in random order
+  2. Explain that the cards tell a story when put in the right order
+  3. Ask the child to arrange the cards to show the story from beginning to end
+  4. Provide prompts or assistance as needed
+  5. Once arranged, ask the child to describe the story using the picture sequence
+- Data Collection: Record the number of cards correctly sequenced and the level of prompting required
+- Variations:
+  - Increase or decrease the number of cards
+  - Use familiar stories or daily routines
+  - Have the child create their own story using the cards
+- Reinforcement: Praise for effort and correct sequencing; allow child to tell the story to others
+- Skills Developed: Sequencing, narrative skills, temporal concepts, expressive language

@@ -1,0 +1,18 @@
+- Domain: Social Emotion
+- Task: Emotional Self-Regulation
+- Sub task: Creating a Personal Calming Toolkit
+- Description: The child learns to identify and use various calming strategies to manage strong emotions effectively.
+- Materials: Shoebox or small container, picture cards of calming activities, art supplies, stress ball, headphones
+- Procedure:
+  1. Discuss different emotions and situations that may cause stress or upset.
+  2. Introduce various calming strategies (deep breathing, counting, listening to music, etc.).
+  3. Help the child create picture cards representing their preferred calming strategies.
+  4. Decorate the shoebox and place the strategy cards and calming items inside.
+  5. Practice using the toolkit in simulated stressful situations.
+- Data Collection: Record the frequency of toolkit use and effectiveness in reducing emotional intensity.
+- Variations:
+  1. Create a digital version of the toolkit using a tablet or smartphone app.
+  2. Incorporate sensory items specific to the child's preferences.
+  3. Gradually introduce more advanced self-regulation techniques.
+- Reinforcement: Praise for appropriate use of the toolkit and successful emotion management.
+- Skills Developed: Emotional awareness, self-regulation, coping skills, stress management

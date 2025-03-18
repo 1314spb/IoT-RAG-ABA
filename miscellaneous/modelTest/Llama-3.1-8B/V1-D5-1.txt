@@ -1,0 +1,34 @@
+- Domain: Independent and Self-help
+- Task: Preparing a Simple Meal
+- Sub task: 
+    - Sub task 1: Washing hands before cooking
+    - Sub task 2: Reading a recipe
+    - Sub task 3: Following a recipe to cook a simple meal
+- Description: This task aims to teach an individual with autism or other developmental disorders to prepare a simple meal independently, promoting self-help skills and independence in daily living.
+- Materials: 
+    - A simple recipe (e.g., grilled cheese sandwich or scrambled eggs)
+    - Ingredients and cooking utensils (e.g., knife, cutting board, stove)
+    - Handwashing station with soap and water
+    - Whiteboard or printed recipe card
+- Procedure: 
+    1. Begin by teaching the individual to wash their hands before cooking (Sub task 1).
+    2. Next, teach the individual to read the recipe (Sub task 2) and identify the ingredients and steps required.
+    3. With the individual's assistance, demonstrate how to follow the recipe to cook the meal (Sub task 3).
+    4. Gradually increase the individual's responsibility for following the recipe and cooking the meal independently.
+- Data Collection: 
+    - Observe the individual's ability to wash their hands before cooking.
+    - Monitor the individual's ability to read and follow the recipe.
+    - Record the individual's ability to cook the meal independently.
+- Variations: 
+    - Use different recipes to increase the complexity of the meal.
+    - Introduce new ingredients or cooking techniques to challenge the individual.
+    - Gradually increase the amount of time the individual is responsible for cooking the meal.
+- Reinforcement: 
+    - Praise the individual for their efforts and accomplishments.
+    - Provide a reward for completing the task (e.g., a favorite snack or activity).
+    - Offer choices (e.g., "Do you want to cook a sandwich or scrambled eggs?") to increase motivation.
+- Skills Developed: 
+    - Independent living skills (e.g., cooking, meal preparation)
+    - Self-help skills (e.g., washing hands, following a recipe)
+    - Problem-solving skills (e.g., adapting to changes in recipes or ingredients)
+    - Fine motor skills (e.g., using a knife, stirring a pot)
