@@ -29,10 +29,11 @@ const Generate = () => {
 			domain: selectedDomain.name,
 			additionalNeed: additionalNeed.trim(),
 		};
+		console.log("payload:", payload);
 
 		try {
 			const response_data = await axioGenerate(payload);
-			console.log("response_data:", response_data);
+			// console.log("response_data:", response_data);
 			setGeneratedTask(response_data);
 		} catch (err) {
 			setError(err);

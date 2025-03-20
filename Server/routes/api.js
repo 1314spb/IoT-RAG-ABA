@@ -1,12 +1,13 @@
 const express = require('express');
 const axios = require("axios");
 const fs = require('fs');
-
 const save_payload = require('../utils/save_payload');
 const cal_sum = require('../utils/cal_sum');
 
 const pool = require('../db');
 const router = express.Router();
+
+require('dotenv').config();
 
 router.get('/past_gen_tasks', async (req, res) => {
   const { student_id } = req.query;
@@ -100,7 +101,7 @@ router.get("/task_sum", async (req, res) => {
 
 router.post('/generate', async (req, res) => {
   const { student_id, domain, additionalNeed } = req.body;
-
+  console.log("student_id:", student_id, "domain:", domain, "additionalNeed:", additionalNeed);
   if (!student_id || !domain) {
     return res.status(400).json({ error: 'Missing required parameters' });
   }
@@ -108,20 +109,23 @@ router.post('/generate', async (req, res) => {
   let conn;
   try {
     conn = await pool.getConnection();
-    const pass_tasks_query = "SELECT task, subtask, trialresult FROM student_sessions WHERE student_id = ? AND domain = ?";
+    const pass_tasks_query = "SELECT task, subtask, trialresult FROM student_sessions WHERE student_id = ? AND domain = ? ORDER BY date DESC LIMIT 20";
     const pass_tasks = await conn.query(pass_tasks_query, [student_id, domain]);
+    console.log("pass_tasks length:", pass_tasks.length);
 
     const generated_tasks_query = "SELECT task, subtask, description, status AS trialresult FROM student_pass_generated_task WHERE student_id = ? AND domain = ?";
     const pass_generated_task = await conn.query(generated_tasks_query, [student_id, domain]);
+    console.log("pass_generated_task length:", pass_generated_task.length);
 
     const last_task_query = "SELECT task, subtask, timestamp, trialresult, bvp, gsr, wristtemp, acceleration_x, acceleration_y, acceleration_z, acceleration, description FROM student_sessions WHERE student_id = ? ORDER BY id DESC LIMIT 1";
     const last_task = await conn.query(last_task_query, [student_id]);
+    console.log("last_task:", last_task);
 
     const task_sum = cal_sum(pass_tasks);
 
     const gen_task_sum = cal_sum(pass_generated_task);
 
-    const targetIP = "http://localhost:5000";
+    // const targetIP = "http://localhost:8000";
     const payload = {
       student_id,
       domain,
@@ -133,15 +137,21 @@ router.post('/generate', async (req, res) => {
       gen_task_sum,
     };
 
-    save_payload(payload);
+    // save_payload(payload);
+    const targetIP = process.env.BASE_URL || "http://127.0.0.1:8000";
 
-    // const response = await axios.post(`${targetIP}/service/generate`, payload);
+    console.log("Sending POST request /service/generate to targetIP:", targetIP);
+    const response = await axios.post(`${targetIP}/service/generate`, payload);
+    const modelResponse = JSON.parse(response.data.model_response);
 
-    // console.log("response:", response.data);
+    console.log("response:", modelResponse);
 
-    return res.status(201).json({ id: result.insertId });
+    // console.log("Response.data type:", typeof(response.data))
+
+    return res.status(201).json(modelResponse);
   } catch (error) {
     console.error(error);
+    // console.log("error:", error);
     return res.status(500).json({ error: error.message });
   }
 });
