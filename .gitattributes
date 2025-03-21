@@ -1,1 +1,2 @@
 Database/docker_db/student_data.sql filter=lfs diff=lfs merge=lfs -text
+Database/docker_db/backup.sql filter=lfs diff=lfs merge=lfs -text

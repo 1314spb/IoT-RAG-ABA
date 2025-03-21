@@ -125,7 +125,6 @@ router.post('/generate', async (req, res) => {
 
     const gen_task_sum = cal_sum(pass_generated_task);
 
-    // const targetIP = "http://localhost:8000";
     const payload = {
       student_id,
       domain,
@@ -144,15 +143,20 @@ router.post('/generate', async (req, res) => {
     const response = await axios.post(`${targetIP}/service/generate`, payload);
     const modelResponse = JSON.parse(response.data.model_response);
 
-    console.log("response:", modelResponse);
+    // console.log("response:", modelResponse);
+    const insert_query = "INSERT INTO student_pass_generated_task (student_id, domain, task, subtask, description, reason, date) VALUES (?, ?, ?, ?, ?, ?, ?)";
+    const insert_values = [student_id, domain, modelResponse.task, modelResponse.subtask, modelResponse.description, modelResponse.reason, new Date()];
 
-    // console.log("Response.data type:", typeof(response.data))
+    const insert_result = await conn.query(insert_query, insert_values);
+    console.log("insert_result:", insert_result);
 
     return res.status(201).json(modelResponse);
   } catch (error) {
     console.error(error);
     // console.log("error:", error);
     return res.status(500).json({ error: error.message });
+  } finally {
+    if (conn) conn.release();
   }
 });
 
