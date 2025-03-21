@@ -45,8 +45,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../Client/dist')));
 
 app.use((req, res, next) => {
-	// res.setHeader("Content-Security-Policy", "script-src 'self' https://cdnjs.cloudflare.com; object-src 'none'");
-	res.setHeader("Content-Security-Policy", "script-src 'self' https://cdnjs.cloudflare.com; script-src-elem 'self' https://cdnjs.cloudflare.com; object-src 'none'");
+	// res.setHeader("Content-Security-Policy", "script-src self' https://cdnjs.cloudflare.com; object-src 'none'");
+	res.setHeader("Content-Security-Policy", "script-src 'self' https://cdnjs.cloudflare.com;");
 	next();
 });
 
