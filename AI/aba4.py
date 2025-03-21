@@ -158,22 +158,22 @@ class PassTask(BaseModel):
 class PassGeneratedTask(BaseModel):
     task: str
     subtask: str
-    description: str
-    trialresult: str
+    description: Optional[str]
+    trialresult: Optional[str]
 
 class LastTask(BaseModel):
     task: str
     subtask: str
     timestamp: str
     trialresult: str
-    bvp: float
+    bvp: Optional[float]
     gsr: Optional[float]
     wristtemp: Optional[float]
     acceleration_x: Optional[float]
     acceleration_y: Optional[float]
     acceleration_z: Optional[float]
     acceleration: Optional[float]
-    description: str
+    description: Optional[str]
 
 class TaskSum(BaseModel):
     plus_sum: int
@@ -189,7 +189,7 @@ class GenTaskSum(BaseModel):
 
 class RequestModel(BaseModel):
     student_id: int
-    domain: str = ""
+    domain: str
     additionalNeed: str = ""
     pass_tasks: Optional[List[PassTask]] = []
     pass_generated_task: Optional[List[PassGeneratedTask]] = []
@@ -200,15 +200,8 @@ class RequestModel(BaseModel):
 class ResponseModel(BaseModel):
     status: str
     model_response: str
-    
-# ---------------------------
-# 主入口函数：给外部（例如 Node/Express）调用
-# ---------------------------
+
 def handle_request(req_json: RequestModel) -> dict:
-    """
-    根据接收的 JSON，执行语义检索与 API 调用。
-    然后返回一个 JSON 对象给上层。
-    """
     # 1) 从 Pydantic 模型中取出需要的字段
     domain_query = req_json.domain.strip()
 

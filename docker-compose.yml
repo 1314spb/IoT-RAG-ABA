@@ -11,6 +11,7 @@ services:
       - ./:/app
     depends_on:
       - db
+      - ai
 
   ai:
     build:
