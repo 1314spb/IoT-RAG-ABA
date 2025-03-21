@@ -58,7 +58,11 @@ app.use(express.static(path.join(__dirname, '../Client/dist')));
 // -------------------------
 // 掛載路由
 // -------------------------
-
+app.use((req, res, next) => {
+	// res.setHeader("Content-Security-Policy", "script-src 'self' https://cdnjs.cloudflare.com; object-src 'none'");
+	res.setHeader("Content-Security-Policy", "script-src 'self' https://cdnjs.cloudflare.com; script-src-elem 'self' https://cdnjs.cloudflare.com; object-src 'none'");
+	next();
+});
 // API 路由 ( /api )
 const apiRouter = require('./routes/api');
 app.use('/api', apiRouter);
