@@ -19,5 +19,3 @@ filtered_data = {"sessions": filtered_sessions}
 
 with open("temp_filter.json", "w", encoding="utf-8") as outfile:
     json.dump(filtered_data, outfile, indent=4, ensure_ascii=False)
-
-print("已成功產生過濾後的 JSON 檔案：temp_filter.json")
