@@ -33,7 +33,7 @@ This project aims to develop an integrated system that combines IoT technology w
 1. Clone the repository from GitHub
 
    ```bash
-   git clone https://github.com/1314spb/RAG-LLM4ABA.git
+   git clone https://github.com/1314spb/IoT-RAG-ABA.git
    cd RAG-LLM4ABA
    ```
 
