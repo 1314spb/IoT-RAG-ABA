@@ -1,136 +1,117 @@
-# RAG-ABA: Fine-Tuned Retrieval-Augmented Generation for Personalized ABA Task Generation
+# Transforming ABA Therapy: An IoT-Guided, Retrieval-Augmented LLM Framework
 
 ## Table of Contents
 
-- [Introduction](#Introduction)
-- [Obejective](#Objective)
-- [Deployment](#Deployment)
-- [Instructions](#Instructions)
-- [Methodology](#Methodology)
-- [Evaluation](#Evaluation)
-- [Reference](#Reference)
-- [Acknowledgement](#Acknowledgement)
-- [License](#License)
+- [Introduction](#introduction)
+- [Objective](#objective)
+- [System Overview](#system-overview)
+- [Deployment](#deployment)
+- [User Interface](#user-interface)
+- [Methodology](#methodology)
+- [Evaluation](#evaluation)
+- [References](#references)
+- [Acknowledgement](#acknowledgement)
+- [License](#license)
 
 ## Introduction
 
-Applied Behavior Analysis (ABA) is a recognized, evidence-based framework for improving socially significant behaviors in children with Special Educational Needs (SEN), primarily by structuring interventions around reinforcement, prompting, and shaping principles [1], [2], [3]. These interventions, while effective, demand extensive planning, monitoring, and real-time adaptation, which can overwhelm practitioners and limit scalability. In conventional implementations, ABA specialists must manually adjust tasks to keep pace with each child’s quickly evolving emotional and behavioral states, diminishing the possibility of delivering timely and context-sensitive interventions [4], [5].
-
+Applied Behavior Analysis (ABA) is an evidence-based therapeutic approach aimed at improving socially significant behaviors among children with Special Educational Needs (SEN), especially Autism Spectrum Disorder (ASD). Despite its effectiveness, traditional ABA intervention requires extensive manual planning and real-time adaptation, placing significant demands on practitioners. This project proposes a novel integration of IoT sensing technology and a Retrieval-Augmented Generation (RAG) Large Language Model (LLM) framework to generate personalized ABA tasks dynamically and efficiently.
 
 ## Objective
 
-This project aims to develop an integrated system that combines IoT technology with a Retrieval-Augmented Generation (RAG) Large Language Model (LLM) to generate personalized ABA tasks in real-time for children with Special Educational Needs. The system is designed to enhance the efficiency and accuracy of ABA task design and dynamically adjust task content based on the child's real-time emotional and behavioral responses.
+The project aims to develop an integrated system capable of:
+- Collecting and analyzing real-time physiological and behavioral data through IoT devices.
+- Utilizing a Retrieval-Augmented Large Language Model fine-tuned on ABA tasks to generate personalized intervention tasks.
+- Dynamically adapting generated tasks based on real-time emotional and behavioral predictions.
+
+## System Overview
+
+The proposed system consists of three main components:
+
+1. **IoT Data Collection and Analysis**: Collect real-time sensor data (e.g., Blood Volume Pulse (BVP), Galvanic Skin Response (GSR), temperature, acceleration) from wearable devices, processed through deep learning models to predict the emotional and behavioral states of children.
+
+2. **Retrieval-Augmented Generation (RAG)**: Semantic retrieval is conducted on structured ABA task datasets to identify relevant intervention templates. These templates, combined with real-time IoT predictions, form comprehensive prompts for an LLM.
+
+3. **LoRA-GA Enhanced Fine-tuning of LLM**: The LLaMA 3.1-70B language model is fine-tuned using a low-rank adaptation method with gradient alignment (LoRA-GA), enabling efficient domain adaptation specifically tailored for ABA task generation.
 
 ## Deployment
 
 ### Prerequisites
 
 - Docker
-- High performance GPU (Recommend NVIDIA RTX 3090 or above)
+- NVIDIA GPU with at least 24 GB memory (e.g., RTX 3090 or equivalent)
 
-### Deployment Step
+### Steps to Deploy
 
-1. Clone the repository from GitHub
+1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/1314spb/IoT-RAG-ABA.git
-   cd RAG-LLM4ABA
-   ```
+```bash
+git clone https://github.com/1314spb/IoT-RAG-ABA.git
+cd RAG-LLM4ABA
+```
 
-2. Use docker-compose to build and run the application
+2. Use Docker Compose to build and run:
 
-   ```bash
-   docker-compose up --build
-   ```
+```bash
+docker-compose up --build
+```
 
-3. Open a browser and visit `http://localhost:80` to view the application.
+3. Access the application via browser at:
 
-   ```bash
-   http://localhost:80
-   ```
+```
+http://localhost:80
+```
 
-## Instructions
+## User Interface
 
-### Page
-1. **Home Page**
+The system provides a web-based interface with the following pages:
 
-   The home page provides an overview of the system and its functionalities.
-
-2. **History Page**
-
-   The history page displays the history of data with the child, including the date, student, and domain.
-
-3. **Generate Page**
-
-   The generate page allows users to select a student, date, and domain to generate personalized ABA tasks.
-
-4. **Therapy Page**
-
-   The therapy page displays the all past ABA tasks for the selected student.
-
-5. **Add Page**
-
-   The add page allows users to add new task, including task, subtask, domain, status, description and date for the selected student.
-
-6. **Analysis Page**
-
-   The analysis page provides a detailed visual piechart of the child's performance based on the uploaded tasks' status.
+1. **Home**: Overview of the system and features.
+2. **History**: Historical data of ABA interventions for each child.
+3. **Generate**: Generate personalized ABA tasks using IoT and retrieval-augmented LLM.
+4. **Therapy**: View previous ABA tasks and monitor progress.
+5. **Add Task**: Manually add or adjust ABA tasks.
+6. **Analysis**: Visual analytics of intervention outcomes and child's progress.
 
 ## Methodology
 
-### IoT Sensory Data Collection
+### IoT Data Processing
 
-1. **Data Collection**: Collect IoT data, including temperature, acceration, GSR and BVP from using sensors.
-2. **Data Preprocessing**: Clean and preprocess the raw data, including normalization and feature extraction.
-3. **Feature Engineering**: Extract features from the preprocessed data, such as mean, variance, and frequency domain features.
+- **Data Collection**: Gather sensor data including BVP, GSR, wrist temperature, and acceleration.
+- **Preprocessing**: Normalize and clean sensor data, removing outliers using a 3-sigma method.
+- **Feature Engineering**: Compute statistical and frequency-domain features for emotion and behavior classification.
+- **Classification**: Deep learning classifiers (e.g., transformer-based) predict emotional states from processed IoT data.
 
-### RAG Model Training
+### Retrieval-Augmented Generation (RAG)
 
-1. **Data Preprocessing**: Clean and structure the ABA task dataset, ensuring consistency in target, behavior, intervention, and outcome.
-2. **RAG Model Integration**: Fine-tune a pre-trained LLM (Llama3) on the ABA task dataset to understand task structure and content.
-3. **Task Generation**: When specific emotion or behavior states are detected, the RAG system retrieves relevant tasks and generates new, customized ABA tasks to adapt to the child's current state.
+- **Semantic Retrieval**: Use SentenceTransformers (e.g., `all-MiniLM-L6-v2`) to semantically search structured ABA task databases, identifying tasks relevant to predicted emotional states.
+- **Prompt Construction**: Combine retrieved tasks and IoT predictions to create enriched prompts for the LLM.
+- **Task Generation**: Generate tailored ABA tasks dynamically via a fine-tuned LLaMA 3.1-70B model.
 
-### System Integration
+### Fine-Tuning with LoRA-GA
 
-1. **Front-end (React.js)**: Develop a user-friendly web interface for therapists, educators, and parents to interact with the system.
-2. **Back-end (Express.js)**: Implement a back-end server to handle task and IoT input and task generation.
-3. **Database (MariaDB)**: Store ABA task data and IoT sensory data for future analysis and reference.
-4. **API Implement**: Implement API to facilitate communication between the IoT sensor module, the RAG system and AI server.
-   1. `GET: /api/pass_gen_tasks`: Take all pass generated task data of selected student from the database.
-   2. `GET: api/students/:student_id`: Take all the task data of selected student from the database.
-   3. `GET: /api/task_sum`: Take the sum of all the tasks' status data from the database.
-   4. `POST: /api/generate`: Generate a new task for the selected student and save it to the database.
-   5. `PATCH: /api/taskOnSave/:id`: Update the task detail and status of the selected task in the database.
-3. **Hardware and Deployment**: Use high-performance GPU (NVIDIA RTX 3090 or above) to support real-time image processing and LLM operations. Deploy the system on a cloud platform (AWS) to ensure scalability and accessibility.
+- **Model Selection**: Use LLaMA 3.1-70B with QLoRA (4-bit quantization) and FlashAttention-2 for efficient fine-tuning.
+- **LoRA-GA Method**: Low-rank adaptation with gradient alignment to enhance convergence and adaptation effectiveness.
+- **Training and Validation**: Fine-tune the model on structured JSON datasets containing ABA tasks (90% train, 10% validation).
+- **Evaluation Metrics**: Post-training evaluation uses automatic metrics (ROUGE, BLEU) for assessing task generation quality.
 
 ## Evaluation
 
-### Model Evaluation
+### Model and System Evaluation
 
-- **檢索模組**：測試檢索的準確性和相關性。
-- **生成模組**：評估生成輸出的質量和連貫性。
+- **Semantic Retrieval Accuracy**: Validate retrieval relevance through semantic similarity scoring.
+- **Generated Task Quality**: Evaluate generated ABA tasks using automated metrics (BLEU, ROUGE) against human-written tasks.
+- **IoT Prediction Accuracy**: Measure accuracy and recall for predicted emotional and behavioral states.
 
-### 系統集成測試
+### Integration and Performance Testing
 
-- **集成測試**：確保所有組件無縫協作。
-- **壓力測試**：評估系統在高負載條件下的性能。
+- **Integration Testing**: Confirm seamless interaction between IoT, retrieval modules, and the LLM.
+- **Stress Testing**: Evaluate system performance under high data throughput and concurrent requests.
 
-### 用戶驗收測試
+### User Acceptance Testing (UAT)
 
-- **實地試驗**：在真實場景中部署系統，收集功能數據。
-- **反饋迴路**：收集用戶反饋，識別改進區域。
-
-### 性能指標
-
-- **響應時間**：測量系統對輸入的反應速度。
-- **情感和行為檢測準確性**：評估系統檢測情感和行為的準確性。
-- **生成任務的有效性**：評估任務是否滿足用戶需求和目標。
-
-### 測試過程
-
-1. **與現有系統比較**：將性能指標與現有解決方案進行比較，以評估改進情況。
-2. **文檔記錄**：記錄所有測試結果，包括成功和需要改進的地方，使用圖表和圖形以增加清晰度。
-3. **迭代測試**：根據反饋和性能指標不斷測試和調整，以實現最佳結果。
+- **Field Trials**: Real-world deployment and data collection to ensure functionality meets practitioner needs.
+- **Feedback Loop**: Continuous collection of user feedback for iterative improvement.
 
 ## Reference
 [1]: J.O. Cooper, T. E. Heron, and W. L. Heward, Applied behavior analysis. Pearson UK, 2020. \
@@ -139,11 +120,11 @@ This project aims to develop an integrated system that combines IoT technology w
 [4]: R. M. Foxx, “Applied behavior analysis treatment of autism: The state of the art,” Child and adolescent psychiatric clinics of North America, vol. 17, no. 4, pp. 821–834, 2008. \
 [5]: R. Y.-Y. Chan, C. M. V. Wong, and Y. N. Yum, “Predicting behavior change in students with special education needs using multimodal learning analytics,” IEEE Access, vol. 11, pp. 63 238–63 251, 2023.
 
-
 ## Acknowledgement
 
-This project adheres to the academic integrity policy of The Chinese University of Hong Kong. The submitted work is original and has not been submitted to multiple courses or purposes without declaration. All cited sources are correctly referenced. No teaching materials are distributed, shared, or copied to gain unfair academic advantage without the permission of the instructor.
+This project adheres to the academic integrity policies of The Chinese University of Hong Kong. All submitted materials are original, properly referenced, and have not been used elsewhere without declaration.
 
 ## License
 
-This project is licensed under the terms of the [MIT license](LICENSE).
+This project is licensed under the [MIT license](LICENSE).
+
